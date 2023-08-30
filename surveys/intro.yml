@@ -1,0 +1,12 @@
+os:
+  type: mc
+  name: os
+  label: |
+    ### Heading
+    Which operating system does your computer use?
+  optional: "!"
+  class: mc_block
+  choice1: macOS <i class="fa fa-smile-o"></i>
+  choice2: Windows
+  choice3: Linux
+  choice4: Other

@@ -1,0 +1,99 @@
+intro:
+  class: label_align_left
+  type: note
+  name: intro
+  label: |
+    ### Hello!
+    We have distributed this form to you as you may have participated in one of our Open Science Seminars provided by the Open Science Office at the University of Mannheim. We are very interested in getting your feedback about the seminar series and would like to learn what you would like to see next.
+    We thank you in advance for your participation in this survey and for your helpful feedback.
+    If you have any questions about this feedback survey please feel free to contact me using the details provided below.
+    ### Rationale for this feedback survey:
+    This feedback will form part of the basis for determining the evaluation of the course and the services it provides (e.g., teaching, funding and Open Science consulting) beyond 2024.
+    We will use the feedback you provide in the impact report which we are currently writing for the Open Science Office.
+    This impact report will be handed to the research council of the University of Mannheim to review the performance of the Open Science Office.
+    ### Contact
+    Dr. Lennart Wittkuhn
+    Email: [lennart.wittkuhn@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)
+career:
+  class: mc_vertical
+  type: mc
+  name: career
+  label: |
+    What is your career level?
+    Choose one of the following answers
+    If you choose "Other"" please also specify your choice in the accompanying text field.
+  choice1: Bachelor Student
+  choice2: Master Student
+  choice3: PhD Student
+  choice4: Postdoctoral Researcher
+  choice5: Junior Professor
+  choice6: Professor
+  choice7: Research Support (Library, Administration, IT)
+  choice8: Other
+discipline:
+  type: text
+  name: discipline
+  label: |
+    Which discipline do you belong to?
+affiliation:
+  class: mc_vertical
+  type: mc
+  name: affiliation
+  label: |
+    Are you affiliated with the University of Hamburg?
+  choice1: Yes
+  choice2: No
+  choice3: Do not wish to state
+impression:
+  class: mc_horizontal
+  type: mc
+  name: impression
+  label: |
+    What was your overall impression of the course?
+  choice1: Very good
+  choice2: Good
+  choice3: Neutral
+  choice4: Bad
+  choice5: Very bad
+  choice6: No answer
+level:
+  class: mc_horizontal
+  type: mc
+  name: level
+  label: |
+    Was the level of the content suitable for your career level and background?
+  choice1: Suitable
+  choice2: Somewhat suitable
+  choice3: Neutral
+  choice4: Somewhat unsuitable
+  choice5: Unsuitable
+  choice6: No answer
+implementation:
+  class: mc_vertical
+  type: mc
+  name: implementation
+  label: |
+    Are you planning to use version control in your next research project and/or publication?
+    Please choose one of the following answers:
+  choice1: Yes, I was already using version control prior to attending.
+  choice2: Yes, I have decided to use version control after attending.
+  choice3: Not sure
+  choice4: No
+negative:
+  type: textarea
+  name: negative
+  label: |
+    What are the **negative aspects** about the course?
+    Any feedback from you is very much appreciated and will help us in our evaluation process as well as future plans.
+positive:
+  type: textarea
+  name: positive
+  label: |
+    What are the **positive aspects** about the course?
+    Any feedback from you is very much appreciated and will help us in our evaluation process as well as future plans.
+topics:
+  type: textarea
+  name: topics
+  label: |
+    Which topics would you like the course to cover next?
+    Any feedback from you is very much appreciated and will help us in our evaluation process as well as future plans.
