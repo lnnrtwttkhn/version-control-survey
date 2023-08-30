@@ -41,8 +41,8 @@ affiliation:
   name: affiliation
   label: |
     Are you affiliated with the University of Hamburg?
-  choice1: Yes
-  choice2: No
+  choice1: "Yes"
+  choice2: "No"
   choice3: Do not wish to state
 impression:
   class: mc_horizontal
@@ -78,7 +78,7 @@ implementation:
   choice1: Yes, I was already using version control prior to attending.
   choice2: Yes, I have decided to use version control after attending.
   choice3: Not sure
-  choice4: No
+  choice4: "No"
 negative:
   type: textarea
   name: negative
