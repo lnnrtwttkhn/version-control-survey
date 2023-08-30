@@ -30,6 +30,12 @@ career:
   choice6: Professor
   choice7: Research Support (Library, Administration, IT)
   choice8: Other
+career_other:
+  type: text
+  name: career_other
+  label: |
+    Please specify your choice:
+  showif: career == 8
 discipline:
   type: text
   name: discipline
