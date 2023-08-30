@@ -16,7 +16,7 @@ intro:
     Email: [lennart.wittkuhn@uni-hamburg.de](mailto:lennart.wittkuhn@uni-hamburg.de)
 career:
   class: mc_vertical
-  type: mc
+  type: mc_button
   name: career
   label: |
     What is your career level?
@@ -37,7 +37,7 @@ discipline:
     Which discipline do you belong to?
 affiliation:
   class: mc_vertical
-  type: mc
+  type: mc_button
   name: affiliation
   label: |
     Are you affiliated with the University of Hamburg?
@@ -46,7 +46,7 @@ affiliation:
   choice3: Do not wish to state
 impression:
   class: mc_horizontal
-  type: mc
+  type: mc_button
   name: impression
   label: |
     What was your overall impression of the course?
@@ -58,7 +58,7 @@ impression:
   choice6: No answer
 level:
   class: mc_horizontal
-  type: mc
+  type: mc_button
   name: level
   label: |
     Was the level of the content suitable for your career level and background?
@@ -70,7 +70,7 @@ level:
   choice6: No answer
 implementation:
   class: mc_vertical
-  type: mc
+  type: mc_button
   name: implementation
   label: |
     Are you planning to use version control in your next research project and/or publication?
