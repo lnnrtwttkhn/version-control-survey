@@ -1,12 +1,17 @@
 os:
-  type: mc
+  type: mc_button
+  class: mc_vertical
   name: os
   label: |
-    ### Heading
+    ### Operating System
     Which operating system does your computer use?
-  optional: "!"
-  class: mc_block
-  choice1: macOS <i class="fa fa-smile-o"></i>
-  choice2: Windows
-  choice3: Linux
+  choice1: macOS <i class="fa fa-apple"></i>
+  choice2: Windows <i class="fa fa-windows"></i>
+  choice3: Linux <i class="fa fa-linux"></i>
   choice4: Other
+os_other:
+  type: text
+  name: os_other
+  label: |
+    Please specify your choice:
+  showif: os == 4
