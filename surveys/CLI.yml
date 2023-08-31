@@ -1,0 +1,46 @@
+Tracking-ref:
+  type: referrer
+  name: last_outside_referrer
+Tracking-ip:
+  type: ip
+  name: ip_address
+Tracking-browser:
+  type: browser
+  name: browser
+Note_start:
+  class: label_align_left
+  type: note
+  name: Note_start
+  label: |
+   ## Command line exercises
+   ### Move to different directories on your computer and list the files and folder using the cd and ls commands:
+Expectation:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: expectation
+  label: |
+    Are there more hidden files and folders than you expected?
+  choice1: "Yes"
+  choice2: "No"
+Noticed:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: Noticed
+  label: |
+    Did you notice something about the names of the hidden files?
+  choice1: "Yes"
+  choice2: "No"
+Noticed_2:
+  type: text
+  class: |
+    answer_below_label
+  name: Noticed_2
+  label: |
+    What did you notice about the names of the hidden files?:
+  showif: Noticed == 1
+
+
