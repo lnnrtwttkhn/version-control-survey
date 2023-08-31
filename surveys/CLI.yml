@@ -1,0 +1,119 @@
+Tracking-ref:
+  type: referrer
+  name: last_outside_referrer
+Tracking-ip:
+  type: ip
+  name: ip_address
+Tracking-browser:
+  type: browser
+  name: browser
+Note_start:
+  class: label_align_left
+  type: note
+  name: Note_start
+  label: |
+   ## Command line exercises
+   
+   ### Move to different directories on your computer and list the files and folder using the cd and ls commands:
+Expectation:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: expectation
+  label: |
+    Are there more hidden files and folders than you expected?
+  choice1: "Yes"
+  choice2: "No"
+Hidden_files_1:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: Hidden_files_1
+  label: |
+    Did you notice something about the names of the hidden files?
+  choice1: "Yes"
+  choice2: "No"
+Hidden_files_2:
+  type: text
+  class: |
+    answer_below_label
+  name: Hidden_files_2
+  label: |
+    What did you notice about the names of the hidden files?:
+  showif: Hidden_files_1 == 1
+Hidden_files_3:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: Hidden_files_3
+  label: |
+    Are there directories with more hidden folders than others??
+  choice1: "Yes"
+  choice2: "No"
+Next_page_1:
+  type: submit
+  name: Next_page_1
+  label: Continue
+Note_2:
+  class: label_align_left
+  type: note
+  name: Note_2
+  label: |
+   ### In this exercise you will figure out how to use arguments and flags together.
+   Using the flags you’ve seen so far, experiment to determine what order the flags have to be in.
+combining_flags:
+  type: text
+  class: |
+    answer_below_label
+  name: combining_flags 
+  label: |
+    Create a command that lists all the contents of your Documents folder in long format.
+Next_page_2:
+  type: submit
+  name: Next_page_2
+  label: Continue   
+Note_3:
+  class: label_align_left
+  type: note
+  name: Note_3
+  label: |
+   ### Using flags
+Using_flags:
+  type: text
+  class: |
+    answer_below_label
+  name: Using_flags 
+  label: |
+    Create a command that lists all the contents of your Documents folder in long format.
+Next_page_3:
+  type: submit
+  name: Next_page_3
+  label: Continue   
+Note_4:
+  class: label_align_left
+  type: note
+  name: Note_4
+  label: |
+   ### Moving around
+Moving_around_1:
+  type: text
+  class: |
+    answer_below_label
+  name: Moving_around_1 
+  label: |
+    If you are not already in the Downloads folder, navigate to it first.
+    Next, switch from your current location, the Downloads folder, to the Documents folder in one command, using the ~ symbol in the path.
+    Which command did you use?
+Moving_around_2:
+  type: text
+  class: |
+    answer_below_label
+  name: Moving_around_2 
+  label: |
+    Where does the following command place you on your system? How does it work? 
+    cd ~/../../..
+
+
