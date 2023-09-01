@@ -1,3 +1,11 @@
+---
+title: "index.qmd"
+format: html
+engine: knitr
+execute-dir: project
+---
+
+```{r}
 library("formr")
 library("here")
 library("ggplot2")
@@ -6,7 +14,7 @@ if ( file.exists(path_password) ) {
   source(path_password)
 } else {
   credentials$email <- Sys.getenv("FORMR_EMAIL")
-  credentials$password <- Sys.getenv("FORMR_PASSWORD")
+  credentials$password <- Sys.getenv("FORMR_PASS")
 }
 survey_name <- "surveytest"
 formr::formr_connect(credentials$email, credentials$password)
@@ -17,3 +25,4 @@ ggplot(data = survey_data, aes(x = version)) +
   geom_text(stat = "count", aes(label = after_stat(count)), vjust = -1) +
   xlab("Responses") +
   ylab("Count")
+```
