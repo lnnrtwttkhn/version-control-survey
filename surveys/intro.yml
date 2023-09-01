@@ -1,3 +1,27 @@
+career:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: career
+  label: |
+    Which **academic career level** do you identify with?
+    Choose one of the following answers.
+    If you choose "Other"" please also specify your choice in the accompanying text field.
+  choice1: Bachelor Student
+  choice2: Master Student
+  choice3: PhD Student
+  choice4: Postdoctoral Researcher
+  choice5: Junior Professor
+  choice6: Professor
+  choice7: Research Support (Library, Administration, IT)
+  choice8: Other
+career_other:
+  type: text
+  name: career_other
+  label: |
+    Please specify your choice:
+  showif: career == 8
 laptop:
   type: mc_button
   class: |
@@ -27,7 +51,7 @@ os:
     mc_vertical
   name: os
   label: |
-    Which **operating system** does your computer use?
+    Which **operating system** do you use on the system that you do most of your work on?
   choice1: macOS <i class="fa fa-apple"></i>
   choice2: Windows <i class="fa fa-windows"></i>
   choice3: Linux <i class="fa fa-linux"></i>
@@ -40,3 +64,47 @@ os_other:
   label: |
     Please specify your choice:
   showif: os == 4
+familiarity_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: familiarity_note
+  label: |
+    Consider the following tools or services, and indicate **your familiarity** with them.
+familiarity_git:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: familiarity_git
+  label: "**Git** ([git-scm.com](http://git-scm.com/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+familiarity_gitub:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: familiarity_github
+  label: "**GitHub** ([github.com](http://github.com/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+familiarity_cli:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: familiarity_cli
+  label: "Your computer's command line/terminal"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
