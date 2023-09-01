@@ -19,8 +19,8 @@ career:
   type: mc_button
   name: career
   label: |
-    What is your career level?
-    Choose one of the following answers
+    Which academic career level do you identify with?
+    Choose one of the following answers.
     If you choose "Other"" please also specify your choice in the accompanying text field.
   choice1: Bachelor Student
   choice2: Master Student
