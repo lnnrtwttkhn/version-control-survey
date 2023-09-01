@@ -10,13 +10,9 @@ output-dir: _site
 library("formr")
 library("here")
 library("ggplot2")
-path_password <- here::here("code", ".passwords.R")
-if ( file.exists(path_password) ) {
-  source(path_password)
-} else {
-  credentials$email <- Sys.getenv("FORMR_EMAIL")
-  credentials$password <- Sys.getenv("FORMR_PASS")
-}
+credentials <- list()
+credentials$email <- Sys.getenv("FORMR_EMAIL")
+credentials$password <- Sys.getenv("FORMR_PASS")
 survey_name <- "surveytest"
 formr::formr_connect(credentials$email, credentials$password)
 survey_items <- formr_items(survey_name = survey_name, host = "https://formr.org")
