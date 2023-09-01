@@ -14,6 +14,7 @@ path_password <- here::here("code", ".passwords.R")
 if ( file.exists(path_password) ) {
   source(path_password)
 } else {
+  credentials <- list()
   credentials$email <- Sys.getenv("FORMR_EMAIL")
   credentials$password <- Sys.getenv("FORMR_PASS")
 }
