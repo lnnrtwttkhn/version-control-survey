@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 .passwords.R
+/*_files/
+*.html
+/_site/
