@@ -1,0 +1,113 @@
+Tracking-ref:
+  type: referrer
+  name: last_outside_referrer
+Tracking-ip:
+  type: ip
+  name: ip_address
+Tracking-browser:
+  type: browser
+  name: browser
+Note_start:
+  class: label_align_left
+  type: note
+  name: Note_start
+  label: |
+   ## Git basics exercises
+   ### Multiple choice
+mc_1:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: mc_1
+  label: |
+    What command is used to create a new folder called "recipes"?
+  choice1: "mkdir"
+  choice2: "touch"
+  choice3: "cd"
+  choice4: "git init"
+mc_2:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: mc_2
+  label: |
+    After creating the "recipes" folder, what is the next step to initialize it as a Git repository?
+  choice1: "git start"
+  choice2: "git create"
+  choice3: "git init"
+  choice4: "git new"
+mc_3:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: mc_3
+  label: |
+   What command is used to stage changes for committing in Git?
+  choice1: "git push"
+  choice2: "git stage"
+  choice3: "git commit"
+  choice4: "git add"
+mc_4:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: mc_4
+  label: |
+   When committing changes in Git, what should you include along with your changes?
+  choice1: "A commit message describing the changes"
+  choice2: "A recipe for your favorite dish"
+  choice3: "A list of Git contributors"
+  choice4: "Your personal contact information"
+mc_5:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: mc_5
+  label: |
+   What is the purpose of a .gitignore file?
+  choice1: "To store your Git commit messages"
+  choice2: "To specify which files or patterns should be excluded from version control"
+  choice3: "To track changes in your project"
+  choice4: "To list all the contributors to a Git repository"
+mc_6:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: mc_6
+  label: |
+    Which command is used to create a .gitignore file?
+  choice1: "git exclude"
+  choice2: "git ignore"
+  choice3: "touch .gitignore"
+  choice4: "create .gitignore"
+mc_7:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: mc_7
+  label: |
+    What should you include in a .gitignore file if you want to exclude all files with the ".log" extension from being tracked by Git?
+  choice1: ".log"
+  choice2: "*.log"
+  choice3: "exclude .log"
+  choice4: "ignore *.log"
+next_page_1:
+  type: submit
+  name: next_page_1
+  label: Continue   
+text_1:
+  type: text
+  class: |
+    answer_below_label
+  name: text_1
+  label: |
+    
+  
+
