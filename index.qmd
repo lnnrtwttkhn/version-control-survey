@@ -3,6 +3,7 @@ title: "index.qmd"
 format: html
 engine: knitr
 execute-dir: project
+output-dir: _site
 ---
 
 ```{r}
