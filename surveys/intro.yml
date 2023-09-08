@@ -5,8 +5,7 @@ about_note:
   type: note
   name: about_note
   label: |
-    #### About you
-    We would like to get to know you better with the following questions.
+    ### About you
 career:
   class: |
     answer_below_label
@@ -14,9 +13,47 @@ career:
   type: mc_button
   name: career
   label: |
+   Where do you see yourself **professionally** once you've finished your current program of study?
+   If you choose "Other"" please also specify your choice in the accompanying text field.
+  choice1: Researcher or Academia
+  choice2: Therapy or Counseling
+  choice3: Data Science/Coding
+  choice4: Other
+career_other:
+  type: text
+  name: career_other
+  label: |
+    Please specify your choice:
+  showif: career == 4
+interest:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: interest
+  label: |
+    Which **field of research** are you most interested in?
+  choice1: Clinical Psychology
+  choice2: Developmental Psychology
+  choice3: Educational Psychology
+  choice4: Social Psychology
+  choice5: Industrial-Organizational Psychology
+  choice6: Cognitive Neuroscience
+  choice7: Other
+interest_other:
+  type: text
+  name: interest_other
+  label: |
+    Please specify your choice:
+  showif: interest == 7
+academic:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: academic
+  label: |
     Which **academic career level** do you identify with?
-    Choose one of the following answers.
-    If you choose "Other"" please also specify your choice in the accompanying text field.
   choice1: Bachelor Student
   choice2: Master Student
   choice3: PhD Student
@@ -25,12 +62,12 @@ career:
   choice6: Professor
   choice7: Research Support (Library, Administration, IT)
   choice8: Other
-career_other:
+academic_other:
   type: text
-  name: career_other
+  name: academic_other
   label: |
     Please specify your choice:
-  showif: career == 8
+  showif: academic== 8
 laptop:
   type: mc_button
   class: |
@@ -73,15 +110,6 @@ os_other:
   label: |
     Please specify your choice:
   showif: os == 4
-preferred_language:
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_horizontal
-  name: preferred_language
-  label: "What would be your **preferred course language**?"
-  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
-  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
 experience_note:
   class: |
     answer_below_label
@@ -94,11 +122,23 @@ experience_note:
     Don't worry if you haven't heard about about some (or any!) of them.
     You don't need any previous experience with any of these tools to participate in the course.
     Your answers help us to get a better understanding of your previous experience.
-experience_git:
-  type: mc_button
+tools_heading:
+  type: mc_heading
   class: |
-    answer_below_label
-    mc_horizontal
+    mc_width100 
+  name: tools_heading
+  label: |
+    **Tools:**
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_git:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
   name: experience_git
   label: "**Git** ([git-scm.com](http://git-scm.com/))"
   choice1: "Never heard of it"
@@ -107,10 +147,10 @@ experience_git:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_gitub:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100
   name: experience_gitub
   label: "**GitHub** ([github.com](http://github.com/))"
   choice1: "Never heard of it"
@@ -119,10 +159,10 @@ experience_gitub:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_cli:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_cli
   label: "**Command line / terminal**"
   choice1: "Never heard of it"
@@ -131,10 +171,10 @@ experience_cli:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_datalad:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_datalad
   label: "**DataLad** ([datalad.org](https://www.datalad.org/))"
   choice1: "Never heard of it"
@@ -143,10 +183,10 @@ experience_datalad:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_markdown:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_markdown
   label: "**Markdown** ([markdownguide.org](https://www.markdownguide.org/))"
   choice1: "Never heard of it"
@@ -155,10 +195,10 @@ experience_markdown:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_quarto:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_quarto
   label: "**Quarto** ([quarto.org](https://quarto.org/))"
   choice1: "Never heard of it"
@@ -167,10 +207,10 @@ experience_quarto:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_python:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_python
   label: "**Python** ([python.org](https://www.python.org/))"
   choice1: "Never heard of it"
@@ -179,10 +219,10 @@ experience_python:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_r:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_r
   label: "**R** ([r-project.org](https://www.r-project.org/))"
   choice1: "Never heard of it"
@@ -191,10 +231,10 @@ experience_r:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_matlab:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_matlab
   label: "**MATLAB** ([www.mathworks.com](https://www.mathworks.com/products/matlab.html))"
   choice1: "Never heard of it"
@@ -203,10 +243,10 @@ experience_matlab:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_spss:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_spss
   label: "**SPSS** ([www.ibm.com/spss](https://www.ibm.com/products/spss-statistics))"
   choice1: "Never heard of it"
@@ -215,23 +255,68 @@ experience_spss:
   choice4: "Frequent user"
   choice5: "Integral part of my work"
 experience_excel:
-  type: mc_button
+  type: mc
   class: |
-    answer_below_label
-    mc_horizontal
+    hide_label 
+    mc_width100 
   name: experience_excel
   label: "**Microsoft Excel** ([www.microsoft.com/en-us/microsoft-365/excel](https://www.ibm.com/products/spss-statistics))"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
   choice4: "Frequent user"
-  choice5: "Integral part of my work"
-motivation_note:
+git_specific:
+  type: text
+  class: |
+    answer_below_label
+    answer_below_label
+  name: git_specific
+  label: |
+    Is there something specific you would like to learn about git?
+  showif: experience_git >= 3
+version_control:
+  type: text
+  class: |
+    answer_below_label
+  name: version_control
+  label: |
+    Without googling: Can you briefly define the term **version control**?
+perspective_note:
   class: |
     answer_below_label
     label_align_left
   type: note
-  name: motivation_note
+  name: perspective_note
   label: |
-    #### Your motivation
-    Consider the following tools or services, and indicate **your familiarity** with them.
+    ### Your Perspective
+preferred_language:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: preferred_language
+  label: "What would be your **preferred course language**?"
+  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
+  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
+hopes:
+  type: text
+  class: |
+    answer_below_label
+  name: hope
+  label: |
+    What do you **hope to learn** in this course?
+worries:
+  type: text
+  class: |
+    answer_below_label
+  name: worries
+  label: |
+    Do you have any **worries or fears** regarding this course, that you want to express?
+motivation:
+  type: text
+  class: |
+    answer_below_label
+  name: motivation
+  label: |
+    What is your **main motivation** for taking this course?
+
