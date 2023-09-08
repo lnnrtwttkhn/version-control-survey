@@ -13,7 +13,7 @@ career:
   type: mc_button
   name: career
   label: |
-   Where do you see yourself **professionally** once you've finished your current program of study?
+   Where do you see yourself **professionally** once you've finished your current program of study? &#x1F4BC;
    If you choose "Other"" please also specify your choice in the accompanying text field.
   choice1: Researcher or Academia
   choice2: Therapy or Counseling
@@ -32,7 +32,7 @@ interest:
   type: mc_button
   name: interest
   label: |
-    Which **field of research** are you most interested in?
+    Which **field of research** are you most interested in? &#128270;
   choice1: Clinical Psychology
   choice2: Developmental Psychology
   choice3: Educational Psychology
@@ -53,7 +53,7 @@ academic:
   type: mc_button
   name: academic
   label: |
-    Which **academic career level** do you identify with?
+    Which **academic career level** do you identify with? &#127891;
   choice1: Bachelor Student
   choice2: Master Student
   choice3: PhD Student
@@ -140,7 +140,7 @@ experience_git:
     hide_label 
     mc_width100 
   name: experience_git
-  label: "**Git** ([git-scm.com](http://git-scm.com/))"
+  label: "**[Git](http://git-scm.com/)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -319,4 +319,10 @@ motivation:
   name: motivation
   label: |
     What is your **main motivation** for taking this course?
+submit:
+  type: submit
+  name: submit
+  label: |
+    Close Survey -
+    Thank you for participating &#127881;
 
