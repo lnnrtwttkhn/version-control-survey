@@ -236,7 +236,7 @@ experience_matlab:
     hide_label 
     mc_width100 
   name: experience_matlab
-  label: "**MATLAB** ([www.mathworks.com](https://www.mathworks.com/products/matlab.html))"
+  label: "**MATLAB** ([mathworks.com](https://www.mathworks.com/products/matlab.html))"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -248,7 +248,7 @@ experience_spss:
     hide_label 
     mc_width100 
   name: experience_spss
-  label: "**SPSS** ([www.ibm.com/spss](https://www.ibm.com/products/spss-statistics))"
+  label: "**SPSS** ([ibm.com/spss](https://www.ibm.com/products/spss-statistics))"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -260,7 +260,7 @@ experience_excel:
     hide_label 
     mc_width100 
   name: experience_excel
-  label: "**Microsoft Excel** ([www.microsoft.com/en-us/microsoft-365/excel](https://www.ibm.com/products/spss-statistics))"
+  label: "**Microsoft Excel** ([microsoft.com/en-us/microsoft-365/excel](https://www.ibm.com/products/spss-statistics))"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
