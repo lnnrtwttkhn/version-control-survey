@@ -1,3 +1,12 @@
+about_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: about_note
+  label: |
+    #### About you
+    We would like to get to know you better with the following questions.
 career:
   class: |
     answer_below_label
@@ -51,7 +60,7 @@ os:
     mc_vertical
   name: os
   label: |
-    Which **operating system** do you use on the system that you do most of your work on?
+    Which **operating system** do you use on the computer that you will bring to class?
   choice1: macOS <i class="fa fa-apple"></i>
   choice2: Windows <i class="fa fa-windows"></i>
   choice3: Linux <i class="fa fa-linux"></i>
@@ -64,47 +73,165 @@ os_other:
   label: |
     Please specify your choice:
   showif: os == 4
-familiarity_note:
-  class: |
-    answer_below_label
-    label_align_left
-  type: note
-  name: familiarity_note
-  label: |
-    Consider the following tools or services, and indicate **your familiarity** with them.
-familiarity_git:
+preferred_language:
   type: mc_button
   class: |
     answer_below_label
     mc_horizontal
-  name: familiarity_git
+  name: preferred_language
+  label: "What would be your **preferred course language**?"
+  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
+  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
+experience_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: experience_note
+  label: |
+    ### Your experience
+    Consider the following software tools or services and indicate **your familiarity** with them.
+    Don't worry if you haven't heard about about some (or any!) of them.
+    You don't need any previous experience with any of these tools to participate in the course.
+    Your answers help us to get a better understanding of your previous experience.
+experience_git:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_git
   label: "**Git** ([git-scm.com](http://git-scm.com/))"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
   choice4: "Frequent user"
   choice5: "Integral part of my work"
-familiarity_gitub:
+experience_gitub:
   type: mc_button
   class: |
     answer_below_label
     mc_horizontal
-  name: familiarity_github
+  name: experience_gitub
   label: "**GitHub** ([github.com](http://github.com/))"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
   choice4: "Frequent user"
   choice5: "Integral part of my work"
-familiarity_cli:
+experience_cli:
   type: mc_button
   class: |
     answer_below_label
     mc_horizontal
-  name: familiarity_cli
-  label: "Your computer's command line/terminal"
+  name: experience_cli
+  label: "**Command line / terminal**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
   choice4: "Frequent user"
   choice5: "Integral part of my work"
+experience_datalad:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_datalad
+  label: "**DataLad** ([datalad.org](https://www.datalad.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_markdown:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_markdown
+  label: "**Markdown** ([markdownguide.org](https://www.markdownguide.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_quarto:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_quarto
+  label: "**Quarto** ([quarto.org](https://quarto.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_python:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_python
+  label: "**Python** ([python.org](https://www.python.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_r:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_r
+  label: "**R** ([r-project.org](https://www.r-project.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_matlab:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_matlab
+  label: "**MATLAB** ([www.mathworks.com](https://www.mathworks.com/products/matlab.html))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_spss:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_spss
+  label: "**SPSS** ([www.ibm.com/spss](https://www.ibm.com/products/spss-statistics))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_excel:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: experience_excel
+  label: "**Microsoft Excel** ([www.microsoft.com/en-us/microsoft-365/excel](https://www.ibm.com/products/spss-statistics))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+motivation_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: motivation_note
+  label: |
+    #### Your motivation
+    Consider the following tools or services, and indicate **your familiarity** with them.
