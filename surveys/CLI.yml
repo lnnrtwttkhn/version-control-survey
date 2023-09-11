@@ -1,13 +1,10 @@
-Tracking-ref:
+referrer:
   type: referrer
   name: last_outside_referrer
-Tracking-ip:
-  type: ip
-  name: ip_address
-Tracking-browser:
+browser:
   type: browser
   name: browser
-Note_start:
+note_start:
   class: label_align_left
   type: note
   name: Note_start
