@@ -1,0 +1,334 @@
+referrer:
+  type: referrer
+  name: last_outside_referrer
+browser:
+  type: browser
+  name: browser
+about_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: about_note
+  label: |
+    ### About you
+career:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: career
+  label: |
+   Where do you see yourself **professionally** once you've finished your current program of study? &#x1F4BC;
+   If you choose "Other"" please also specify your choice in the accompanying text field.
+  choice1: Researcher or Academia
+  choice2: Therapy or Counseling
+  choice3: Data Science/Coding
+  choice4: Other
+career_other:
+  type: text
+  name: career_other
+  label: |
+    Please specify your choice:
+  showif: career == 4
+interest:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: interest
+  label: |
+    Which **field of research** are you most interested in? &#128270;
+  choice1: Clinical Psychology
+  choice2: Developmental Psychology
+  choice3: Educational Psychology
+  choice4: Social Psychology
+  choice5: Industrial-Organizational Psychology
+  choice6: Cognitive Neuroscience
+  choice7: Other
+interest_other:
+  type: text
+  name: interest_other
+  label: |
+    Please specify your choice:
+  showif: interest == 7
+academic:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: academic
+  label: |
+    Which **academic career level** do you identify with? &#127891;
+  choice1: Bachelor Student
+  choice2: Master Student
+  choice3: PhD Student
+  choice4: Postdoctoral Researcher
+  choice5: Junior Professor
+  choice6: Professor
+  choice7: Research Support (Library, Administration, IT)
+  choice8: Other
+academic_other:
+  type: text
+  name: academic_other
+  label: |
+    Please specify your choice:
+  showif: academic== 8
+laptop:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: laptop
+  label: |
+    Do you have a **personal laptop** that you can bring to each class?
+    Please note that tablets are not suitable.
+  choice1: "Yes"
+  choice2: "No"
+laptop_feedback:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: laptop_feedback
+  label: |
+    If you don't have a personal laptop that you can bring to each class, that's no problem.
+    It's possible to borrow a laptop from the university, e.g., from the institute's [notebook center](https://www.psy.uni-hamburg.de/en/service/notebookcenter.html).
+    Please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de).
+  showif: laptop == 2
+os:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: os
+  label: |
+    Which **operating system** do you use on the computer that you will bring to class?
+  choice1: macOS <i class="fa fa-apple"></i>
+  choice2: Windows <i class="fa fa-windows"></i>
+  choice3: Linux <i class="fa fa-linux"></i>
+  choice4: Other
+os_other:
+  type: text
+  class: |
+    answer_below_label
+  name: os_other
+  label: |
+    Please specify your choice:
+  showif: os == 4
+experience_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: experience_note
+  label: |
+    ### Your experience
+    Consider the following software tools or services and indicate **your familiarity** with them.
+    Don't worry if you haven't heard about about some (or any!) of them.
+    You don't need any previous experience with any of these tools to participate in the course.
+    Your answers help us to get a better understanding of your previous experience.
+tools_heading:
+  type: mc_heading
+  class: |
+    mc_width100 
+  name: tools_heading
+  label: |
+    **Tools:**
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_git:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_git
+  label: "**[Git](http://git-scm.com/)**"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_gitub:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100
+  name: experience_gitub
+  label: "**GitHub** ([github.com](http://github.com/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_cli:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_cli
+  label: "**Command line / terminal**"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_datalad:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_datalad
+  label: "**DataLad** ([datalad.org](https://www.datalad.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_markdown:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_markdown
+  label: "**Markdown** ([markdownguide.org](https://www.markdownguide.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_quarto:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_quarto
+  label: "**Quarto** ([quarto.org](https://quarto.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_python:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_python
+  label: "**Python** ([python.org](https://www.python.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_r:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_r
+  label: "**R** ([r-project.org](https://www.r-project.org/))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_matlab:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_matlab
+  label: "**MATLAB** ([mathworks.com](https://www.mathworks.com/products/matlab.html))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_spss:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_spss
+  label: "**SPSS** ([ibm.com/spss](https://www.ibm.com/products/spss-statistics))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+experience_excel:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_excel
+  label: "**Microsoft Excel** ([microsoft.com/en-us/microsoft-365/excel](https://www.ibm.com/products/spss-statistics))"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+git_specific:
+  type: text
+  class: |
+    answer_below_label
+    answer_below_label
+  name: git_specific
+  label: |
+    Is there something specific you would like to learn about git?
+  showif: experience_git >= 3
+version_control:
+  type: text
+  class: |
+    answer_below_label
+  name: version_control
+  label: |
+    Without googling: Can you briefly define the term **version control**?
+perspective_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: perspective_note
+  label: |
+    ### Your Perspective
+preferred_language:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: preferred_language
+  label: "What would be your **preferred course language**?"
+  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
+  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
+hopes:
+  type: text
+  class: |
+    answer_below_label
+  name: hope
+  label: |
+    What do you **hope to learn** in this course?
+worries:
+  type: text
+  class: |
+    answer_below_label
+  name: worries
+  label: |
+    Do you have any **worries or fears** regarding this course, that you want to express?
+motivation:
+  type: text
+  class: |
+    answer_below_label
+  name: motivation
+  label: |
+    What is your **main motivation** for taking this course?
+submit:
+  type: submit
+  name: submit
+  label: |
+    Close Survey -
+    Thank you for participating &#127881;
+

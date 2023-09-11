@@ -1,0 +1,20 @@
+note1:
+  class: "label_align_left"
+  type: "note"
+  name: "note1"
+  label: |
+    ### Hello!
+    Great that you are interested in becoming a member of the new Open Science Intitative at the Psychological Institute of the University of Hamburg.
+    We are planning to kick off the initiative with a first meeting in November.
+    In advance, we have a few questions for all those who will potentially join.
+    Answering the questions will take 3-5 minutes of your time.
+cli:
+  class: "label_align_left"
+  type: "note"
+  name: "note3"
+  label: |
+    ### Hello!
+    
+    ```{bash}
+    git status
+    ```
