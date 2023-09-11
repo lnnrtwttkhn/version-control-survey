@@ -1,10 +1,7 @@
-Tracking-ref:
+referrer:
   type: referrer
   name: last_outside_referrer
-Tracking-ip:
-  type: ip
-  name: ip_address
-Tracking-browser:
+browser:
   type: browser
   name: browser
 Note_start:
@@ -21,7 +18,7 @@ mc_1:
     mc_vertical
   name: mc_1
   label: |
-    What command is used to create a new folder called "recipes"?
+    What command is used to create a new folder?
   choice1: "mkdir"
   choice2: "touch"
   choice3: "cd"
@@ -102,12 +99,4 @@ next_page_1:
   type: submit
   name: next_page_1
   label: Continue   
-text_1:
-  type: text
-  class: |
-    answer_below_label
-  name: text_1
-  label: |
-    
-  
 
