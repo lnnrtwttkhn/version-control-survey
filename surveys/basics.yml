@@ -4,7 +4,7 @@ referrer:
 browser:
   type: browser
   name: browser
-Note_start:
+note_start:
   class: label_align_left
   type: note
   name: Note_start
@@ -99,4 +99,21 @@ next_page_1:
   type: submit
   name: next_page_1
   label: Continue   
-
+text_1:
+  type: text
+  class: |
+    answer_below_label
+  name: text_1
+  label: |
+    Write a good commit message for adding a new receipe into a file.
+text_2:
+type: text
+  class: |
+    answer_below_label
+  name: text_2
+  label: |
+    Write a good commit message for fixing an error in your recipe.
+next_page_2:
+  type: submit
+  name: next_page_1
+  label: End Quiz 
