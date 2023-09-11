@@ -116,4 +116,16 @@ type: text
 next_page_2:
   type: submit
   name: next_page_1
-  label: End Quiz 
+  label: End quiz and see feedback
+feedback: 
+  class: label_align_left
+  type: note
+  name: feedback
+  label: |
+    ## Basics exercises
+    ### Feedback
+next_page_3:
+  type: submit
+  name: next_page_3
+  label: |
+    Close feedback
