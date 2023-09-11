@@ -35,6 +35,23 @@ renv::restore()
 
 ## Usage
 
+### Update survey
+
+- Add survey data to a `.yml` file in `/surveys`
+- Make sure to use a consistent keyword for the filenames (e.g., `intro`)!
+- Add the googlesheet to [`_sheets.yml`](_sheets.yml)
+- Give edit permissions to your collaborators on the google sheet
+- Add the survey keyword (e.g., `intro`) to the [`Makefile`](Makefile).
+- Run the Makefile to update the survey in the Google sheets
+
+```make
+make intro
+```
+
+If you want to update *all* surveys, run `make all`.
+
+### Tips & Tricks
+
 - "Yes" and "No" statements need to be wrapped into quotation marks
 
 ## Contributors
