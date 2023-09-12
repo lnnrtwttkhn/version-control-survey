@@ -107,7 +107,7 @@ text_1:
   label: |
     Write a good commit message for adding a new receipe into a file.
 text_2:
-type: text
+  type: text
   class: |
     answer_below_label
   name: text_2
@@ -115,7 +115,7 @@ type: text
     Write a good commit message for fixing an error in your recipe.
 next_page_2:
   type: submit
-  name: next_page_1
+  name: next_page_2
   label: End quiz and see feedback
 feedback: 
   class: label_align_left
@@ -124,8 +124,67 @@ feedback:
   label: |
     ## Basics exercises
     ### Feedback
+    #### Multiple choice questions
+  
+    *What command is used to create a new folder?*
+    Your answer:
+    `r mc_2` 
+    Right answer: 
+    "mkdir"    
+    
+   *After creating the "recipes" folder, what is the next step to initialize it as a Git repository?*
+    Your answer: 
+    `r mc_2` 
+    Right answer:  
+    "git init"
+    
+    *What command is used to stage changes for committing in Git?*
+    Your answer:
+    `r mc_3`
+    Right answer: 
+    "git stage"
+    
+   *When committing changes in Git, what should you include along with your changes?*
+    Your answer: 
+    `r mc_4`
+    Right answer:  
+    "A commit message describing the changes"
+    
+    *What is the purpose of a .gitignore file?*
+    Your answer: 
+    `r mc_5`
+    Right answer:  
+    "To specify which files or patterns should be excluded from version control"
+    
+   *Which command is used to create a .gitignore file?*
+    Your answer: 
+    `r mc_6` 
+    Right answer:  
+    ```bash cd ~/Documents```
+    
+    *What should you include in a .gitignore file if you want to exclude all files with the ".log" extension from being tracked by Git?*
+    Your answer: 
+    `r mc_7`  
+    Right answer:  
+    "*.log"
+    
+    #### Open questions
+    *Write a good commit message for adding a new receipe into a file.*
+    Your answer: 
+    `r text_1`  
+    Right answer:  
+    e.g.: "Add delicious new recipe: [Recipe Name]"
+    
+    *Write a good commit message for fixing an error in your recipe.*
+    Your answer: 
+    `r text_2`  
+    Right answer: 
+    e.g.: "Fix error in [Recipe Name]: [Brief Description]"
+  
+  
 next_page_3:
   type: submit
   name: next_page_3
   label: |
     Close feedback
+
