@@ -158,7 +158,7 @@ experience_gitub:
     hide_label 
     mc_width100
   name: experience_gitub
-  label: "**GitHub** ([github.com](http://github.com/))"
+  label: "**[GitHub](http://github.com)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -182,7 +182,7 @@ experience_datalad:
     hide_label 
     mc_width100 
   name: experience_datalad
-  label: "**DataLad** ([datalad.org](https://www.datalad.org/))"
+  label: "**[DataLad](https://www.datalad.org)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -194,7 +194,7 @@ experience_markdown:
     hide_label 
     mc_width100 
   name: experience_markdown
-  label: "**Markdown** ([markdownguide.org](https://www.markdownguide.org/))"
+  label: "**[Markdown](https://www.markdownguide.org)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -206,7 +206,7 @@ experience_quarto:
     hide_label 
     mc_width100 
   name: experience_quarto
-  label: "**Quarto** ([quarto.org](https://quarto.org/))"
+  label: "**[Quarto](https://quarto.org)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -218,7 +218,7 @@ experience_python:
     hide_label 
     mc_width100 
   name: experience_python
-  label: "**Python** ([python.org](https://www.python.org/))"
+  label: "**[Python](https://www.python.org/)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -230,7 +230,7 @@ experience_r:
     hide_label 
     mc_width100 
   name: experience_r
-  label: "**R** ([r-project.org](https://www.r-project.org/))"
+  label: "**[R](https://www.r-project.org/)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -242,7 +242,7 @@ experience_matlab:
     hide_label 
     mc_width100 
   name: experience_matlab
-  label: "**MATLAB** ([mathworks.com](https://www.mathworks.com/products/matlab.html))"
+  label: "**[MATLAB](https://www.mathworks.com/products/matlab.html)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -254,7 +254,7 @@ experience_spss:
     hide_label 
     mc_width100 
   name: experience_spss
-  label: "**SPSS** ([ibm.com/spss](https://www.ibm.com/products/spss-statistics))"
+  label: "**[SPSS](https://www.ibm.com/products/spss-statistics)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -266,7 +266,7 @@ experience_excel:
     hide_label 
     mc_width100 
   name: experience_excel
-  label: "**Microsoft Excel** ([microsoft.com/en-us/microsoft-365/excel](https://www.ibm.com/products/spss-statistics))"
+  label: "**[Microsoft Excel](microsoft.com/en-us/microsoft-365/excel)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
