@@ -128,12 +128,10 @@ feedback:
     ## Basics exercises
     ### Feedback
     #### Multiple choice questions
-    
+  
     *What command is used to create a new folder?*
-
-    `r mc_1[label]` 
     Your answer:
-    `r mc_1` 
+    `r mc_2` 
     Right answer: 
     "mkdir"    
     
@@ -174,7 +172,6 @@ feedback:
     "*.log"
     
     #### Open questions
-    
     *Write a good commit message for adding a new receipe into a file.*
     Your answer: 
     `r text_1`  
