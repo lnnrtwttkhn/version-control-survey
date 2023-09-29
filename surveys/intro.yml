@@ -11,7 +11,7 @@ intro_note:
   type: note
   name: intro_note
   label: |
-    ### Welcome to this survey!
+    ## Welcome to this survey!
     This survey is part of the course "version control of data and code"" by Lennart Wittkuhn.
     All answers are anonymous and free text items will not be shared with everyone.
 about_note:
@@ -120,8 +120,6 @@ os:
   choice4: Other
 os_other:
   type: text
-  class: |
-    answer_below_label
   name: os_other
   label: |
     Please specify your choice:
@@ -314,24 +312,35 @@ preferred_language:
   label: "What would be your **preferred course language**?"
   choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
   choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
-hopes:
-  type: text
+expectations:
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
+  name: expectations
+  label: |
+    Without copy-pasting the title: What do you think this course is **going to be about**?
+hopes:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
   name: hope
   label: |
     What do you **hope to learn** in this course?
 worries:
-  type: text
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
   name: worries
   label: |
     Do you have any **worries or fears** regarding this course, that you want to express?
 motivation:
-  type: text
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
   name: motivation
   label: |
     What is your **main motivation** for taking this course?

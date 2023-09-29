@@ -1,0 +1,219 @@
+referrer:
+  type: referrer
+  name: last_outside_referrer
+browser:
+  type: browser
+  name: browser
+intro_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: intro_note
+  label: |
+    ## Welcome to this survey!
+    This survey is part of the course "version control of data and code"" by Lennart Wittkuhn.
+    All answers are anonymous and free text items will not be shared with everyone.
+note_start:
+  class: label_align_left
+  type: note
+  name: Note_start
+  label: |
+   ## Command line exercises
+   This survey will be about the [Command Line chapter](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   ### Hidden files
+   
+   #### Please navigate to and list all files (including the hidden ones) of your document folder.
+hidden_files_5:
+  type: text
+  class: |
+    answer_below_label
+  name: hidden_files_5
+  label: |
+    What command do you use to list hidden files in a folder?
+hidden_files_1:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: hidden_files_1
+  optional: "*"
+  label: |
+    Are there more hidden files and folders than you expected?
+  choice1: "Yes"
+  choice2: "No"
+hidden_files_2:
+  optional: "*"
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: hidden_files_2
+  label: |
+    Did you notice something about the names of the hidden files?
+  choice1: "Yes"
+  choice2: "No"
+hidden_files_3:
+  optional: "*"
+  type: text
+  class: |
+    answer_below_label
+  name: hidden_files_3
+  label: |
+    What did you notice about the names of the hidden files?
+  showif: hidden_files_2 == 1
+hidden_files_4:
+  optional: "*"
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: hidden_files_4
+  label: |
+    Are there directories with more hidden folders than others?
+  choice1: "Yes"
+  choice2: "No"
+next_page_1:
+  type: submit
+  name: next_page_1
+  label: Continue
+note_1:
+  class: label_align_left
+  type: note
+  name: note_1
+  label: |
+    ## Command line exercises
+    ### Combining arguments and flags
+combining_flags:
+  type: text
+  class: |
+    answer_below_label
+  name: combining_flags 
+  label: |
+    Create a command that lists all the contents of your Documents folder in long format.
+next_page_2:
+  type: submit
+  name: next_page_2
+  label: Continue   
+note_3:
+  class: label_align_left
+  type: note
+  name: note_3
+  label: |
+    ## Command line exercises
+    ### Using flags
+using_flags_1:
+  type: text
+  class: |
+    answer_below_label
+  name: using_flags_1 
+  label: |
+    Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?
+using_flags_2:
+  optional: "*"
+  type: text
+  class: |
+    answer_below_label
+  name: using_flags_2
+  label: |
+    By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?
+next_page_3:
+  type: submit
+  name: next_page_3
+  label: Continue   
+note_4:
+  class: label_align_left
+  type: note
+  name: note_4
+  label: |
+    ## Command line exercises
+    ### Moving around
+moving_around_1:
+  type: text
+  class: |
+    answer_below_label
+  name: moving_around_1 
+  label: |
+    If you are not already in the Downloads folder, navigate to it first.
+    Next, switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
+    Which command did you use?
+moving_around_2:
+  type: text
+  class: |
+    answer_below_label
+  name: moving_around_2 
+  label: |
+    Where does the following command place you on your system? 
+    ```{bash}
+    cd ~/../../..
+    ```
+next_page_4:
+  type: submit
+  name: next_page_4
+  label: |
+    End Quiz and see feedback
+feedback: 
+  class: label_align_left
+  type: note
+  name: feedback
+  label: |
+    ## Command line exercises
+    ### Feedback
+    
+    #### Hidden files
+    *What did you notice about the names of the hidden files?*
+    Your answer:
+    `r hidden_files_3` 
+    Right answer: 
+     Hidden files and directories will have names that start with a dot (.).
+    
+    *What command do you use to list hidden files in a folder?*
+    Your answer: 
+    `r hidden_files_5` 
+    Right answer:  
+    ```bash ls -a ```
+    
+    #### Combining arguments and flags
+    
+    *Create a command that lists all the contents of your Documents folder in long format*
+    Your answer:
+    `r combining_flags ` 
+    Right answer: 
+    ```bash ls -a -l ``` or ```bash ls -al ``` 
+    
+    #### Using flags
+    
+    *Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?*
+    Your answer: 
+    `r using_flags_1 ` 
+    Right answer:  
+    ```bash ls -lt ```
+    
+    *By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?*
+    Your answer: 
+    `r using_flags_2` 
+    Right answer:  
+    Readibility, avoiding ambiguity, consistency
+  
+    #### Moving around
+    
+    *Switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
+    Which command did you use?*
+    Your answer: 
+    `r moving_around_1 ` 
+    Right answer:  
+    ```bash cd ~/Documents```
+    
+    *Where does the following command place you on your system?* 
+    ```bash
+    cd ~/../../..
+    ```
+    Your answer: 
+    `r moving_around_2` 
+    Right answer:  
+    Root directory of your system, which is typically represented as /.
+next_page_5:
+  type: submit
+  name: next_page_5
+  label: |
+    Close feedback
