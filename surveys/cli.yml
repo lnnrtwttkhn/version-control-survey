@@ -20,10 +20,17 @@ note_start:
   name: Note_start
   label: |
    ## Command line exercises
-   
+   This survey will be about the [Command Line chapter](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
    ### Hidden files
    
-   #### List all files (including the hidden ones) in your document folder
+   #### Please navigate to and list all files (including the hidden ones) of your document folder.
+hidden_files_5:
+  type: text
+  class: |
+    answer_below_label
+  name: hidden_files_5
+  label: |
+    What command do you use to list hidden files in a folder?
 hidden_files_1:
   type: mc_button
   class: |
@@ -66,13 +73,6 @@ hidden_files_4:
     Are there directories with more hidden folders than others?
   choice1: "Yes"
   choice2: "No"
-hidden_files_5:
-  type: text
-  class: |
-    answer_below_label
-  name: hidden_files_5
-  label: |
-    What command do you use to list hidden files in a folder?
 next_page_1:
   type: submit
   name: next_page_1

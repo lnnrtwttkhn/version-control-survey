@@ -20,7 +20,8 @@ note_start:
   name: Note_start
   label: |
    ## Git basics exercises
-   ### Multiple choice
+   This survey will be about the [First steps with Git chapter](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   ### Single choice questions:
 mc_1:
   type: mc_button
   class: |
@@ -109,6 +110,13 @@ next_page_1:
   type: submit
   name: next_page_1
   label: Continue   
+note_free_text:
+  class: label_align_left
+  type: note
+  name: note_free_text
+  label: |
+   ## Git basics exercises
+   ### Free Text Questions:
 text_1:
   type: text
   class: |
@@ -135,7 +143,7 @@ feedback:
   label: |
     ## Basics exercises
     ### Feedback
-    #### Multiple choice questions
+    #### Single choice questions
   
     *What command is used to create a new folder?*
     Your answer:
