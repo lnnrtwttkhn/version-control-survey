@@ -37,20 +37,25 @@ note_start:
   type: note
   name: Note_start
   label: |
-   ## Git Installation survey
-   This survey will be about the [Installation and Setup chapter](https://lennartwittkuhn.com/version-control-book/chapters/installation-setup.html).
+   ### Git Installation and setup survey
+   This survey will be about the [Installation and Setup chapter](https://lennartwittkuhn.com/version-control-book/chapters/installation-setup.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+difficulty:
+  type: range_ticks 0,5,1
+  name: difficulty
+  label: |
+    In general, how difficult did installing and setting up Git feel for you?
+  class: |
+    left500
+    label_align_left
+  choice1: |
+    not possible
+  choice2: |
+    very easy
 version:
   type: text
   name: version
   label: |
-    Check which version of Git (if any) is installed:
-  class: |
-    answer_below_label
-init:
-  type: text
-  name: init
-  label: |
-    Initialize Git on the current folder:
+    Use ```git --version``` to check which version of Git (if any) is installed:
   class: |
     answer_below_label
 submit:
