@@ -122,8 +122,6 @@ feedback:
   class: |
     label_align_left
   name: feedback
-  value: 
-  
   label: |
     ## Basics exercises
     ### Feedback
