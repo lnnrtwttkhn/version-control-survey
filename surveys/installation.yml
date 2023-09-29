@@ -23,7 +23,7 @@ feedback:
   label: |
     # Feedback
     
-    `r init]`
+    `r init`
     
     Hello
   class: label_align_left
