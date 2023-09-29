@@ -108,7 +108,7 @@ using_flags_1:
     answer_below_label
   name: using_flags_1 
   label: |
-    Retrieve the usage information for the ls command and identify a flag that allows you to sort the output based on the date of modification
+    Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?
 using_flags_2:
   optional: "*"
   type: text
@@ -116,7 +116,7 @@ using_flags_2:
     answer_below_label
   name: using_flags_2
   label: |
-    By convention flags that are full words use a double dash -- and flags are a single letter have a singe dash -. Why must this be the case?
+    By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?
 next_page_3:
   type: submit
   name: next_page_3
@@ -135,7 +135,7 @@ moving_around_1:
   name: moving_around_1 
   label: |
     If you are not already in the Downloads folder, navigate to it first.
-    Next, switch from your current location, the Downloads folder, to the Documents folder in one command, using the **~** symbol in the path.
+    Next, switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
     Which command did you use?
 moving_around_2:
   type: text
@@ -183,13 +183,13 @@ feedback:
     
     #### Using flags
     
-    *Retrieve the usage information for the ls command and identify a flag that allows you to sort the output based on the date of modification*
+    *Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?*
     Your answer: 
     `r using_flags_1 ` 
     Right answer:  
     ```bash ls -lt ```
     
-    *By convention flags that are full words use a double dash -- and flags are a single letter have a singe dash -. Why must this be the case?*
+    *By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?*
     Your answer: 
     `r using_flags_2` 
     Right answer:  
@@ -197,7 +197,7 @@ feedback:
   
     #### Moving around
     
-    *Switch from your current location, the Downloads folder, to the Documents folder in one command, using the **~** symbol in the path.
+    *Switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
     Which command did you use?*
     Your answer: 
     `r moving_around_1 ` 
