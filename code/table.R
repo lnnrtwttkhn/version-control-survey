@@ -35,7 +35,22 @@ df2google <- function(survey_df, sheet_link) {
   write_sheet(survey_df, ss = gs4_get(sheet_link), sheet = "Sheet1")
 }
 
+add_codeword_instructions <- function() {
+  path_codeword_yml <- here::here("surveys", "codeword.yml")
+  codeword_df <- yml2df(yml_file = path_codeword_yml)
+  codeword_instructions <- codeword_df %>%
+    .[name == "instructions", ] %>%
+    .$label
+}
+
 opt <- get_input()
 survey <- surveys[grepl(x = surveys, pattern = opt$survey)]
 sheet_link <- sheets[[opt$survey]]
-df2google(yml2df(yml_file = survey), sheet_link = sheet_link)
+survey_df <- yml2df(yml_file = survey)
+if (any(survey_df$name %in% "codeword_instructions")) {
+  # add codeword instructions if required:
+  codeword_instructions <- add_codeword_instructions()
+  survey_df$label[survey_df$name == "codeword_instructions"] <- codeword_instructions
+}
+df2google(survey_df, sheet_link = sheet_link)
+survey <- surveys[grepl(x = surveys, pattern = opt$survey)]
