@@ -30,8 +30,12 @@ instructions:
     - Your birthday: **09**.11.1987
 
     This results in the following code word: **ER04LF09**
-    
-    #### Please enter your code word in the boxes:
+input_heading:
+  class: label_align_left
+  type: note
+  name: input_heading
+  label: |
+    ### Please enter your code word in the boxes:
 mother_letters:
   type: letters 2
   class: label_align_left
