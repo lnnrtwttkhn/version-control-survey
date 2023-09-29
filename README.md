@@ -1,9 +1,5 @@
 # Version Control Survey
 
-## Usage
-
-- "Yes" and "No" statements need to be wrapped into quotation marks
-
 ## Requirements
 
 This repo uses [`renv`](https://rstudio.github.io/renv/articles/renv.html) for dependency management.
@@ -37,6 +33,8 @@ Finally, after `renv` is activated, restore the computational environment using:
 renv::restore()
 ```
 
+## Usage
+
 ### Update survey
 
 - Add survey data to a `.yml` file in `/surveys`
@@ -56,9 +54,11 @@ If you want to update *all* surveys, run `make all`.
 
 - "Yes" and "No" statements need to be wrapped into quotation marks
 
-### How to connect to Google sheet
+### How to connect to Google sheets
+
 #### 1.
-when running table.R for first Time:
+
+When running `table.R` for first time:
 
 ```r
 der
@@ -75,10 +75,11 @@ Would you like to install it now?
 Selection: 1
 ```
 
-Installs packages and dependencies and opens up Google authentification website
+Installs packages and dependencies and opens up Google authentication website
 (https://accounts.google.com/signin/oauth...)
 
 #### 2.
+
 Tidyverse API packages would like to access your Google account.
 Choose what Tidyverse API packages are allowed to access:
 Access, edit, create, or delete all your Google Sheets.
@@ -88,7 +89,7 @@ Access, edit, create, or delete all your Google Sheets.
 Do you trust Tidyverse API packages?
 **Continue**
 
-### 3.
+#### 3.
 Google Sheets:
 Should other macOS programs be allowed to access your account?
 **OK**
