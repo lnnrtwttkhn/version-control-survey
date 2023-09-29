@@ -120,8 +120,6 @@ os:
   choice4: Other
 os_other:
   type: text
-  class: |
-    answer_below_label
   name: os_other
   label: |
     Please specify your choice:
