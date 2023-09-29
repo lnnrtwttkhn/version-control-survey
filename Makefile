@@ -1,4 +1,4 @@
-SURVEY_TARGETS := intro installation codeword
+SURVEY_TARGETS := intro installation codeword test1 test2
 
 all: $(SURVEY_TARGETS)
 
