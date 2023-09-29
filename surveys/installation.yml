@@ -1,0 +1,29 @@
+version:
+  type: text
+  name: version
+  label: |
+    Check which version of Git (if any) is installed:
+  class: |
+    answer_below_label
+init:
+  type: text
+  name: init
+  label: |
+    Initialize Git on the current folder:
+  class: |
+    answer_below_label
+submit:
+  type: submit
+  name: submit
+  label: |
+    Submit
+feedback:
+  type: note
+  name: feedback
+  label: |
+    # Feedback
+    
+    `r init]`
+    
+    Hello
+  class: label_align_left
