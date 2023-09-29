@@ -132,7 +132,7 @@ feedback:
     Right answer: 
     "mkdir"    
     
-   *After creating the "recipes" folder, what is the next step to initialize it as a Git repository?*
+    *After creating the "recipes" folder, what is the next step to initialize it as a Git repository?*
     Your answer: 
     `r mc_2` 
     Right answer:  
@@ -144,7 +144,7 @@ feedback:
     Right answer: 
     "git stage"
     
-   *When committing changes in Git, what should you include along with your changes?*
+    *When committing changes in Git, what should you include along with your changes?*
     Your answer: 
     `r mc_4`
     Right answer:  
@@ -156,7 +156,7 @@ feedback:
     Right answer:  
     "To specify which files or patterns should be excluded from version control"
     
-   *Which command is used to create a .gitignore file?*
+    *Which command is used to create a .gitignore file?*
     Your answer: 
     `r mc_6` 
     Right answer:  
@@ -180,11 +180,8 @@ feedback:
     `r text_2`  
     Right answer: 
     e.g.: "Fix error in [Recipe Name]: [Brief Description]"
-  
-  
 next_page_3:
   type: submit
   name: next_page_3
   label: |
     Close feedback
-
