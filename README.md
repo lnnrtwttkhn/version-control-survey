@@ -37,6 +37,25 @@ Finally, after `renv` is activated, restore the computational environment using:
 renv::restore()
 ```
 
+### Update survey
+
+- Add survey data to a `.yml` file in `/surveys`
+- Make sure to use a consistent keyword for the filenames (e.g., `intro`)!
+- Add the googlesheet to [`_sheets.yml`](_sheets.yml)
+- Give edit permissions to your collaborators on the google sheet
+- Add the survey keyword (e.g., `intro`) to the [`Makefile`](Makefile).
+- Run the Makefile to update the survey in the Google sheets
+
+```make
+make intro
+```
+
+If you want to update *all* surveys, run `make all`.
+
+### Tips & Tricks
+
+- "Yes" and "No" statements need to be wrapped into quotation marks
+
 ### How to connect to Google sheet
 #### 1.
 when running table.R for first Time:
@@ -75,7 +94,8 @@ Should other macOS programs be allowed to access your account?
 **OK**
 
 ### 4. 
-R console should print: 
+R console should print:
+
 ```r
 Waiting for authentication in browser...
 Press Esc/Ctrl + C to abort
@@ -83,7 +103,6 @@ Authentication complete.
 ✔ Writing to version-control-survey.
 ✔ Writing to sheet Sheet1.
 ```
-
 ## Contributors
 
 - [Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de)
