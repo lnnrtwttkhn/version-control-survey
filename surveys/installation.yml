@@ -12,7 +12,7 @@ intro_note:
   name: intro_note
   label: |
     ## Welcome to this survey!
-    This survey is part of the course "version control of data and code"" by Lennart Wittkuhn.
+    This survey is part of the course: [Effective Progress Tracking and Collaboration: An Introduction to Version Control of Code and Data.](https://lennartwittkuhn.com/version-control-course-uhh-ws23/)
     All answers are anonymous and free text items will not be shared with everyone.
     ### Codeword
 codeword:
@@ -43,33 +43,74 @@ difficulty:
   type: range_ticks 0,5,1
   name: difficulty
   label: |
-    In general, how difficult did installing and setting up Git feel for you?
+    In general, **how difficult** did installing and setting up Git feel for you?
   class: |
     left500
     label_align_left
   choice1: |
-    not possible
+    Very Difficult
   choice2: |
-    very easy
+    Very Easy
+challenges:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: challenges
+  label: |
+    Did you encounter **any challenges** during the Git installation process? If so, please describe them.
+  optional: "*"
+time:
+  type: time 00:00, 05:00
+  name: time
+  label: |
+    Approximately: **How long** (in hours) did the entire Git installation process take, from start to finish?
+  class: |
+    answer_below_label
 version:
   type: text
   name: version
   label: |
-    Use ```git --version``` to check which version of Git (if any) is installed:
+    Using the appropiate command, please check **which version of Git** (if any) is installed and write the version down below:
   class: |
     answer_below_label
-submit:
+texteditor:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: texteditor
+  label: |
+    If you switched to an **alternative text editor** for Git, which one did you choose, and how did the process go?
+  optional: "*"
+error:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: errors
+  label: |
+    id you encounter any **specific error messages** during the Git installation process? If so, please provide details about the errors and any solutions you found.
+  optional: "*"
+ressources:
+  type: text
+  name: ressources
+  label: |
+    What **resources or methods** did you find most helpful in resolving any installation-related challenges?
+  class: |
+    answer_below_label
+feedback:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: feedback
+  label: |
+    Do you have any **additional comments or feedback** regarding the Git installation and configuration process?
+  optional: "*"
+Submit:
   type: submit
   name: submit
   label: |
-    Submit
-feedback:
-  type: note
-  name: feedback
-  label: |
-    # Feedback
+    Submit and end Survey
     
-    `r init`
-    
-    Hello
-  class: label_align_left
