@@ -12,7 +12,7 @@ intro_note:
   name: intro_note
   label: |
     ## Welcome to this survey!
-    This survey is part of the course: [Effective Progress Tracking and Collaboration: An Introduction to Version Control of Code and Data.](https://lennartwittkuhn.com/version-control-course-uhh-ws23/)
+    This survey is part of the course [Effective Progress Tracking and Collaboration: An Introduction to Version Control of Code and Data.](https://lennartwittkuhn.com/version-control-course-uhh-ws23/)
     All answers are anonymous and free text items will not be shared with everyone.
     ### Codeword
 codeword:
@@ -38,19 +38,20 @@ note_start:
   name: Note_start
   label: |
    ### Git Installation and setup survey
-   This survey will be about the [Installation and Setup chapter](https://lennartwittkuhn.com/version-control-book/chapters/installation-setup.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   This survey will be about the chapter on [installation and setup](https://lennartwittkuhn.com/version-control-book/chapters/installation-setup.html) from the online guide on ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
 difficulty:
-  type: range_ticks 0,5,1
+  type: range_ticks 1,5,1
   name: difficulty
   label: |
-    In general, **how difficult** did installing and setting up Git feel for you?
+    Overall, on a scale from very easy to very difficult, how would you **rate the process of installing and setting up Git**?
   class: |
     left500
     label_align_left
+    answer_below_label
   choice1: |
-    Very Difficult
+    Very easy
   choice2: |
-    Very Easy
+    Very difficult
 challenges:
   type: textarea
   class: |
@@ -64,14 +65,14 @@ time:
   type: time 00:00, 05:00
   name: time
   label: |
-    Approximately: **How long** (in hours) did the entire Git installation process take, from start to finish?
+    **How many hours** did it take you to complete the entire Git installation process from start to finish?
   class: |
     answer_below_label
 version:
   type: text
   name: version
   label: |
-    Using the appropiate command, please check **which version of Git** (if any) is installed and write the version down below:
+    Please use the appropriate command to **check the installed Git version** (if any) and **write down the version** below.
   class: |
     answer_below_label
 texteditor:
@@ -90,15 +91,16 @@ error:
     big-textarea
   name: errors
   label: |
-    id you encounter any **specific error messages** during the Git installation process? If so, please provide details about the errors and any solutions you found.
+    Did you encounter any **specific error messages** while installing Git? If yes, please provide details about the errors and any solutions you discovered.
   optional: "*"
 ressources:
   type: text
   name: ressources
   label: |
-    What **resources or methods** did you find most helpful in resolving any installation-related challenges?
+    What **resources or methods** were most helpful in resolving installation-related challenges for you?
   class: |
     answer_below_label
+  optional: "*"
 feedback:
   type: textarea
   class: |
@@ -106,11 +108,11 @@ feedback:
     big-textarea
   name: feedback
   label: |
-    Do you have any **additional comments or feedback** regarding the Git installation and configuration process?
+    Is there anything else you'd like to share, or **any feedback** you have regarding the Git installation and configuration process?
   optional: "*"
 Submit:
   type: submit
   name: submit
   label: |
-    Submit and end Survey
+    Submit and end survey
     
