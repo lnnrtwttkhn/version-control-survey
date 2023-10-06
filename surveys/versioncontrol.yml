@@ -48,21 +48,6 @@ question_1:
   label: |
      Imagine a scenario where you crafted a brilliant paragraph for your paper, but then accidentally ruined it. 
      **How would you retrieve the earlier brilliant version?** Is it even possible.
-show_answer1:
-  type: check
-  class: label_align_left
-  name: show_answer1
-  label: |
-   **Show model answer**
-answer_1:
-  class: label_align_left
-  type: note
-  name: answer_1
-  showif: show_answer1 == 1
-  label: |
-    The possibility of retrieving the brilliant version exists only when you have made a copy of the previous paper version. 
-    The risk of losing valuable versions frequently results in “implicit” version control, where multiple versions of the same file are saved. 
-    This approach, however, is error-prone and can lead to additional confusion and frustration.
 question_2:
   type: textarea
   class: |
@@ -73,24 +58,47 @@ question_2:
      Consider a situation where you are working with five co-authors on a paper. 
      **How do you handle the changes and comments they make to the document?**
      If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the “Track Changes” option, **what happens to the history of those modifications?**
-show_answer2:
-  type: check
-  class: label_align_left
-  name: show_answer2
-  label: |
-   **Show model answer**
-answer_2:
-  class: label_align_left
-  type: note
-  name: answer_2
-  showif: show_answer2 == 1
-  label: |
-   Collaborative writing using traditional word processors presents challenges. 
-   Collaborators either need to work on the document sequentially, which slows down the writing process, or you have to send versions to each collaborator and manually merge their comments into the document. 
-   While the “track changes” option can highlight modifications and simplify merging, accepting changes erases their history, making it impossible to identify who suggested the change, the reason behind it, or when it was incorporated into the document. 
-   Even online word processors like Google Docs or Microsoft Office Online do not entirely resolve these issues
-Submit:
+submit:
   type: submit
   name: submit
   label: |
-    Submit and end survey
+    Submit and see model answers
+feedback: 
+  type: note
+  class: |
+    label_align_left
+  name: feedback
+  label: |
+    ### Feedback
+    
+    #### Question 1:
+    *Imagine a scenario where you crafted a brilliant paragraph for your paper, but then accidentally ruined it. 
+     **How would you retrieve the earlier brilliant version?** Is it even possible?*
+     
+    **Your answer:**
+    `r question_1` 
+    
+    **Model answer:**
+    The possibility of retrieving the brilliant version exists only when you have made a copy of the previous paper version. 
+    The risk of losing valuable versions frequently results in “implicit” version control, where multiple versions of the same file are saved. 
+    This approach, however, is error-prone and can lead to additional confusion and frustration.
+    
+    
+    #### Question 2:
+    *Consider a situation where you are working with five co-authors on a paper. 
+     **How do you handle the changes and comments they make to the document?**
+     If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the “Track Changes” option, **what happens to the history of those modifications?***
+     
+    **Your answer:**
+    `r question_2` 
+    
+    **Model answer:**
+    Collaborative writing using traditional word processors presents challenges. 
+    Collaborators either need to work on the document sequentially, which slows down the writing process, or you have to send versions to each collaborator and manually merge their comments into the document. 
+    While the “track changes” option can highlight modifications and simplify merging, accepting changes erases their history, making it impossible to identify who suggested the change, the reason behind it, or when it was incorporated into the document. 
+    Even online word processors like Google Docs or Microsoft Office Online do not entirely resolve these issues
+submit_2:
+  type: submit
+  name: submit_2
+  label: |
+    Close survey
