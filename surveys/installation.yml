@@ -67,6 +67,18 @@ time:
     Approximately: **How long** (in hours) did the entire Git installation process take, from start to finish?
   class: |
     answer_below_label
+version_mc:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: version_mc
+  label: |
+    How can you check which version of Git is installed on your system?
+  choice1: "git info"
+  choice2: "git check-version"
+  choice3: "Open Git settings and check the version tab."
+  choice4: "git --version"
 version:
   type: text
   name: version
@@ -74,6 +86,15 @@ version:
     Using the appropiate command, please check **which version of Git** (if any) is installed and write the version down below:
   class: |
     answer_below_label
+version_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: version_note
+  label: |
+   The right answer is: `git --version` 
+  showif: version_mc == 1 | version_mc == 2 | version_mc == 3
 texteditor:
   type: textarea
   class: |
@@ -113,4 +134,5 @@ Submit:
   name: submit
   label: |
     Submit and end Survey
+    
     
