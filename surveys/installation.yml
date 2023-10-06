@@ -103,7 +103,7 @@ texteditor:
     big-textarea
   name: texteditor
   label: |
-    If you switched to an **alternative text editor** for Git, which one did you choose, and how did the process go?
+    If you decided to use a **different text editor** for writing Git commit messages instead of the default one, which text editor did you choose, and how did the setup process go?
   optional: "*"
 error:
   type: textarea
