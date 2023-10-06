@@ -79,6 +79,21 @@ version_mc:
   choice2: "git check-version"
   choice3: "Open Git settings and check the version tab."
   choice4: "git --version"
+show_version_answer:
+  type: check
+  class: label_align_left
+  name: show_version_answer
+  label: |
+    **Show answer**
+version_answer:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: version_answer
+  label: |
+    `git --version` 
+  showif: show_version_answer == 1 
 version:
   type: text
   name: version
@@ -86,15 +101,6 @@ version:
     Please use the appropriate command to **check the installed Git version** (if any) and **write down the version** below.
   class: |
     answer_below_label
-version_note:
-  class: |
-    answer_below_label
-    label_align_left
-  type: note
-  name: version_note
-  label: |
-   The right answer is: `git --version` 
-  showif: version_mc == 1 | version_mc == 2 | version_mc == 3
 texteditor:
   type: textarea
   class: |
