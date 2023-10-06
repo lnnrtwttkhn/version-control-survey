@@ -1,4 +1,4 @@
-SURVEY_TARGETS := intro installation codeword test1 test2 cli basics
+SURVEY_TARGETS := intro installation codeword test1 test2 cli basics versioncontrol
 
 all: $(SURVEY_TARGETS)
 
