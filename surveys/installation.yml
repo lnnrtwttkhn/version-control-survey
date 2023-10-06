@@ -47,7 +47,6 @@ difficulty:
   class: |
     left500
     label_align_left
-    answer_below_label
   choice1: |
     Very easy
   choice2: |
