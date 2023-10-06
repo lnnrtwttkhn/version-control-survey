@@ -38,5 +38,24 @@ note_start:
   name: Note_start
   label: |
    ## Intro to version control exercises
-   TThis survey will be about the [Introduction chapter](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html) from the online guide on ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
-   ### Single choice questions:
+   This survey will be about the [Introduction chapter](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html) from the online guide on ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+text_1:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: text_1
+  label: |
+     Imagine a scenario where you crafted a brilliant paragraph for your paper, but then accidentally ruined it. 
+     How would you retrieve the earlier brilliant version? Is it even possible.
+text_2:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: text_2
+  label: |
+     Consider a situation where you are working with five co-authors on a paper. 
+     How do you handle the changes and comments they make to the document? 
+     If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the “Track Changes” option, what happens to the history of those modifications
+     
