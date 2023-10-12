@@ -75,10 +75,10 @@ version_mc:
   name: version_mc
   label: |
     How can you check which version of Git is installed on your system?
-  choice1: "git info"
-  choice2: "git check-version"
+  choice1: "`git info`"
+  choice2: "`git check-version`"
   choice3: "Open Git settings and check the version tab."
-  choice4: "git --version"
+  choice4: "`git --version`"
 show_version_answer:
   type: check
   class: label_align_left
