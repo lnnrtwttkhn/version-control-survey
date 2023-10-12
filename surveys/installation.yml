@@ -1,29 +1,145 @@
+referrer:
+  type: referrer
+  name: last_outside_referrer
+browser:
+  type: browser
+  name: browser
+intro_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: intro_note
+  label: |
+    ## Welcome to this survey!
+    This survey is part of the course [Effective Progress Tracking and Collaboration: An Introduction to Version Control of Code and Data.](https://lennartwittkuhn.com/version-control-course-uhh-ws23/)
+    All answers are anonymous and free text items will not be shared with everyone.
+    ### Codeword
+codeword:
+  type: text 8
+  class: label_align_left
+  name: codeword
+  label: |
+    **Please enter your personal codeword:**
+codeword_check:
+  class: |
+    label_align_left
+  type: mc_multiple
+  name: codeword_check
+  choice1: "Show codeword instructions"
+codeword_instructions:
+  type: note
+  name: codeword_instructions
+  label: "Instructions missing!"
+  showif: codeword_check == 1
+note_start:
+  class: label_align_left
+  type: note
+  name: Note_start
+  label: |
+   ### Git Installation and setup survey
+   This survey will be about the chapter on [installation and setup](https://lennartwittkuhn.com/version-control-book/chapters/installation-setup.html) from the online guide on ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+difficulty:
+  type: range_ticks 1,5,1
+  name: difficulty
+  label: |
+    Overall, on a scale from very easy to very difficult, how would you **rate the process of installing and setting up Git**?
+  class: |
+    left500
+    label_align_left
+  choice1: |
+    Very easy
+  choice2: |
+    Very difficult
+challenges:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: challenges
+  label: |
+    Did you encounter **any challenges** during the Git installation process? If so, please describe them.
+  optional: "*"
+time:
+  type: time 00:00, 05:00
+  name: time
+  label: |
+    **How many hours** did it take you to complete the entire Git installation process from start to finish?
+  class: |
+    answer_below_label
+version_mc:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: version_mc
+  label: |
+    How can you check which version of Git is installed on your system?
+  choice1: "`git info`"
+  choice2: "`git check-version`"
+  choice3: "Open Git settings and check the version tab."
+  choice4: "`git --version`"
+show_version_answer:
+  type: check
+  class: label_align_left
+  name: show_version_answer
+  label: |
+    **Show answer**
+version_answer:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: version_answer
+  label: |
+    `git --version` 
+  showif: show_version_answer == 1 
 version:
   type: text
   name: version
   label: |
-    Check which version of Git (if any) is installed:
+    Please use the appropriate command to **check the installed Git version** (if any) and **write down the version** below.
   class: |
     answer_below_label
-init:
-  type: text
-  name: init
+texteditor:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: texteditor
   label: |
-    Initialize Git on the current folder:
+    If you decided to use a **different text editor** for writing Git commit messages instead of the default one, which text editor did you choose, and how did the setup process go?
+  optional: "*"
+error:
+  type: textarea
   class: |
     answer_below_label
-submit:
+    big-textarea
+  name: errors
+  label: |
+    Did you encounter any **specific error messages** while installing Git? If yes, please provide details about the errors and any solutions you discovered.
+  optional: "*"
+ressources:
+  type: text
+  name: ressources
+  label: |
+    What **resources or methods** were most helpful in resolving installation-related challenges for you?
+  class: |
+    answer_below_label
+  optional: "*"
+feedback:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: feedback
+  label: |
+    Is there anything else you'd like to share, or **any feedback** you have regarding the Git installation and configuration process?
+  optional: "*"
+Submit:
   type: submit
   name: submit
   label: |
-    Submit
-feedback:
-  type: note
-  name: feedback
-  label: |
-    # Feedback
+    Submit and end survey
     
-    `r init`
     
-    Hello
-  class: label_align_left
