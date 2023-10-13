@@ -39,6 +39,13 @@ about_note:
   name: about_note
   label: |
     ### About you
+hamburg:
+  type: text
+  class: |
+    answer_below_label
+  name: hamburg
+  label: |
+    Since which year have you been living in Hamburg? &#x2693;
 career:
   class: |
     answer_below_label
@@ -299,7 +306,6 @@ experience_excel:
 git_specific:
   type: text
   class: |
-    answer_below_label
     answer_below_label
   name: git_specific
   label: |
