@@ -10,10 +10,19 @@ intro_note:
   type: note
   name: intro_note
   label: |
-    ## Welcome to this survey!
-    This survey is part of the course "version control of data and code"" by Lennart Wittkuhn.
+    ## Welcome!
+    This survey is part of the course ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at University of Hamburg.
     All answers are anonymous and free text items will not be shared with everyone.
+    
     ### Codeword
+codeword_course:
+  type: text 8
+  class: label_align_left
+  name: codeword_course
+  label: |
+    **Please enter the course codeword:** 
+    (If you participate in the course "Version Control of Code and Data" at the University of Hamburg. If not, leave blank.)
+  optional: "*"
 codeword:
   type: text 8
   class: label_align_left
@@ -39,53 +48,6 @@ about_note:
   name: about_note
   label: |
     ### About you
-hamburg:
-  type: text
-  class: |
-    answer_below_label
-  name: hamburg
-  label: |
-    Since which year have you been living in Hamburg? &#x2693;
-career:
-  class: |
-    answer_below_label
-    mc_vertical
-  type: mc_button
-  name: career
-  label: |
-   Where do you see yourself **professionally** once you've finished your current program of study? &#x1F4BC;
-   If you choose "Other"" please also specify your choice in the accompanying text field.
-  choice1: Researcher or Academia
-  choice2: Therapy or Counseling
-  choice3: Data Science/Coding
-  choice4: Other
-career_other:
-  type: text
-  name: career_other
-  label: |
-    Please specify your choice:
-  showif: career == 4
-interest:
-  class: |
-    answer_below_label
-    mc_vertical
-  type: mc_button
-  name: interest
-  label: |
-    Which **field of research** are you most interested in? &#128270;
-  choice1: Clinical Psychology
-  choice2: Developmental Psychology
-  choice3: Educational Psychology
-  choice4: Social Psychology
-  choice5: Industrial-Organizational Psychology
-  choice6: Cognitive Neuroscience
-  choice7: Other
-interest_other:
-  type: text
-  name: interest_other
-  label: |
-    Please specify your choice:
-  showif: interest == 7
 academic:
   class: |
     answer_below_label
@@ -94,6 +56,7 @@ academic:
   name: academic
   label: |
     Which **academic career level** do you identify with? &#127891;
+    If you choose `Other` please specify your choice in the accompanying text field.
   choice1: Bachelor Student
   choice2: Master Student
   choice3: PhD Student
@@ -108,6 +71,56 @@ academic_other:
   label: |
     Please specify your choice:
   showif: academic== 8
+interest:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: interest
+  label: |
+    Which **field of research** are you most interested in? &#128270;
+    If you choose `Other` please specify your choice in the accompanying text field.
+  choice1: Clinical Psychology
+  choice2: Developmental Psychology
+  choice3: Educational Psychology
+  choice4: Social Psychology
+  choice5: Industrial-Organizational Psychology
+  choice6: Cognitive Neuroscience
+  choice7: Other
+interest_other:
+  type: text
+  name: interest_other
+  label: |
+    Please specify your choice:
+  showif: interest == 7
+career:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: career
+  label: |
+   Where do you see yourself **professionally** once you've finished your current program of study or job? &#x1F4BC;
+   If you choose `Other` please specify your choice in the accompanying text field.
+  choice1: Clinical Psychology
+  choice2: Educational Psychology
+  choice3: Industrial-Organizational Psychology
+  choice4: Research
+  choice5: Other
+career_other:
+  type: text
+  name: career_other
+  label: |
+    Please specify your choice:
+  showif: career == 5
+course_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: course_note
+  label: |
+    ### Course organization
 laptop:
   type: mc_button
   class: |
@@ -148,6 +161,17 @@ os_other:
   label: |
     Please specify your choice:
   showif: os == 4
+preferred_language:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_horizontal
+  name: preferred_language
+  label: |
+    What would be your **preferred course language** (spoken language during the course)?
+    Note, that all course materials are in English (for example, presentations, reading materials etc.)
+  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
+  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
 experience_note:
   class: |
     answer_below_label
@@ -202,7 +226,7 @@ experience_cli:
     hide_label 
     mc_width100 
   name: experience_cli
-  label: "**Command line / terminal**"
+  label: "**[Command-line interface](https://en.wikipedia.org/wiki/Command-line_interface)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -286,7 +310,7 @@ experience_spss:
     hide_label 
     mc_width100 
   name: experience_spss
-  label: "**[SPSS](https://www.ibm.com/products/spss-statistics)**"
+  label: "**[IBM SPSS](https://www.ibm.com/products/spss-statistics)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
@@ -303,21 +327,25 @@ experience_excel:
   choice2: "Heard of it, but never used it"
   choice3: "Used it occassionally"
   choice4: "Frequent user"
+  choice5: "Integral part of my work"
 git_specific:
-  type: text
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
   name: git_specific
   label: |
-    Is there something specific you would like to learn about git?
+    Is there something specific you would like to learn about Git?
   showif: experience_git >= 3
 version_control:
-  type: text
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
   name: version_control
   label: |
-    Without googling: Can you briefly define the term **version control**?
+    In your own words: Can you briefly define the term **version control**?
+    Please refrain from looking up an answer online.
 perspective_note:
   class: |
     answer_below_label
@@ -326,15 +354,6 @@ perspective_note:
   name: perspective_note
   label: |
     ### Your Perspective
-preferred_language:
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_horizontal
-  name: preferred_language
-  label: "What would be your **preferred course language**?"
-  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
-  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
 expectations:
   type: textarea
   class: |
@@ -367,10 +386,18 @@ motivation:
   name: motivation
   label: |
     What is your **main motivation** for taking this course?
+comments:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: comments
+  label: |
+    Is there **anything else** you would like to say?
+  optional: "*"
 submit:
   type: submit
   name: submit
   label: |
-    Close Survey -
-    Thank you for participating &#127881;
-
+    Click here to close the survey.
+    Thank you for participating! &#127881;
