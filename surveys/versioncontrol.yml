@@ -47,21 +47,31 @@ note_start:
   label: |
    ### Intro to version control exercises
    This survey will be about the ["Introduction to Version Control" chapter](https://lennartwittkuhn.com/version-control-book/chapters/intro-version-control.html) from the online guide on ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
-question_1:
+version_control:
   type: textarea
   class: |
     answer_below_label
     big-textarea
-  name: question_1
+  name: version_control
+  label: |
+    In your own words: Can you briefly define the term **version control**?
+    Please refrain from looking up an answer online.
+  optional: "*"
+scenario_1:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: scenario_1
   label: |
      Imagine a scenario where you crafted a brilliant paragraph for your document (for example, your paper, thesis or report), but then accidentally ruined it. 
-     How would you retrieve the earlier brilliant version? Is it even possible?
-question_2:
+     **How would you retrieve the earlier brilliant version?** Is it even possible?
+scenario_2:
   type: textarea
   class: |
     answer_below_label
     big-textarea
-  name: question_2
+  name: scenario_2
   label: |
      Consider a situation where you are working with five co-authors on a paper. 
      **How do you handle the changes and comments they make to the document?**

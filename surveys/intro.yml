@@ -359,16 +359,6 @@ git_specific:
   label: |
     Is there something specific you would like to learn about Git?
   showif: experience_git >= 3
-version_control:
-  type: textarea
-  class: |
-    answer_below_label
-    big-textarea
-  name: version_control
-  label: |
-    In your own words: Can you briefly define the term **version control**?
-    Please refrain from looking up an answer online.
-  optional: "*"
 perspective_note:
   class: |
     answer_below_label
