@@ -412,9 +412,3 @@ comments:
   label: |
     Is there **anything else** you would like to say?
   optional: "*"
-submit:
-  type: submit
-  name: submit
-  label: |
-    Click here to close the survey.
-    Thank you for participating! &#127881;
