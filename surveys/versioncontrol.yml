@@ -19,7 +19,7 @@ version_control:
     big-textarea
   name: version_control
   label: |
-    1. In your own words: Can you briefly define the term **version control**?
+    In your own words: Can you briefly define the term **version control**?
     Please refrain from looking up an answer online.
   optional: "*"
 scenario_1:
@@ -29,7 +29,7 @@ scenario_1:
     big-textarea
   name: scenario_1
   label: |
-     2. Imagine a scenario where you crafted a brilliant paragraph for your document (for example, your paper, thesis or report), but then accidentally ruined it. 
+     Imagine a scenario where you crafted a brilliant paragraph for your document (for example, your paper, thesis or report), but then accidentally ruined it. 
      **How would you retrieve the earlier brilliant version?** Is it even possible?
   optional: "*"
 scenario_2:
@@ -39,7 +39,7 @@ scenario_2:
     big-textarea
   name: scenario_2
   label: |
-     3. Consider a situation where you are working with five co-authors on a paper. 
+     Consider a situation where you are working with five co-authors on a paper. 
      **How do you handle the changes and comments they make to the document?**
      If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the "Track Changes"" option, **what happens to the history of those modifications?**
   optional: "*"
@@ -54,8 +54,10 @@ feedback:
     label_align_left
   name: feedback
   label: |
+  
+    ### Sample answers
     
-    1. *In your own words: Can you briefly define the term **version control**?*
+    *In your own words: Can you briefly define the term **version control**?*
     
     **Your answer:**
     `r version_control` 
@@ -64,7 +66,7 @@ feedback:
     Version control is a method used to track file or file set changes over time so that you can recall older versions at a later time. ([Harvard College, 2022](https://datamanagement.hms.harvard.edu/collect-analyze/version-control))
     
     
-    2. *Imagine a scenario where you crafted a brilliant paragraph for your paper, but then accidentally ruined it. 
+    *Imagine a scenario where you crafted a brilliant paragraph for your paper, but then accidentally ruined it. 
     **How would you retrieve the earlier brilliant version?** Is it even possible?*
      
     **Your answer:**
@@ -76,7 +78,7 @@ feedback:
     This approach, however, is error-prone and can lead to additional confusion and frustration.
     
     
-    3. *Consider a situation where you are working with five co-authors on a paper. How do you handle the changes and comments they make to the document? If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the "Track Changes"" option, what happens to the history of those modifications?*
+    *Consider a situation where you are working with five co-authors on a paper. How do you handle the changes and comments they make to the document? If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the "Track Changes"" option, what happens to the history of those modifications?*
      
     **Your answer:**
     `r scenario_2` 
