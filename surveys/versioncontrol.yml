@@ -31,6 +31,7 @@ scenario_1:
   label: |
      2. Imagine a scenario where you crafted a brilliant paragraph for your document (for example, your paper, thesis or report), but then accidentally ruined it. 
      **How would you retrieve the earlier brilliant version?** Is it even possible?
+  optional: "*"
 scenario_2:
   type: textarea
   class: |
@@ -41,6 +42,7 @@ scenario_2:
      3. Consider a situation where you are working with five co-authors on a paper. 
      **How do you handle the changes and comments they make to the document?**
      If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the "Track Changes"" option, **what happens to the history of those modifications?**
+  optional: "*"
 submit:
   type: submit
   name: submit
