@@ -222,7 +222,8 @@ bonus:
     big-textarea
   name: bonus
   label: |
-   *You are in a directory containing multiple text files with various extensions, including .txt, .md, and .docx.*
+    **Bonus question**
+    *You are in a directory containing multiple text files with various extensions, including .txt, .md, and .docx.*
     *You want to move all the .txt files to a subdirectory named "text_files" while keeping the other file types in the current directory.*
     *Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.*
     *Explain each step in your solution.*
