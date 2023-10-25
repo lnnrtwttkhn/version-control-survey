@@ -188,11 +188,49 @@ combining_flags:
   name: combining_flags 
   label: |
     Create a command that lists all the contents of your Documents folder in long format.
+note_manipulating:
+  class: label_align_left
+  type: note
+  name: note_manipulating
+  label: |
+    ### Manipulating the file system
+creating_file:
+  type: text
+  class: |
+    answer_below_label
+  name: creating_file 
+  label: |
+   How can you create a new empty file using the command line? Provide an example.
+creating_folder:
+  type: text
+  class: |
+    answer_below_label
+  name: creating_folder 
+  label: |
+   What command is used to create a new folder called "newproject" in the command line?
+wildcards:
+  type: text
+  class: |
+    answer_below_label
+  name: wildcards
+  label: |
+    What is the purpose of using wildcards, such as *, in the command line? Give an example of how wildcards can be used..
+bonus:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: bonus
+  label: |
+   *You are in a directory containing multiple text files with various extensions, including .txt, .md, and .docx.*
+    *You want to move all the .txt files to a subdirectory named "text_files" while keeping the other file types in the current directory.*
+    *Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.*
+    *Explain each step in your solution.*
 next_page_2:
   type: submit
   name: next_page_2
   label: |
-    End Quiz and see feedback
+    End quiz and see sample answers
 feedback: 
   class: label_align_left
   type: note
@@ -201,34 +239,33 @@ feedback:
     ## Command line exercises
     #### Moving around
     
-    *Switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
-    Which command did you use?*
-    Your answer: 
+    *Switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.*
+    *Which command did you use?*
+    **Your answer:**
     `r moving_around_1 ` 
-    Right answer:  
+    **Sample answer:**
     ```bash cd ~/Documents```
     
     *Where does the following command place you on your system?* 
     ```bash
     cd ~/../../..
     ```
-    Your answer: 
+    **Your answer:** 
     `r moving_around_2` 
-    Right answer:  
+    **Sample answer:**  
     Root directory of your system, which is typically represented as /.
-    ### Feedback
     
     #### Hidden files
     *What did you notice about the names of the hidden files?*
-    Your answer:
+    **Your answer:**
     `r hidden_files_3` 
-    Right answer: 
+    **Sample answer:**
      Hidden files and directories will have names that start with a dot (.).
     
     *What command do you use to list hidden files in a folder?*
-    Your answer: 
+    **Your answer:** 
     `r hidden_files_5` 
-    Right answer:  
+    **Sample answer:**
     ```bash ls -a ```
     
     #### Using flags
@@ -236,22 +273,62 @@ feedback:
     *Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?*
     Your answer: 
     `r using_flags_1 ` 
-    Right answer:  
+    **Sample answer:**  
+    1. Usage Information:
+    ```bash ls --help```
+    2. Arranging output according to date modified:
     ```bash ls -lt ```
     
     *By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?*
-    Your answer: 
+    **Your answer:** 
     `r using_flags_2` 
-    Right answer:  
+    **Sample answer:**
     Readibility, avoiding ambiguity, consistency
     
     #### Combining arguments and flags
     
     *Create a command that lists all the contents of your Documents folder in long format*
-    Your answer:
+    **Your answer:**
     `r combining_flags ` 
-    Right answer: 
+    **Sample answer:**
     ```bash ls -a -l ``` or ```bash ls -al ```
+    
+    #### Manipulating the file system
+    
+    *How can you create a new empty file using the command line? Provide an example.*
+    **Your answer:**
+    `r creating_file` 
+    **Sample answer:**
+    ```bash touch example.txt```
+    
+    *What command is used to create a new folder called "newproject" in the command line?*
+    **Your answer:**
+    `r creating_folder` 
+    **Sample answer:** 
+    ```bash mkdir newproject```
+    
+    *What is the purpose of using wildcards, such as `*`, in the command line?*
+    *Give an example of how wildcards can be used..*
+    **Your answer:**
+    `r wildcards` 
+    **Sample answer:** 
+    Wildcards, such as "*", in the command line are used to represent one or more characters, allowing you to match multiple files or directories based on a pattern. 
+    They are useful for performing operations on multiple files or directories simultaneously.
+    E.g. to list all files in your current directory that have a ".txt" extension.
+    ```bash ls *.txt```
+    
+    **Bonus question:**
+    *You are in a directory containing multiple text files with various extensions, including .txt, .md, and .docx.*
+    *You want to move all the .txt files to a subdirectory named "text_files" while keeping the other file types in the current directory.*
+    *Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.*
+    *Explain each step in your solution.*
+    **Your answer:**
+    `r bonus`
+    **Sample answer:**
+    1. Creating "text_files" subdirectory.
+     ```bash mkdir text_files```
+    2. Moving all the .txt files to the "text_files" subdirectory.
+    ```bash mv *.txt text_files```
 next_page_5:
   type: submit
   name: next_page_5
