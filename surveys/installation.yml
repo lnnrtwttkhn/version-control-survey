@@ -29,6 +29,7 @@ codeword:
   name: codeword
   label: |
     **Please enter your personal codeword:**
+  optional: "*"
 codeword_check:
   class: |
     label_align_left
@@ -40,6 +41,10 @@ codeword_instructions:
   name: codeword_instructions
   label: "Instructions missing!"
   showif: codeword_check == 1
+next_page_1:
+  type: submit
+  name: next_page_1
+  label: Continue
 note_start:
   class: label_align_left
   type: note
@@ -51,7 +56,7 @@ difficulty:
   type: range_ticks 1,5,1
   name: difficulty
   label: |
-    Overall, on a scale from very easy to very difficult, how would you **rate the process of installing and setting up Git**?
+    Overall, on a scale from very easy to very difficult, how would you **rate the process of installing Git**?
   class: |
     left500
     label_align_left
@@ -68,56 +73,13 @@ challenges:
   label: |
     Did you encounter **any challenges** during the Git installation process? If so, please describe them.
   optional: "*"
-time:
-  type: time 00:00, 05:00
-  name: time
-  label: |
-    **How many hours** did it take you to complete the entire Git installation process from start to finish?
-  class: |
-    answer_below_label
-version_mc:
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_vertical
-  name: version_mc
-  label: |
-    How can you check which version of Git is installed on your system?
-  choice1: "`git info`"
-  choice2: "`git check-version`"
-  choice3: "Open Git settings and check the version tab."
-  choice4: "`git --version`"
-show_version_answer:
-  type: check
-  class: label_align_left
-  name: show_version_answer
-  label: |
-    **Show answer**
-version_answer:
-  class: |
-    answer_below_label
-    label_align_left
-  type: note
-  name: version_answer
-  label: |
-    `git --version` 
-  showif: show_version_answer == 1 
 version:
   type: text
   name: version
   label: |
-    Please use the appropriate command to **check the installed Git version** (if any) and **write down the version** below.
+    Please use the command `git --version` to **check the installed Git version** (if any) and **write down the version** below.
   class: |
     answer_below_label
-texteditor:
-  type: textarea
-  class: |
-    answer_below_label
-    big-textarea
-  name: texteditor
-  label: |
-    If you decided to use a **different text editor** for writing Git commit messages instead of the default one, which text editor did you choose, and how did the setup process go?
-  optional: "*"
 error:
   type: textarea
   class: |
@@ -126,14 +88,6 @@ error:
   name: errors
   label: |
     Did you encounter any **specific error messages** while installing Git? If yes, please provide details about the errors and any solutions you discovered.
-  optional: "*"
-ressources:
-  type: text
-  name: ressources
-  label: |
-    What **resources or methods** were most helpful in resolving installation-related challenges for you?
-  class: |
-    answer_below_label
   optional: "*"
 feedback:
   type: textarea

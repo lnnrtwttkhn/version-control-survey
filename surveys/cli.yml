@@ -209,9 +209,10 @@ creating_folder:
   label: |
    What command is used to create a new folder called "newproject" in the command line?
 wildcards:
-  type: text
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
   name: wildcards
   label: |
     What is the purpose of using wildcards, such as *, in the command line? Give an example of how wildcards can be used..
