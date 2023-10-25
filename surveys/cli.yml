@@ -62,6 +62,10 @@ codeword_instructions:
   name: codeword_instructions
   label: "Instructions missing!"
   showif: codeword_check == 1
+next_page_1:
+  type: submit
+  name: next_page_1
+  label: Continue
 note_start:
   class: label_align_left
   type: note
@@ -69,9 +73,38 @@ note_start:
   label: |
    ## Command line exercises
    This survey will be about the [Command Line chapter](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
-   ### Hidden files
-   
-   **Please navigate to your document folder and list all files, including the hidden ones**
+note_4:
+  class: label_align_left
+  type: note
+  name: note_4
+  label: |
+    ### Moving around
+moving_around_1:
+  type: text
+  class: |
+    answer_below_label
+  name: moving_around_1 
+  label: |
+    If you are not already in the Downloads folder, navigate to it first.
+    Next, switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
+    Which command did you use?
+moving_around_2:
+  type: text
+  class: |
+    answer_below_label
+  name: moving_around_2 
+  label: |
+    Where does the following command place you on your system? 
+    ```{bash}
+    cd ~/../../..
+    ```
+note_hiddenfiles:
+  class: label_align_left
+  type: note
+  name: note_hiddenfiles
+  label: |
+    ### Hidden files
+    **Please navigate to your document folder and list all files, including the hidden ones**
 hidden_files_5:
   type: text
   class: |
@@ -121,34 +154,11 @@ hidden_files_4:
     Are there directories with more hidden folders than others?
   choice1: "Yes"
   choice2: "No"
-next_page_1:
-  type: submit
-  name: next_page_1
-  label: Continue
-note_1:
-  class: label_align_left
-  type: note
-  name: note_1
-  label: |
-    ## Command line exercises
-    ### Combining arguments and flags
-combining_flags:
-  type: text
-  class: |
-    answer_below_label
-  name: combining_flags 
-  label: |
-    Create a command that lists all the contents of your Documents folder in long format.
-next_page_2:
-  type: submit
-  name: next_page_2
-  label: Continue   
 note_3:
   class: label_align_left
   type: note
   name: note_3
   label: |
-    ## Command line exercises
     ### Using flags
 using_flags_1:
   type: text
@@ -165,39 +175,22 @@ using_flags_2:
   name: using_flags_2
   label: |
     By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?
-next_page_3:
-  type: submit
-  name: next_page_3
-  label: Continue   
-note_4:
+note_1:
   class: label_align_left
   type: note
-  name: note_4
+  name: note_1
   label: |
-    ## Command line exercises
-    ### Moving around
-moving_around_1:
+    ### Combining arguments and flags
+combining_flags:
   type: text
   class: |
     answer_below_label
-  name: moving_around_1 
+  name: combining_flags 
   label: |
-    If you are not already in the Downloads folder, navigate to it first.
-    Next, switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
-    Which command did you use?
-moving_around_2:
-  type: text
-  class: |
-    answer_below_label
-  name: moving_around_2 
-  label: |
-    Where does the following command place you on your system? 
-    ```{bash}
-    cd ~/../../..
-    ```
-next_page_4:
+    Create a command that lists all the contents of your Documents folder in long format.
+next_page_2:
   type: submit
-  name: next_page_4
+  name: next_page_2
   label: |
     End Quiz and see feedback
 feedback: 
@@ -206,43 +199,6 @@ feedback:
   name: feedback
   label: |
     ## Command line exercises
-    ### Feedback
-    
-    #### Hidden files
-    *What did you notice about the names of the hidden files?*
-    Your answer:
-    `r hidden_files_3` 
-    Right answer: 
-     Hidden files and directories will have names that start with a dot (.).
-    
-    *What command do you use to list hidden files in a folder?*
-    Your answer: 
-    `r hidden_files_5` 
-    Right answer:  
-    ```bash ls -a ```
-    
-    #### Combining arguments and flags
-    
-    *Create a command that lists all the contents of your Documents folder in long format*
-    Your answer:
-    `r combining_flags ` 
-    Right answer: 
-    ```bash ls -a -l ``` or ```bash ls -al ``` 
-    
-    #### Using flags
-    
-    *Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?*
-    Your answer: 
-    `r using_flags_1 ` 
-    Right answer:  
-    ```bash ls -lt ```
-    
-    *By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?*
-    Your answer: 
-    `r using_flags_2` 
-    Right answer:  
-    Readibility, avoiding ambiguity, consistency
-  
     #### Moving around
     
     *Switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
@@ -260,6 +216,42 @@ feedback:
     `r moving_around_2` 
     Right answer:  
     Root directory of your system, which is typically represented as /.
+    ### Feedback
+    
+    #### Hidden files
+    *What did you notice about the names of the hidden files?*
+    Your answer:
+    `r hidden_files_3` 
+    Right answer: 
+     Hidden files and directories will have names that start with a dot (.).
+    
+    *What command do you use to list hidden files in a folder?*
+    Your answer: 
+    `r hidden_files_5` 
+    Right answer:  
+    ```bash ls -a ```
+    
+    #### Using flags
+    
+    *Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?*
+    Your answer: 
+    `r using_flags_1 ` 
+    Right answer:  
+    ```bash ls -lt ```
+    
+    *By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?*
+    Your answer: 
+    `r using_flags_2` 
+    Right answer:  
+    Readibility, avoiding ambiguity, consistency
+    
+    #### Combining arguments and flags
+    
+    *Create a command that lists all the contents of your Documents folder in long format*
+    Your answer:
+    `r combining_flags ` 
+    Right answer: 
+    ```bash ls -a -l ``` or ```bash ls -al ```
 next_page_5:
   type: submit
   name: next_page_5
