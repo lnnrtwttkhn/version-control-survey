@@ -71,8 +71,9 @@ note_start:
   type: note
   name: Note_start
   label: |
-   ### Git Installation and setup survey
-   This survey will be about the chapter on [installation and setup](https://lennartwittkuhn.com/version-control-book/chapters/installation-setup.html) from the online guide on ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   ### Survey: Git installation and setup
+   This survey accompanies the chapter on [installation and setup](https://lennartwittkuhn.com/version-control-book/chapters/installation-setup.html) from the online guide on ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   If you had Git already installed on your computer before the course, feel free to skip questions that are not applicable.
 difficulty:
   type: range_ticks 1,5,1
   name: difficulty
