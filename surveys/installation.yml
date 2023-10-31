@@ -74,6 +74,24 @@ note_start:
    ### Survey: Git installation and setup
    This survey accompanies the chapter on [installation and setup](https://lennartwittkuhn.com/version-control-book/chapters/installation-setup.html) from the online guide on ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
    If you had Git already installed on your computer before the course, feel free to skip questions that are not applicable.
+os:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: os
+  label: |
+    On which **operating system** did you install Git?
+  choice1: macOS <i class="fa fa-apple"></i>
+  choice2: Windows <i class="fa fa-windows"></i>
+  choice3: Linux <i class="fa fa-linux"></i>
+  choice4: Other
+os_other:
+  type: text
+  name: os_other
+  label: |
+    Please specify your choice:
+  showif: os == 4
 difficulty:
   type: range_ticks 1,5,1
   name: difficulty
