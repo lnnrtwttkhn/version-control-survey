@@ -100,10 +100,8 @@ difficulty:
   class: |
     left500
     label_align_left
-  choice1: |
-    Very easy
-  choice2: |
-    Very difficult
+  choice1: "Very easy"
+  choice2: "Very difficult"
 challenges:
   type: textarea
   class: |
@@ -138,10 +136,8 @@ feedback:
   label: |
     Is there anything else you'd like to share, or **any feedback** you have regarding the Git installation and configuration process?
   optional: "*"
-Submit:
+submit:
   type: submit
   name: submit
   label: |
     Submit and end survey
-    
-    
