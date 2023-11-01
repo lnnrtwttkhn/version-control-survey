@@ -1,0 +1,88 @@
+instructions:
+  class: label_align_left
+  type: note
+  name: instructions
+  label: |
+    ### How to create your personal code word
+    
+    In order to be able to correctly assign your data without violating confidentiality, **we require a code word**.
+    The code word is structured in such a way that **no one can infer your person from your code word**, not even us.
+    However, **you yourself can reconstruct your code word** at any time if you are asked for it and should have forgotten it.
+    We only need to tell you the rule according to which you have to produce it.
+    
+    #### These are the components of your code word:
+
+    1. the last two letters of your mother's maiden name
+    1. the number of letters of your mother's (first) given name
+    1. the last two letters of your father's (first) given name
+    1. your own birthday (only the day, not the month and / or year)
+
+    #### Additional instructions:
+
+    - Please write all numbers with two digits. If necessary, use a leading zero (for example `01`).
+    - In case of several or compound first names, please consider only the first one.
+    - If you do not know the respective name, use `XX` for the letters and `00` for the number.
+
+    #### Example (fictional):
+
+    - Name of the mother: **Elke**-Hannelore Müller née Mayerhof**er**
+    - Name of the father: Wo**lf**-Rüdiger Müller
+    - Your birthday: **09**.11.1987
+
+    This results in the following code word: **ER04LF09**
+input_heading:
+  class: label_align_left
+  type: note
+  name: input_heading
+  label: |
+    ### Please enter your code word in the boxes:
+mother_letters:
+  type: letters 2
+  class: label_align_left
+  name: mother_letters
+  label: |
+    The last two letters of your mother's maiden name:
+mother_numbers:
+  type: text 2
+  class: label_align_left
+  name: mother_numbers
+  label: |
+    The number of letters in your mother's (first) given name: 
+father_letters:
+  type: letters 2
+  class: label_align_left
+  name: father_letters
+  label: |
+    The last two letters of your father's (first) given name:
+birthday:
+  type: text 2
+  class: label_align_left
+  name: birthday
+  label: |
+    Your own birthday (only the day):
+submit:
+  type: submit
+  name: submit
+  label: |
+    Continue
+codeword:
+  type: calculate
+  name: codeword
+  value: "paste0(toupper(mother_letters), mother_numbers, toupper(father_letters), birthday)"
+codeword_display:
+  class: label_align_left
+  type: note
+  name: codeword_display
+  label: |
+    #### Your codeword:
+    
+    **`r codeword`**
+    
+    Is this correct?
+important:
+  class: label_align_left
+  type: note
+  name: important
+  label: | 
+    **Important:**
+    This codeword stays with you. Keep it safe! You should not show it to anyone!

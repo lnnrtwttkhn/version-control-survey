@@ -1,0 +1,93 @@
+referrer:
+  type: referrer
+  name: last_outside_referrer
+browser:
+  type: browser
+  name: browser
+intro_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: intro_note
+  label: |
+    ### Understanding version control
+version_control:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: version_control
+  label: |
+    In your own words: Can you briefly define the term **version control**?
+    Please refrain from looking up an answer online.
+  optional: "*"
+scenario_1:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: scenario_1
+  label: |
+     Imagine a scenario where you crafted a brilliant paragraph for your document (for example, your paper, thesis or report), but then accidentally ruined it. 
+     **How would you retrieve the earlier brilliant version?** Is it even possible?
+  optional: "*"
+scenario_2:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: scenario_2
+  label: |
+     Consider a situation where you are working with five co-authors on a paper. 
+     **How do you handle the changes and comments they make to the document?**
+     If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the "Track Changes"" option, **what happens to the history of those modifications?**
+  optional: "*"
+submit:
+  type: submit
+  name: submit
+  label: |
+    Submit and see sample answers
+feedback: 
+  type: note
+  class: |
+    label_align_left
+  name: feedback
+  label: |
+  
+    ### Sample answers
+    
+    *In your own words: Can you briefly define the term **version control**?*
+    
+    **Your answer:**
+    `r version_control` 
+    
+    **Sample answer:**
+    Version control is a method used to track file or file set changes over time so that you can recall older versions at a later time. ([Harvard College, 2022](https://datamanagement.hms.harvard.edu/collect-analyze/version-control))
+    
+    
+    *Imagine a scenario where you crafted a brilliant paragraph for your paper, but then accidentally ruined it. 
+    **How would you retrieve the earlier brilliant version?** Is it even possible?*
+     
+    **Your answer:**
+    `r scenario_1` 
+    
+    **Sample answer:**
+    The possibility of retrieving the brilliant version exists only when you have made a copy of the previous paper version. 
+    The risk of losing valuable versions frequently results in "implicit" version control, where multiple versions of the same file are saved. 
+    This approach, however, is error-prone and can lead to additional confusion and frustration.
+    
+    
+    *Consider a situation where you are working with five co-authors on a paper. How do you handle the changes and comments they make to the document? If you’re using LibreOffice Writer or Microsoft Word and you accept changes made using the "Track Changes"" option, what happens to the history of those modifications?*
+     
+    **Your answer:**
+    `r scenario_2` 
+    
+    **Sample answer:**
+    Collaborative writing using traditional word processors presents challenges. Collaborators either need to work on the document sequentially, which slows down the writing process, or you have to send versions to each collaborator and manually merge their comments into the document.  While the "Track Changes" option can highlight modifications and simplify merging, accepting changes erases their history, making it impossible to identify who suggested the change, the reason behind it, or when it was incorporated into the document.  Even online word processors like Google Docs or Microsoft Office Online do not entirely resolve these issues
+submit_2:
+  type: submit
+  name: submit_2
+  label: |
+    Close survey
+    
