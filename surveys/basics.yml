@@ -187,7 +187,7 @@ feedback:
     Your answer:
     `r mc_3`
     Right answer: 
-    "git stage"
+    "git add"
     
     *When committing changes in Git, what should you include along with your changes?*
     Your answer: 
@@ -205,7 +205,7 @@ feedback:
     Your answer: 
     `r mc_6` 
     Right answer:  
-    ```bash cd ~/Documents```
+    ```touch .gitignore```
     
     *What should you include in a .gitignore file if you want to exclude all files with the ".log" extension from being tracked by Git?*
     Your answer: 
