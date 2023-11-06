@@ -64,7 +64,7 @@ submit:
   type: submit
   name: submit
   label: |
-    Submit
+    Continue
 codeword:
   type: calculate
   name: codeword
