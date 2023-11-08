@@ -199,3 +199,91 @@ text_2:
   label: |
     When managing a Git project with multiple feature branches, describe a best practice for keeping the main development branch up-to-date and minimizing merge conflicts.
   optional: "*"
+next_page_3:
+  type: submit
+  name: next_page_3
+  label: End quiz and see feedback
+feedback: 
+  type: note
+  class: |
+    label_align_left
+  name: feedback
+  label: |
+    ## Branches exercises
+    ### Feedback
+    #### Single choice questions
+  
+    *What is the command to create a new branch in Git*
+    **Your answer:**
+    `r sc_1` 
+    **Right answer:** 
+    "git branch"    
+    
+    *What is a Git branch?*
+    **Your answer:** 
+    `r sc_2` 
+    **Right answer:**  
+    "A separate workspace within a Git repository"
+    
+    *What is the command to merge two branches in Git? *
+    **Your answer:**
+    `r sc_3`
+    **Right answer**: 
+    "git merge"
+    
+    *What is the purpose of merging branches in Git?*
+    **Your answer:** 
+    `r sc_4`
+    **Right answer:**  
+    "To incorporate changes from one branch into another"
+    
+    *When does a merge conflict occur in Git?*
+    **Your answer:** 
+    `r sc_5`
+    **Right answer:**  
+    "When both branches have conflicting changes to the same part of a file"
+    
+    *What are the conflict markers in a file during a merge conflict in Git?*
+    **Your answer:** 
+    `r sc_6`
+    **Right answer**
+    "<<<<<<<, ===, >>>>>>>"
+    
+    *Which type of merge creates a new "merge commit" to mark when the merge happened?*
+    **Your answer:** 
+    `r sc_7`  
+    **Right answer:**  
+    "Standard merge"
+    
+    *How can you ensure a fast forward merge in Git?*
+    **Your answer:** 
+    `r sc_8`  
+    **Right answer:**  
+    "Use the --ff-only flag during the merge"
+    
+    #### Open questions
+    *Write a good commit message for adding a new receipe into a file.*
+    **Your answer:** 
+    `r text_1`  
+    **Sample answer:**
+    git branch" and "git checkout" serve different purposes in Git. 
+    "git branch" is primarily used for creating, listing, and managing branches. 
+    It allows you to see the list of existing branches and create new ones. 
+    "git checkout," on the other hand, is used for switching between branches. 
+    It allows you to change your working directory and active branch.
+    Scenario: You would use "git branch" to create a new branch when you want to start working on a new feature or bug fix. 
+    Once the branch is created, you can use "git checkout" to switch to that branch and begin making changes. 
+    For example, you could use "git branch feature-branch" to create a new feature branch and "git checkout feature-branch" to switch to that branch.
+    
+    *Write a good commit message for fixing an error in your recipe.*
+    **Your answer:**
+    `r text_2`  
+    **Sample answer:** 
+    In managing a Git project with multiple feature branches, a best practice for keeping the main development branch up-to-date and minimizing merge conflicts is to regularly merge or rebase the main branch into the feature branches. 
+    This approach is commonly referred to as "branch synchronization."
+next_page_4:
+  type: submit
+  name: next_page_4
+  label: |
+    Close feedback
+
