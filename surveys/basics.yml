@@ -214,7 +214,7 @@ feedback:
     *What command is used to stage changes for committing in Git?*
     **Your answer:**
     `r mc_3`
-    Right answer: 
+    **Right answer**: 
     "git add"
     
     *When committing changes in Git, what should you include along with your changes?*
@@ -232,6 +232,7 @@ feedback:
     *Which command is used to create a .gitignore file?*
     **Your answer:** 
     `r mc_6`
+    **Right answer**
     ```touch .gitignore```
     
     *What should you include in a .gitignore file if you want to exclude all files with the ".log" extension from being tracked by Git?*
