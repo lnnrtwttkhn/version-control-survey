@@ -1,0 +1,118 @@
+elow) which you create following a specific rule. No one else will have access to it except you.
+    The data will be used exclusively for educational purposes as part of the course  ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at the University of Hamburg.
+    If responses are shared as part of the course, they will be aggregated to ensure anonymity is maintained.
+    If you want your data to be deleted, send an email with your codeword to [sekretariat-luv.psych@uni-hamburg.de](mailto:sekretariat-luv.psych@uni-hamburg.de).
+  showif: intro_note == 1
+codeword_note:
+  class: |
+    label_align_left
+  type: note
+  name: codeword_note
+  label: |
+    ### Codeword
+codeword_course:
+  type: text 8
+  class: label_align_left
+  name: codeword_course
+  label: |
+    **Please enter the course codeword:** 
+    (If you participate in the course "Version Control of Code and Data" at the University of Hamburg. If not, leave blank.)
+  optional: "*"
+codeword:
+  type: text 8
+  class: label_align_left
+  name: codeword
+  label: |
+    **Please enter your personal codeword:**
+  optional: "*"
+codeword_check:
+  class: |
+    label_align_left
+  type: mc_multiple
+  name: codeword_check
+  choice1: "Show codeword instructions"
+codeword_instructions:
+  type: note
+  name: codeword_instructions
+  label: "Instructions missing!"
+  showif: codeword_check == 1
+next_page_1:
+  type: submit
+  name: next_page_1
+  label: Continue
+note_start:
+  class: label_align_left
+  type: note
+  name: Note_start
+  label: |
+   ## GitHub exercises
+   This survey will be about the [GitHub chapter](https://lennartwittkuhn.com/version-control-book/chapters/github.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+note_1:
+  class: label_align_left
+  type: note
+  name: note_1
+  label: |
+    ### Single choice questions
+sc_1:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_1
+  label: |
+    What are remote repositories?
+  choice1: "Local copies of your project"
+  choice2: "Versions of your project hosted on the internet or a network"
+  choice3: "Backups stored on a local machine"
+  choice4: "Snapshots of your project"
+sc_2:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_2
+  label: |
+    How do you create a new GitHub repository from scratch?
+  choice1: "Use the `git create` command"
+  choice2: "Click the "+" sign on the GitHub page and select `New repository`"
+  choice3: "Clone an existing repository"
+  choice4: "Fork a repository"
+sc_3:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_3
+  label: |
+    What does forking a repository on GitHub allow you to do?
+  choice1: "Merge changes directly to the original repository"
+  choice2: "Create a personal copy of the project under your GitHub account`"
+  choice3: "Delete the original repository"
+  choice4: "Edit files without creating a new branch"
+sc_4:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_4
+  label: |
+    What does the git pull command do?
+  choice1: "Pushes local commits to the remote repository"
+  choice2: "Fetches the latest changes from a remote repository and merges them into the local branch"
+  choice3: "Clones a repository to your local machine"
+  choice4: "Creates a new branch in the repository"
+sc_5:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_5
+  label: |
+    What is the purpose of a pull request on GitHub?
+  choice1: "To create a new branch"
+  choice2: "To fetch the latest changes from a remote repository"
+  choice3: "To request code review and integration into a project's codebase"
+  choice4: "To push changes to a remote repository"
+
+  
+  
