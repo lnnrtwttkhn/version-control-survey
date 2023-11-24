@@ -139,4 +139,180 @@ sc_5:
   choice2: "To fetch the latest changes from a remote repository"
   choice3: "To request code review and integration into a project's codebase"
   choice4: "To push changes to a remote repository"
+sc_6:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_6
+  label: |
+    When creating a Pull Request, what is the "base" branch typically representing?
+  choice1: "The branch in your fork where you made changes."
+  choice2: "The original repository's branch where you want to propose your changes."
+  choice3: "The main GitHub homepage."
+  choice4: "The most recent commit."
+sc_7:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_7
+  label: |
+    What is a GitHub repository template used for?
+  choice1: "To showcase code snippets."
+  choice2: "To create a starting point for new projects with predefined files and code."
+  choice3: "To store binary files."
+  choice4: "To archive old projects."
+sc_8:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_8
+  label: |
+    Which is a prominent alternative to GitHub for hosting Git repositories?
+  choice1: "GitLab"
+  choice2: "GitBox"
+  choice3: "GitHub Lite"
+  choice4: "To push changes to a remote repository"
+next_page_2:
+  type: submit
+  name: next_page_2
+  label: Continue 
+note_free_text:
+  class: label_align_left
+  type: note
+  name: note_free_text
+  label: |
+   ## Github exercises
+   ### Free Text Questions: 
+text_1:
+  type: text
+  class: |
+    answer_below_label
+  name: text_1
+  label: |
+    Explain the concept of a remote repository in Git. 
+    Provide an example of a scenario where a remote repository is beneficial.
+  optional: "*"
+text_2:
+  type: text
+  class: |
+    answer_below_label
+  name: text_2
+  label: |
+    Describe the steps involved in cloning a repository from GitHub to your local machine. 
+    Why is cloning necessary?
+  optional: "*"
+text_3:
+  type: text
+  class: |
+    answer_below_label
+  name: text_3
+  label: |
+    Explain the purpose of a README file in a GitHub repository and its significance in a project
+  optional: "*"
+next_page_3:
+  type: submit
+  name: next_page_3
+  label: End quiz and see feedback
+feedback: 
+  type: note
+  class: |
+    label_align_left
+  name: feedback
+  label: |
+    ## GitHub exercises
+    ### Feedback
+    #### Single choice questions
+  
+    *What are remote repositories?*
+    **Your answer:**
+    `r sc_1` 
+    **Right answer:** 
+    "Versions of your project hosted on the internet or a network"    
+    
+    *How do you create a new GitHub repository from scratch?*
+    **Your answer:** 
+    `r sc_2` 
+    **Right answer:**  
+    "Click the + sign on the GitHub page and select New repository"
+    
+    *What does forking a repository on GitHub allow you to do?*
+    **Your answer:**
+    `r sc_3`
+    **Right answer**: 
+    "Create a personal copy of the project under your GitHub account"
+    
+    *What does the git pull command do?*
+    **Your answer:** 
+    `r sc_4`
+    **Right answer:**  
+    "Fetches the latest changes from a remote repository and merges them into the local branch"
+    
+    *What is the purpose of a pull request on GitHub?*
+    **Your answer:** 
+    `r sc_5`
+    **Right answer:**  
+    "To request code review and integration into a project's codebase"
+    
+    *When creating a Pull Request, what is the "base" branch typically representing?*
+    **Your answer:** 
+    `r sc_6`
+    **Right answer**
+    The original repository's branch where you want to propose your changes.
+    
+    *What is a GitHub repository template used for?*
+    **Your answer:** 
+    `r sc_7`  
+    **Right answer:**  
+    "To create a starting point for new projects with predefined files and code."
+        
+    *Which is a prominent alternative to GitHub for hosting Git repositories?*
+    **Your answer:** 
+    `r sc_8`  
+    **Right answer:**  
+    "GitLab"
+    
+    #### Open questions
+    *Explain the concept of a remote repository in Git. 
+    Provide an example of a scenario where a remote repository is beneficial*
+    **Your answer:** 
+    `r text_1`  
+    **Sample answer:**  
+    e.g.: "A remote repository in Git is a version of a project hosted on the internet or a network, allowing collaboration among multiple developers. 
+    It acts as a central hub where team members can push and pull changes, ensuring everyone stays synchronized.
+    Example Scenario: Imagine a software development team spread across different geographic locations. 
+    Each developer has their local copy of the project on their machine. 
+    A remote repository on a platform like GitHub serves as a common space where team members can share their changes, coordinate work, and maintain a unified version of the project"
+    
+    
+    
+    *Describe the steps involved in cloning a repository from GitHub to your local machine.
+    Why is cloning necessary*
+    **Your answer:**
+    `r text_2`  
+    **Sample answer:** 
+    e.g.: "Cloning a repository involves creating a local copy of a GitHub repository on your machine. Here are the steps:
+    Copy the repository's URL from GitHub.
+    Open your terminal and navigate to the directory where you want the clone.
+    Use the git clone command followed by the repository's URL.
+    Why Cloning is Necessary: Cloning is necessary to download all files, commit history, and branches from the GitHub repository to your local machine. 
+    It allows you to work with the project locally, make changes, and contribute back to the original repository."
+    
+    *Explain the purpose of a README file in a GitHub repository and its significance in a project*
+    **Your answer:**
+    `r text_3`  
+    **Sample answer:** 
+    e.g.: " The purpose of a README file in a GitHub repository is to provide essential information and context about the project, helping both contributors and users understand the purpose, functionality, and usage of the software. 
+    The README file serves as the entry point and documentation for the project"
+    
+next_page_4:
+next_page_4:
+  type: submit
+  name: next_page_4
+  label: |
+    Close feedback
+
+
   
