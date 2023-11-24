@@ -187,27 +187,30 @@ note_free_text:
    ## Github exercises
    ### Free Text Questions: 
 text_1:
-  type: text
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
   name: text_1
   label: |
     Explain the concept of a remote repository in Git. 
     Provide an example of a scenario where a remote repository is beneficial.
   optional: "*"
 text_2:
-  type: text
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
   name: text_2
   label: |
     Describe the steps involved in cloning a repository from GitHub to your local machine. 
     Why is cloning necessary?
   optional: "*"
-text_3:
-  type: text
+  text_3:
+  type: textarea
   class: |
     answer_below_label
+    big-textarea
   name: text_3
   label: |
     Explain the purpose of a README file in a GitHub repository and its significance in a project
@@ -308,11 +311,8 @@ feedback:
     The README file serves as the entry point and documentation for the project"
     
 next_page_4:
-next_page_4:
   type: submit
   name: next_page_4
   label: |
     Close feedback
-
-
   
