@@ -195,57 +195,57 @@ feedback:
     label_align_left
   name: feedback
   label: |
-    ## Basics exercises
+    ## Git basics exercises
     ### Feedback
     #### Single choice questions
   
     *What command is used to create a new folder?*
-    **Your answer:**
-    `r mc_2` 
+    **Your answer:** 
+    `r if(mc_1 == 1) "mkdir" else if(mc_1 == 2) "touch" else if(mc_1 == 3) "cd" else if(mc_1 == 4) "git init" else "Your answer here"` 
     **Right answer:** 
-    "mkdir"    
+    mkdir
     
     *After creating the "recipes" folder, what is the next step to initialize it as a Git repository?*
-    **Your answer:** 
-    `r mc_2` 
-    **Right answer:**  
-    "git init"
+    **Your answer:**
+    `r if(mc_2 == 1) "git start" else if(mc_2 == 2) "git create" else if(mc_2 == 3) "git init" else if(mc_2 == 4) "git new" else "Your answer here"` 
+    **Right answer:**
+    git init
     
     *What command is used to stage changes for committing in Git?*
     **Your answer:**
-    `r mc_3`
-    **Right answer**: 
-    "git add"
+    `r if(mc_3 == 1) "git push" else if(mc_3 == 2) "git stage" else if(mc_3 == 3) "git commit" else if(mc_3 == 4) "git add" else "Your answer here"` 
+    **Right answer:**
+    git add
     
     *When committing changes in Git, what should you include along with your changes?*
-    **Your answer:** 
-    `r mc_4`
-    **Right answer:**  
-    "A commit message describing the changes"
+    **Your answer:**
+    `r if(mc_4 == 1) "A commit message describing the changes" else if(mc_4 == 2) "A recipe for your favorite dish" else if(mc_4 == 3) "A list of Git contributors" else if(mc_4 == 4) "Your personal contact information" else "Your answer here"` 
+    **Right answer:**
+    A commit message describing the changes
     
     *What is the purpose of a .gitignore file?*
-    **Your answer:** 
-    `r mc_5`
-    **Right answer:**  
-    "To specify which files or patterns should be excluded from version control"
+    **Your answer:**
+    `r if(mc_5 == 1) "To store your Git commit messages" else if(mc_5 == 2) "To specify which files or patterns should be excluded from version control" else if(mc_5 == 3) "To track changes in your project" else if(mc_5 == 4) "To list all the contributors to a Git repository" else "Your answer here"` 
+    **Right answer:**
+    To specify which files or patterns should be excluded from version control
     
     *Which command is used to create a .gitignore file?*
-    **Your answer:** 
-    `r mc_6`
-    **Right answer**
-    ```touch .gitignore```
+    **Your answer:**
+    `r if(mc_6 == 1) "git exclude" else if(mc_6 == 2) "git ignore" else if(mc_6 == 3) "touch .gitignore" else if(mc_6 == 4) "create .gitignore" else "Your answer here"` 
+    **Right answer:**
+    `touch .gitignore`
     
     *What should you include in a .gitignore file if you want to exclude all files with the ".log" extension from being tracked by Git?*
-    **Your answer:** 
-    `r mc_7`  
-    **Right answer:**  
-    "*.log"
+    **Your answer:**
+    `r if(mc_7 == 1) ".log" else if(mc_7 == 2) "*.log" else if(mc_7 == 3) "exclude .log" else if(mc_7 == 4) "ignore *.log" else "Your answer here"` 
+    **Right answer:**
+    *.log
     
     #### Open questions
-    *Write a good commit message for adding a new receipe into a file.*
-    **Your answer:** 
+    *Write a good commit message for adding a new recipe into a file.*
+    **Your answer:**
     `r text_1`  
-    Sample answer:  
+    **Sample answer:**  
     e.g.: "Add new recipe: [Recipe Name]"
     
     *Write a good commit message for fixing an error in your recipe.*
