@@ -214,55 +214,55 @@ feedback:
     #### Single choice questions
   
     *What is the command to create a new branch in Git*
-    **Your answer:**
-    `r sc_1` 
+    **Your answer:** 
+    `r if(sc_1 == 1) "Local copies of your project" else if(sc_1 == 2) "Versions of your project hosted on the internet or a network" else if(sc_1 == 3) "Backups stored on a local machine" else "Snapshots of your project"` 
     **Right answer:** 
-    "git branch"    
+    git branch    
     
     *What is a Git branch?*
     **Your answer:** 
-    `r sc_2` 
+    `r if(sc_2 == 1) "A separate workspace within a Git repository" else if(sc_2 == 2) "text editor" else if(sc_2 == 3) "A compiler" else "An operating system"` 
     **Right answer:**  
-    "A separate workspace within a Git repository"
+    A separate workspace within a Git repository
     
     *What is the command to merge two branches in Git? *
     **Your answer:**
-    `r sc_3`
+    `r if(sc_3 == 1) "git merge" else if(sc_3 == 2) "git switch" else if(sc_3 == 3) "git checkout" else "git branch"` 
     **Right answer**: 
-    "git merge"
+    git merge
     
     *What is the purpose of merging branches in Git?*
     **Your answer:** 
-    `r sc_4`
+    `r if(sc_4 == 1) "To create a new branch" else if(sc_4 == 2) "To delete a branch" else if(sc_4 == 3) "To incorporate changes from one branch into another" else "To create a new repository"` 
     **Right answer:**  
-    "To incorporate changes from one branch into another"
+    To incorporate changes from one branch into another
     
     *When does a merge conflict occur in Git?*
     **Your answer:** 
-    `r sc_5`
+    `r if(sc_5 == 1) "When branches have the same name" else if(sc_5 == 2) "When a branch is deleted" else if(sc_5 == 3) "When both branches have conflicting changes to the same part of a file" else "When there are no changes in the branches"` 
     **Right answer:**  
     "When both branches have conflicting changes to the same part of a file"
     
     *What are the conflict markers in a file during a merge conflict in Git?*
     **Your answer:** 
-    `r sc_6`
+    `r if(sc_6 == 1) "<<<<<<<, ===, >>>>>>>" else if(sc_6 == 2) "[CONFLICT]" else if(sc_6 == 3) "<<<<<<<<<<<, >>>>>>>>>>>>" else "//CONFLICT//, //END//"` 
     **Right answer**
-    "<<<<<<<, ===, >>>>>>>"
+    <<<<<<<, ===, >>>>>>>
     
     *Which type of merge creates a new "merge commit" to mark when the merge happened?*
     **Your answer:** 
-    `r sc_7`  
+    `r if(sc_7 == 1) "Standard merge" else if(sc_7 == 2) "Fast Forward Merge" else if(sc_7 == 3) "Squash and Merge" else "None of the above"`  
     **Right answer:**  
-    "Standard merge"
+    Standard merge
     
     *How can you ensure a fast forward merge in Git?*
     **Your answer:** 
-    `r sc_8`  
+    `r if(sc_8 == 1) "Use the --ff-only flag during the merge" else if(sc_8 == 2) "Use the --no-ff flag during the merge" else if(sc_8 == 3) "Fast forward merges are automatic and cannot be controlled" else "Use the git squash command"`  
     **Right answer:**  
-    "Use the --ff-only flag during the merge"
+    Use the --ff-only flag during the merge
     
     #### Open questions
-    *Write a good commit message for adding a new receipe into a file.*
+    *Explain the difference between "git branch" and "git checkout" in Git, and provide a scenario in which you would use each command.*
     **Your answer:** 
     `r text_1`  
     **Sample answer:**
@@ -275,7 +275,7 @@ feedback:
     Once the branch is created, you can use "git checkout" to switch to that branch and begin making changes. 
     For example, you could use "git branch feature-branch" to create a new feature branch and "git checkout feature-branch" to switch to that branch.
     
-    *Write a good commit message for fixing an error in your recipe.*
+    *When managing a Git project with multiple feature branches, describe a best practice for keeping the main development branch up-to-date and minimizing merge conflicts.*
     **Your answer:**
     `r text_2`  
     **Sample answer:** 
