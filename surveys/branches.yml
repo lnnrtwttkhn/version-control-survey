@@ -188,7 +188,7 @@ text_1:
     big-textarea
   name: text_1
   label: |
-    Explain the difference between "git branch" and "git checkout" in Git, and provide a scenario in which you would use each command.
+    Explain the difference between "git branch" and "git switch" in Git, and provide a scenario in which you would use each command.
   optional: "*"
 text_2:
   type: textarea
@@ -262,18 +262,18 @@ feedback:
     Use the --ff-only flag during the merge
     
     #### Open questions
-    *Explain the difference between "git branch" and "git checkout" in Git, and provide a scenario in which you would use each command.*
+    *Explain the difference between "git branch" and "git switch" in Git, and provide a scenario in which you would use each command.*
     **Your answer:** 
     `r text_1`  
     **Sample answer:**
-    git branch" and "git checkout" serve different purposes in Git. 
+    git branch" and git switch serve different purposes in Git. 
     "git branch" is primarily used for creating, listing, and managing branches. 
     It allows you to see the list of existing branches and create new ones. 
-    "git checkout," on the other hand, is used for switching between branches. 
+    "git switch," on the other hand, is used for switching between branches. 
     It allows you to change your working directory and active branch.
     Scenario: You would use "git branch" to create a new branch when you want to start working on a new feature or bug fix. 
-    Once the branch is created, you can use "git checkout" to switch to that branch and begin making changes. 
-    For example, you could use "git branch feature-branch" to create a new feature branch and "git checkout feature-branch" to switch to that branch.
+    Once the branch is created, you can use "git switch" to switch to that branch and begin making changes. 
+    For example, you could use "git branch feature-branch" to create a new feature branch and "git switch feature-branch" to switch to that branch.
     
     *When managing a Git project with multiple feature branches, describe a best practice for keeping the main development branch up-to-date and minimizing merge conflicts.*
     **Your answer:**
