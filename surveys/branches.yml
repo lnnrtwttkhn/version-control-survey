@@ -197,7 +197,7 @@ text_2:
     big-textarea
   name: text_2
   label: |
-    When managing a Git project with multiple feature branches, describe a best practice for keeping the main development branch up-to-date and minimizing merge conflicts.
+    How does using branches in Git contribute to a more organized and efficient development workflow?
   optional: "*"
 next_page_3:
   type: submit
@@ -275,12 +275,15 @@ feedback:
     Once the branch is created, you can use "git switch" to switch to that branch and begin making changes. 
     For example, you could use "git branch feature-branch" to create a new feature branch and "git switch feature-branch" to switch to that branch.
     
-    *When managing a Git project with multiple feature branches, describe a best practice for keeping the main development branch up-to-date and minimizing merge conflicts.*
+    *How does using branches in Git contribute to a more organized and efficient development workflow?*
     **Your answer:**
     `r text_2`  
     **Sample answer:** 
-    In managing a Git project with multiple feature branches, a best practice for keeping the main development branch up-to-date and minimizing merge conflicts is to regularly merge or rebase the main branch into the feature branches. 
-    This approach is commonly referred to as "branch synchronization."
+    E.g. 
+    Using branches in Git enhances organization and efficiency in development by allowing developers to work on separate tasks or features without interfering with the main codebase. 
+    This isolation of work enables parallel development, with teams concurrently addressing different aspects of a project.
+    Branches also streamline collaboration, as changes made in isolation can be smoothly integrated through merging. 
+    Additionally, branches facilitate easy experimentation, testing, and rollback, contributing to a more controlled and structured development process.
 next_page_4:
   type: submit
   name: next_page_4
