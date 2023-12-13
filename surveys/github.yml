@@ -230,53 +230,53 @@ feedback:
     #### Single choice questions
   
     *What are remote repositories?*
-    **Your answer:** 
-    `r if(sc_1 == 1) "Local copies of your project" else if(sc_1 == 2) "Versions of your project hosted on the internet or a network" else if(sc_1 == 3) "Backups stored on a local machine" else if(sc_1 == 4) "Snapshots of your project" else "Your answer here"` 
+    **Your answer:**
+    `r if(sc_1 == 1) "Local copies of your project" else if(sc_1 == 2) "Versions of your project hosted on the internet or a network" else if(sc_1 == 3) "Backups stored on a local machine" else if(sc_1 == 4) "Snapshots of your project"
     **Right answer:**
-    Versions of your project hosted on the internet or a network    
-    
+    Versions of your project hosted on the internet or a network
+
     *How do you create a new GitHub repository from scratch?*
     **Your answer:**
-    `r if(sc_2 == 1) "Use the \`git create\` command" else if(sc_2 == 2) "Click the \`+\` sign on the GitHub page and select \`New repository\`" else if(sc_2 == 3) "Clone an existing repository" else if(sc_2 == 4) "Fork a repository" else "Your answer here"` 
+    `r if(sc_2 == 1) "Use the 'git create' command" else if(sc_2 == 2) "Click the '+' sign on the GitHub page and select 'New repository'" else if(sc_2 == 3) "Clone an existing repository" else if(sc_2 == 4) "Fork a repository"`
     **Right answer:**
     Click the + sign on the GitHub page and select New repository
-    
+
     *What does forking a repository on GitHub allow you to do?*
     **Your answer:**
-    `r if(sc_3 == 1) "Merge changes directly to the original repository" else if(sc_3 == 2) "Create a personal copy of the project under your GitHub account\`" else if(sc_3 == 3) "Delete the original repository" else if(sc_3 == 4) "Edit files without creating a new branch" else "Your answer here"` 
+    `r if(sc_3 == 1) "Merge changes directly to the original repository" else if(sc_3 == 2) "Create a personal copy of the project under your GitHub account" else if(sc_3 == 3) "Delete the original repository" else if(sc_3 == 4) "Edit files without creating a new branch"`
     **Right answer:**
     Create a personal copy of the project under your GitHub account
-    
+
     *What does the git pull command do?*
     **Your answer:**
-    `r if(sc_4 == 1) "Pushes local commits to the remote repository" else if(sc_4 == 2) "Fetches the latest changes from a remote repository and merges them into the local branch" else if(sc_4 == 3) "Clones a repository to your local machine" else if(sc_4 == 4) "Creates a new branch in the repository" else "Your answer here"` 
+    `r if(sc_4 == 1) "Pushes local commits to the remote repository" else if(sc_4 == 2) "Fetches the latest changes from a remote repository and merges them into the local branch" else if(sc_4 == 3) "Clones a repository to your local machine" else if(sc_4 == 4) "Creates a new branch in the repository"`
     **Right answer:**
     Fetches the latest changes from a remote repository and merges them into the local branch
-    
+
     *What is the purpose of a pull request on GitHub?*
     **Your answer:**
-    `r if(sc_5 == 1) "To create a new branch" else if(sc_5 == 2) "To fetch the latest changes from a remote repository" else if(sc_5 == 3) "To request code review and integration into a project's codebase" else if(sc_5 == 4) "To push changes to a remote repository" else "Your answer here"` 
+    `r if(sc_5 == 1) "To create a new branch" else if(sc_5 == 2) "To fetch the latest changes from a remote repository" else if(sc_5 == 3) "To request code review and integration into a project's codebase" else if(sc_5 == 4) "To push changes to a remote repository"`
     **Right answer:**
     To request code review and integration into a project's codebase
-    
+
     *When creating a Pull Request, what is the "base" branch typically representing?*
     **Your answer:**
-    `r if(sc_6 == 1) "The branch in your fork where you made changes." else if(sc_6 == 2) "The original repository's branch where you want to propose your changes." else if(sc_6 == 3) "The main GitHub homepage." else if(sc_6 == 4) "The most recent commit." else "Your answer here"` 
+    `r if(sc_6 == 1) "The branch in your fork where you made changes." else if(sc_6 == 2) "The original repository's branch where you want to propose your changes." else if(sc_6 == 3) "The main GitHub homepage." else if(sc_6 == 4) "The most recent commit."`
     **Right answer:**
     The original repository's branch where you want to propose your changes.
-    
+
     *What is a GitHub repository template used for?*
     **Your answer:**
-    `r if(sc_7 == 1) "To showcase code snippets." else if(sc_7 == 2) "To create a starting point for new projects with predefined files and code." else if(sc_7 == 3) "To store binary files." else if(sc_7 == 4) "To archive old projects." else "Your answer here"` 
+    `r if(sc_7 == 1) "To showcase code snippets." else if(sc_7 == 2) "To create a starting point for new projects with predefined files and code." else if(sc_7 == 3) "To store binary files." else if(sc_7 == 4) "To archive old projects."`
     **Right answer:**
     To create a starting point for new projects with predefined files and code.
-        
+
     *Which is a prominent alternative to GitHub for hosting Git repositories?*
     **Your answer:**
-    `r if(sc_8 == 1) "GitLab" else if(sc_8 == 2) "GitBox" else if(sc_8 == 3) "GitHub Lite" else if(sc_8 == 4) "To push changes to a remote repository" else "Your answer here"` 
+    `r if(sc_8 == 1) "GitLab" else if(sc_8 == 2) "GitBox" else if(sc_8 == 3) "GitHub Lite" else if(sc_8 == 4) "To push changes to a remote repository"`
     **Right answer:**
     GitLab
-    
+
     #### Open questions
     *Explain the concept of a remote repository in Git. 
     Provide an example of a scenario where a remote repository is beneficial*
@@ -288,7 +288,7 @@ feedback:
     Example Scenario: Imagine a software development team spread across different geographic locations. 
     Each developer has their local copy of the project on their machine. 
     A remote repository on a platform like GitHub serves as a common space where team members can share their changes, coordinate work, and maintain a unified version of the project"
-    
+
     *Describe the steps involved in cloning a repository from GitHub to your local machine.
     Why is cloning necessary*
     **Your answer:**
@@ -300,13 +300,14 @@ feedback:
     Use the git clone command followed by the repository's URL.
     Why Cloning is Necessary: Cloning is necessary to download all files, commit history, and branches from the GitHub repository to your local machine. 
     It allows you to work with the project locally, make changes, and contribute back to the original repository."
-    
+
     *Explain the purpose of a README file in a GitHub repository and its significance in a project*
     **Your answer:**
     `r text_3`  
     **Sample answer:** 
     e.g.: " The purpose of a README file in a GitHub repository is to provide essential information and context about the project, helping both contributors and users understand the purpose, functionality, and usage of the software. 
     The README file serves as the entry point and documentation for the project"
+
 next_page_4:
   type: submit
   name: next_page_4
