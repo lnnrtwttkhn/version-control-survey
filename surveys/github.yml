@@ -206,7 +206,7 @@ text_2:
     Describe the steps involved in cloning a repository from GitHub to your local machine. 
     Why is cloning necessary?
   optional: "*"
-  text_3:
+text_3:
   type: textarea
   class: |
     answer_below_label
