@@ -214,7 +214,7 @@ feedback:
     *What command is used to stage changes for committing in Git?*
     **Your answer:**
     `r if(mc_3 == 1) "git push" else if(mc_3 == 2) "git stage" else if(mc_3 == 3) "git commit" else if(mc_3 == 4) "git add" else "Your answer here"` 
-    **Right answer:**
+    **Right answer**: 
     git add
     
     *When committing changes in Git, what should you include along with your changes?*
