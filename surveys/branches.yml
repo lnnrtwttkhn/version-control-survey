@@ -1,0 +1,292 @@
+referrer:
+  type: referrer
+  name: last_outside_referrer
+browser:
+  type: browser
+  name: browser
+intro_note:
+  class: |
+    label_align_left
+    answer_below_label
+  type: mc_multiple
+  name: intro_note
+  label: |
+    ## Welcome!
+    This survey is part of the course ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at the University of Hamburg.
+    Please spend a few minutes answering the following questions about the course and course contents.
+    Your answers will help us to make this course better for you and the other participants.
+    If you have any questions about the survey or if there is a problem, please contact [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de).
+  choice1: "Show information on anonymity and data usage"
+anonymity_note:
+  type: note
+  name: anonymity_note
+  label: |
+    #### Anonymity and data usage
+    All answers are kept anonymous.
+    The recording and evaluation of your responses are conducted anonymously in the research group "Mechanisms of Learning & Change" at the University of Hamburg.
+    A personal codeword is used (see below) which you create following a specific rule. No one else will have access to it except you.
+    The data will be used exclusively for educational purposes as part of the course  ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at the University of Hamburg.
+    If responses are shared as part of the course, they will be aggregated to ensure anonymity is maintained.
+    If you want your data to be deleted, send an email with your codeword to [sekretariat-luv.psych@uni-hamburg.de](mailto:sekretariat-luv.psych@uni-hamburg.de).
+  showif: intro_note == 1
+codeword_note:
+  class: |
+    label_align_left
+  type: note
+  name: codeword_note
+  label: |
+    ### Codeword
+codeword_course:
+  type: text 8
+  class: label_align_left
+  name: codeword_course
+  label: |
+    **Please enter the course codeword:** 
+    (If you participate in the course "Version Control of Code and Data" at the University of Hamburg. If not, leave blank.)
+  optional: "*"
+codeword:
+  type: text 8
+  class: label_align_left
+  name: codeword
+  label: |
+    **Please enter your personal codeword:**
+  optional: "*"
+codeword_check:
+  class: |
+    label_align_left
+  type: mc_multiple
+  name: codeword_check
+  choice1: "Show codeword instructions"
+codeword_instructions:
+  type: note
+  name: codeword_instructions
+  label: "Instructions missing!"
+  showif: codeword_check == 1
+next_page_1:
+  type: submit
+  name: next_page_1
+  label: Continue
+note_start:
+  class: label_align_left
+  type: note
+  name: Note_start
+  label: |
+   ## Git basics exercises
+   This survey will be about the [branches chapter](https://lennartwittkuhn.com/version-control-book/chapters/branches.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   ### Single choice questions
+sc_1:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_1
+  label: |
+    What is the command to create a new branch in Git?
+  choice1: "git new"
+  choice2: "git create"
+  choice3: "git start"
+  choice4: "git branch"
+sc_2:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_2
+  label: |
+    What is a Git branch?
+  choice1: "A separate workspace within a Git repository"
+  choice2: "text editor"
+  choice3: "A compiler"
+  choice4: "An operating system"
+sc_3:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_3
+  label: |
+    What is the command to merge two branches in Git? 
+  choice1: "git merge"
+  choice2: "git switch"
+  choice3: "git checkout"
+  choice4: "git branch"
+sc_4:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_4
+  label: |
+    What is the purpose of merging branches in Git?
+  choice1: "To create a new branch"
+  choice2: "To delete a branch "
+  choice3: "To incorporate changes from one branch into another"
+  choice4: "To create a new repository"
+sc_5:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_5
+  label: |
+    When does a merge conflict occur in Git?
+  choice1: "When branches have the same name"
+  choice2: "When a branch is deleted"
+  choice3: "When both branches have conflicting changes to the same part of a file"
+  choice4: "When there are no changes in the branches"
+sc_6:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_6
+  label: |
+    What are the conflict markers in a file during a merge conflict in Git?
+  choice1: "<<<<<<<, ===, >>>>>>>"
+  choice2: "[CONFLICT]"
+  choice3: "<<<<<<<<<<<, >>>>>>>>>>>>"
+  choice4: "//CONFLICT//, //END//"
+sc_7:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_7
+  label: |
+    Which type of merge creates a new "merge commit" to mark when the merge happened?
+  choice1: "Standard merge"
+  choice2: "Fast Forward Merge"
+  choice3: "Squash and Merge"
+  choice4: "None of the above"
+sc_8:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: sc_8
+  label: |
+    How can you ensure a fast forward merge in Git?
+  choice1: "Use the --ff-only flag during the merge"
+  choice2: "Use the --no-ff flag during the merge"
+  choice3: "Fast forward merges are automatic and cannot be controlled"
+  choice4: "Use the git squash command"
+next_page_2:
+  type: submit
+  name: next_page_2
+  label: Continue   
+note_free_text:
+  class: label_align_left
+  type: note
+  name: note_free_text
+  label: |
+   ## Git branches exercises
+   ### Free Text Questions:
+text_1:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: text_1
+  label: |
+    Explain the difference between "git branch" and "git switch" in Git, and provide a scenario in which you would use each command.
+  optional: "*"
+text_2:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: text_2
+  label: |
+    How does using branches in Git contribute to a more organized and efficient development workflow?
+  optional: "*"
+next_page_3:
+  type: submit
+  name: next_page_3
+  label: End quiz and see feedback
+feedback: 
+  type: note
+  class: |
+    label_align_left
+  name: feedback
+  label: |
+    ## Branches exercises
+    ### Feedback
+    #### Single choice questions
+  
+    *What is the command to create a new branch in Git*
+    **Your answer:** 
+    `r if(sc_1 == 1) "Local copies of your project" else if(sc_1 == 2) "Versions of your project hosted on the internet or a network" else if(sc_1 == 3) "Backups stored on a local machine" else "Snapshots of your project"` 
+    **Right answer:** 
+    git branch    
+    
+    *What is a Git branch?*
+    **Your answer:** 
+    `r if(sc_2 == 1) "A separate workspace within a Git repository" else if(sc_2 == 2) "text editor" else if(sc_2 == 3) "A compiler" else "An operating system"` 
+    **Right answer:**  
+    A separate workspace within a Git repository
+    
+    *What is the command to merge two branches in Git? *
+    **Your answer:**
+    `r if(sc_3 == 1) "git merge" else if(sc_3 == 2) "git switch" else if(sc_3 == 3) "git checkout" else "git branch"` 
+    **Right answer**: 
+    git merge
+    
+    *What is the purpose of merging branches in Git?*
+    **Your answer:** 
+    `r if(sc_4 == 1) "To create a new branch" else if(sc_4 == 2) "To delete a branch" else if(sc_4 == 3) "To incorporate changes from one branch into another" else "To create a new repository"` 
+    **Right answer:**  
+    To incorporate changes from one branch into another
+    
+    *When does a merge conflict occur in Git?*
+    **Your answer:** 
+    `r if(sc_5 == 1) "When branches have the same name" else if(sc_5 == 2) "When a branch is deleted" else if(sc_5 == 3) "When both branches have conflicting changes to the same part of a file" else "When there are no changes in the branches"` 
+    **Right answer:**  
+    "When both branches have conflicting changes to the same part of a file"
+    
+    *What are the conflict markers in a file during a merge conflict in Git?*
+    **Your answer:** 
+    `r if(sc_6 == 1) "<<<<<<<, ===, >>>>>>>" else if(sc_6 == 2) "[CONFLICT]" else if(sc_6 == 3) "<<<<<<<<<<<, >>>>>>>>>>>>" else "//CONFLICT//, //END//"` 
+    **Right answer**
+    <<<<<<<, ===, >>>>>>>
+    
+    *Which type of merge creates a new "merge commit" to mark when the merge happened?*
+    **Your answer:** 
+    `r if(sc_7 == 1) "Standard merge" else if(sc_7 == 2) "Fast Forward Merge" else if(sc_7 == 3) "Squash and Merge" else "None of the above"`  
+    **Right answer:**  
+    Standard merge
+    
+    *How can you ensure a fast forward merge in Git?*
+    **Your answer:** 
+    `r if(sc_8 == 1) "Use the --ff-only flag during the merge" else if(sc_8 == 2) "Use the --no-ff flag during the merge" else if(sc_8 == 3) "Fast forward merges are automatic and cannot be controlled" else "Use the git squash command"`  
+    **Right answer:**  
+    Use the --ff-only flag during the merge
+    
+    #### Open questions
+    *Explain the difference between "git branch" and "git switch" in Git, and provide a scenario in which you would use each command.*
+    **Your answer:** 
+    `r text_1`  
+    **Sample answer:**
+    git branch" and git switch serve different purposes in Git. 
+    "git branch" is primarily used for creating, listing, and managing branches. 
+    It allows you to see the list of existing branches and create new ones. 
+    "git switch," on the other hand, is used for switching between branches. 
+    It allows you to change your working directory and active branch.
+    Scenario: You would use "git branch" to create a new branch when you want to start working on a new feature or bug fix. 
+    Once the branch is created, you can use "git switch" to switch to that branch and begin making changes. 
+    For example, you could use "git branch feature-branch" to create a new feature branch and "git switch feature-branch" to switch to that branch.
+    
+    *How does using branches in Git contribute to a more organized and efficient development workflow?*
+    **Your answer:**
+    `r text_2`  
+    **Sample answer:** 
+    E.g. 
+    Using branches in Git enhances organization and efficiency in development by allowing developers to work on separate tasks or features without interfering with the main codebase. 
+    This isolation of work enables parallel development, with teams concurrently addressing different aspects of a project.
+    Branches also streamline collaboration, as changes made in isolation can be smoothly integrated through merging. 
+    Additionally, branches facilitate easy experimentation, testing, and rollback, contributing to a more controlled and structured development process.
+next_page_4:
+  type: submit
+  name: next_page_4
+  label: |
+    Close feedback
+
