@@ -1,4 +1,6 @@
-SURVEY_TARGETS := intro installation codeword test1 test2 cli basics versioncontrol github
+
+SURVEY_TARGETS := intro installation codeword test1 test2 cli basics versioncontrol branches github
+
 
 all: $(SURVEY_TARGETS)
 
