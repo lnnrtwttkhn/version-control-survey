@@ -104,12 +104,12 @@ feedback_length:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-feedback_content1:
+feedback_expectation:
   type: mc
   class: |
     hide_label 
     mc_width100
-  name: feedback_content1
+  name: feedback_expectation
   label: "Content was as expected from the title"
   choice1: "Strongly disagree"
   choice2: "Disagree"
@@ -118,12 +118,12 @@ feedback_content1:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-feedback_content2:
+feedback_clarity:
   type: mc
   class: |
     hide_label 
     mc_width100 
-  name: feedback_content2
+  name: feedback_clarity
   label: "Content was clear"
   choice1: "Strongly disagree"
   choice2: "Disagree"
@@ -146,13 +146,13 @@ feedback_delivery:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-speaker_expertise:
+feedback_expertise:
   type: mc
   class: |
     hide_label 
     mc_width100
-  name: speaker_expertise
-  label: "Speaker had the appropriate level of expertise"
+  name: feedback_expertise
+  label: "Instructor had the appropriate level of expertise"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
@@ -160,13 +160,13 @@ speaker_expertise:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-speaker_preparedness:
+feedback_preparedness:
   type: mc
   class: |
     hide_label 
     mc_width100 
-  name: speaker_preparedness
-  label: "Speaker was well-prepared"
+  name: feedback_preparedness
+  label: "Instructor was well-prepared"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
@@ -174,12 +174,12 @@ speaker_preparedness:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-skills_usefulness:
+feedback_usefulness:
   type: mc
   class: |
     hide_label 
     mc_width100 
-  name: skills_usefulness
+  name: feedback_usefulness
   label: "I consider the skills learned useful for my everyday work"
   choice1: "Strongly disagree"
   choice2: "Disagree"
@@ -188,13 +188,12 @@ skills_usefulness:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-
-skills_integration:
+feedback_integration:
   type: mc
   class: |
     hide_label 
     mc_width100 
-  name: skills_integration
+  name: feedback_integration
   label: "I will integrate the skills learned into my everyday work"
   choice1: "Strongly disagree"
   choice2: "Disagree"
@@ -203,12 +202,12 @@ skills_integration:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-theory_practice_ratio:
+feedback_theory_practice:
   type: mc
   class: |
     hide_label 
     mc_width100 
-  name: theory_practice_ratio
+  name: feedback_theory_practice
   label: "Proportion between theory and practice was adequate"
   choice1: "Strongly disagree"
   choice2: "Disagree"
@@ -217,14 +216,13 @@ theory_practice_ratio:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-
-interaction_time:
+feedback_interaction:
   type: mc
   class: |
     hide_label 
     mc_width100 
-  name: interaction_time
-  label: "Time to interact with the speaker was sufficient"
+  name: feedback_interaction
+  label: "Time to interact with the instructor was sufficient"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
@@ -232,13 +230,13 @@ interaction_time:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-recommendation:
+feedback_recommendation:
   type: mc
   class: |
     hide_label 
     mc_width100 
-  name: recommendation
-  label: "I recommend repeating this workshop for future colleagues"
+  name: feedback_recommendation
+  label: "I would recommend this course to colleagues"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
