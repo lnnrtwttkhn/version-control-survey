@@ -71,7 +71,13 @@ note_start:
   type: note
   name: Note_start
   label: |
-   ## Feedback
+    ## Feedback
+    Thank you for participating in the course "Version Control of Code and Data."
+    We hope you have enjoyed it!
+
+    We are always aiming to improve the course to meet the needs and interests of the participants.
+    Therefore, we would be very interested in your feedback on the course, as well as any suggestions you might have for possible future courses.
+    Please consider the entire course in your evaluation as an average across all sessions.
 feedback_heading:
   type: mc_heading
   class: |
