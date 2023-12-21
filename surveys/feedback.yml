@@ -96,7 +96,7 @@ feedback_length:
     hide_label 
     mc_width100 
   name: feedback_length
-  label: "Length was appropiate"
+  label: "Length was appropriate"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
@@ -257,7 +257,7 @@ comments_best:
     big-textarea
   name: comments_best
   label: |
-    Overall, what did you like **best** about this seminar?
+    Overall, what did you like **best** about the course?
   optional: "*"
 comments_worst:
   type: textarea
@@ -266,7 +266,7 @@ comments_worst:
     big-textarea
   name: comments_worst
   label: |
-    Overall, what did you like **least** about this session?
+    Overall, what did you like **least** about the course?
   optional: "*"
 comments_topic:
   type: textarea
@@ -275,5 +275,5 @@ comments_topic:
     big-textarea
   name: comments_topic
   label: |
-    Which topics would you also like to **learn more** about?
+    Which topics would you like to **learn more** about?
   optional: "*"
