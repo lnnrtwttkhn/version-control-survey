@@ -277,3 +277,12 @@ comments_topic:
   label: |
     Which topics would you like to **learn more** about?
   optional: "*"
+comments_open:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: comments_open
+  label: |
+    **Anything else** that you would like to say?
+  optional: "*"
