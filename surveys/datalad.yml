@@ -1,0 +1,202 @@
+referrer:
+  type: referrer
+  name: last_outside_referrer
+browser:
+  type: browser
+  name: browser
+welcome_note:
+  class: |
+    label_align_left
+    answer_below_label
+  type: note
+  name: welcome_note
+  label: |
+    ## Talk on DataLad 
+    
+    Thank you for your interest in attending **hybrid talk by [Dr. Adina Wagner](https://www.adina-wagner.com/)** on **"DataLad - Decentralized Management of Digital Objects for Open Science"**.
+    
+    The talk takes place on **Friday, 26th of January 2024** from **10:15 to 11:45**.
+    You can choose to attend in person at Von-Melle-Park 5, 20146 Hamburg, William Stern Room (Room 4054) or via Zoom.
+    
+    If you have any questions about this survey or the event, please contact [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de).
+registration_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: registration_note
+  label: |
+    ### Registration
+    
+    To register, please enter your email address below.
+    Please also indicate whether you would like to join in-person or online.
+    
+    We will store and use your email address only for the purpose of sending you the Zoom link together with a reminder about the talk.
+    Your email address will be deleted shortly after the event.
+email_address:
+  type: text
+  name: email_address
+  label: |
+    Please enter your email address:
+attendance:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: attendance
+  label: |
+    Would you like to attend in person or online?
+  choice1: in person
+  choice2: online
+attendance_inperson_note:
+  type: note
+  name: attendance_inperson_note
+  label: |
+    For in person attendance, please join us at Von-Melle-Park 5, 20146 Hamburg, William Stern Room (Room 4054).
+  showif: attendance == 1
+attendance_online_note:
+  type: note
+  name: attendance_online_note
+  label: |
+    For online attendance, please join us via Zoom.
+    The link to the Zoom meeting will be sent to all registered participants a few days before the event.
+  showif: attendance == 2
+  optional: "*"
+about_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: about_note
+  label: |
+    ### About you
+    
+    In addition, we have prepared a few questions that will allows us to get to know our audience better.
+    Answering these questions is fully optional and not required for the registration.
+    Your answers will help us to improving the organization and planning of future similiar events.
+academic:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: academic
+  label: |
+    Which **academic career level** do you identify with?
+    If you choose `Other` please specify your choice in the text field.
+  choice1: Bachelor Student
+  choice2: Master Student
+  choice3: PhD Student
+  choice4: Postdoctoral Researcher
+  choice5: Assistant Professor
+  choice6: Professor
+  choice7: Research Support (e.g., Library, Administration, IT)
+  choice8: Other
+  optional: "*"
+academic_other:
+  type: text
+  name: academic_other
+  label: |
+    Please specify your choice:
+  showif: academic == 8
+  optional: "*"
+affiliation:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: text
+  name: affiliation
+  label: |
+    Which institution are you affiliated with?
+  optional: "*"
+referral:
+  class: |
+    answer_below_label
+    mc_vertical
+  type: mc_button
+  name: referral
+  label: |
+    How did you hear about the talk?
+  choice1: via DDLitLab
+  choice2: via Data Science Kiez
+  choice3: via the Institute of Psychology at UHH
+  choice4: via HCNS or HBS
+  choice5: via UKE
+  choice6: Other
+referral_other:
+  type: text
+  name: referral_other
+  label: |
+    Please specify your choice:
+  showif: referral == 6
+  optional: "*"
+experience_note:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: experience_note
+  label: |
+    ### Your experience
+    Consider the following software tools or services and indicate **your familiarity** with them.
+    Your answers help us to get a better understanding of your previous experience.
+tools_heading:
+  type: mc_heading
+  class: |
+    mc_width100 
+  name: tools_heading
+  label: |
+    **Tools:**
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+  optional: "*"
+experience_git:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_git
+  label: "**[Git](http://git-scm.com/)**"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+  optional: "*"
+experience_cli:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_cli
+  label: "**[Command-line interface](https://en.wikipedia.org/wiki/Command-line_interface)**"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+  optional: "*"
+experience_datalad:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100 
+  name: experience_datalad
+  label: "**[DataLad](https://www.datalad.org)**"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
+  optional: "*"
+comments:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: comments
+  label: |
+    Is there **anything else** you would like to say?
+  optional: "*"
