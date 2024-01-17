@@ -323,4 +323,23 @@ exercises_helpfulness:
   choice4: "Helpful"
   choice5: "Very helpful"
   choice6: "Extremely helpful"
+positive_feedback1:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: positive_feedback1
+  label: |
+    What aspects of the course exceeded your expectations or **pleasantly surprised** you? Please share any **positive experiences or highlights** that you would like to mention.
+  optional: "*"
+positive_feedback2:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: positive_feedback2
+  label: |
+    Can you recall a specific moment, topic, or activity in the course that you found **particularly valuable or enjoyable**? Please elaborate on what made it positive for you.
+  optional: "*"
+
 
