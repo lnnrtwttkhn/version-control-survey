@@ -273,3 +273,54 @@ comments_topic:
   label: |
     Which topics would you also like to **learn more** about?
   optional: "*"
+mc_heading_2:
+  type: mc_heading
+  class: |
+    mc_width100 
+  name: mc_heading_2
+  choice1: "Not helpful at all"
+  choice2: "Slightly helpful"
+  choice3: "Moderately helpful"
+  choice4: "Helpful"
+  choice5: "Very helpful"
+  choice6: "Extremely helpful"
+book_helpfulness:
+  type: mc
+  class: |
+    mc_width100 
+    hide_label
+  name: book_helpfulness
+  label: "How helpful did you find the course book?"
+  choice1: "Not helpful at all"
+  choice2: "Slightly helpful"
+  choice3: "Moderately helpful"
+  choice4: "Helpful"
+  choice5: "Very helpful"
+  choice6: "Extremely helpful"
+surveys_helpfulness:
+  type: mc
+  class: |
+    mc_width100 
+    hide_label
+  name: surveys_helpfulness
+  label: "How helpful did you find the surveys in understanding course content?"
+  choice1: "Not helpful at all"
+  choice2: "Slightly helpful"
+  choice3: "Moderately helpful"
+  choice4: "Helpful"
+  choice5: "Very helpful"
+  choice6: "Extremely helpful"
+exercises_helpfulness:
+  type: mc
+  class: |
+    mc_width100 
+    hide_label
+  name: exercises_helpfulness
+  label: "How helpful did you find the in-class exercises for practical application?"
+  choice1: "Not helpful at all"
+  choice2: "Slightly helpful"
+  choice3: "Moderately helpful"
+  choice4: "Helpful"
+  choice5: "Very helpful"
+  choice6: "Extremely helpful"
+
