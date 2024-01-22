@@ -44,24 +44,6 @@ codeword_course:
     **Please enter the course codeword:** 
     (If you participate in the course "Version Control of Code and Data" at the University of Hamburg. If not, leave blank.)
   optional: "*"
-codeword:
-  type: text 8
-  class: label_align_left
-  name: codeword
-  label: |
-    **Please enter your personal codeword:**
-  optional: "*"
-codeword_check:
-  class: |
-    label_align_left
-  type: mc_multiple
-  name: codeword_check
-  choice1: "Show codeword instructions"
-codeword_instructions:
-  type: note
-  name: codeword_instructions
-  label: "Instructions missing!"
-  showif: codeword_check == 1
 next_page_1:
   type: submit
   name: next_page_1
@@ -72,6 +54,8 @@ note_start:
   name: Note_start
   label: |
    ## Feedback
+   ### General
+   Please indicate how much you (dis)agree with the following statements:
 feedback_heading:
   type: mc_heading
   class: |
@@ -146,7 +130,7 @@ speaker_expertise:
     hide_label 
     mc_width100
   name: speaker_expertise
-  label: "Speaker had the appropriate level of expertise"
+  label: "Instructor had the appropriate level of expertise"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
@@ -160,7 +144,7 @@ speaker_preparedness:
     hide_label 
     mc_width100 
   name: speaker_preparedness
-  label: "Speaker was well-prepared"
+  label: "Instructor was well-prepared"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
@@ -182,7 +166,6 @@ skills_usefulness:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-
 skills_integration:
   type: mc
   class: |
@@ -211,14 +194,13 @@ theory_practice_ratio:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-
 interaction_time:
   type: mc
   class: |
     hide_label 
     mc_width100 
   name: interaction_time
-  label: "Time to interact with the speaker was sufficient"
+  label: "Time to interact with the Instructor was sufficient"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
@@ -232,7 +214,7 @@ recommendation:
     hide_label 
     mc_width100 
   name: recommendation
-  label: "I recommend repeating this workshop for future colleagues"
+  label: "I would recommend this seminar for fellow student"
   choice1: "Strongly disagree"
   choice2: "Disagree"
   choice3: "Rather disagree"
@@ -240,39 +222,12 @@ recommendation:
   choice5: "Rather agree"
   choice6: "Agree"
   choice7: "Strongly agree"
-note_comments:
+note_materials:
   class: label_align_left
   type: note
-  name: note_comments
+  name: Note_materials
   label: |
-   ### Comments
-comments_best:
-  type: textarea
-  class: |
-    answer_below_label
-    big-textarea
-  name: comments_best
-  label: |
-    Overall, what did you like **best** about this seminar?
-  optional: "*"
-comments_worst:
-  type: textarea
-  class: |
-    answer_below_label
-    big-textarea
-  name: comments_worst
-  label: |
-    Overall, what did you like **least** about this session?
-  optional: "*"
-comments_topic:
-  type: textarea
-  class: |
-    answer_below_label
-    big-textarea
-  name: comments_topic
-  label: |
-    Which topics would you also like to **learn more** about?
-  optional: "*"
+   ### Learning Materials
 mc_heading_2:
   type: mc_heading
   class: |
@@ -323,6 +278,39 @@ exercises_helpfulness:
   choice4: "Helpful"
   choice5: "Very helpful"
   choice6: "Extremely helpful"
+note_comments:
+  class: label_align_left
+  type: note
+  name: note_comments
+  label: |
+   ### Comments
+comments_best:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: comments_best
+  label: |
+    Overall, what did you like **best** about this seminar?
+  optional: "*"
+comments_worst:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: comments_worst
+  label: |
+    Overall, what did you like **least** about this session?
+  optional: "*"
+comments_topic:
+  type: textarea
+  class: |
+    answer_below_label
+    big-textarea
+  name: comments_topic
+  label: |
+    Which topics would you also like to **learn more** about?
+  optional: "*"
 positive_feedback1:
   type: textarea
   class: |
@@ -332,14 +320,14 @@ positive_feedback1:
   label: |
     What aspects of the course exceeded your expectations or **pleasantly surprised** you? Please share any **positive experiences or highlights** that you would like to mention.
   optional: "*"
-positive_feedback2:
+comment_anythingelse:
   type: textarea
   class: |
     answer_below_label
     big-textarea
-  name: positive_feedback2
+  name: comment_anythingelse
   label: |
-    Can you recall a specific moment, topic, or activity in the course that you found **particularly valuable or enjoyable**? Please elaborate on what made it positive for you.
+   Is there **anything else** we should have asked? **Anything else** you want to tell us about the quality of the learning experience?
   optional: "*"
 
 
