@@ -183,17 +183,6 @@ os_other:
   label: |
     Please specify your choice:
   showif: os == 4
-preferred_language:
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_horizontal
-  name: preferred_language
-  label: |
-    What would be your **preferred course language** (spoken language during the course)?
-    Note, that all course materials are in English (for example, presentations, reading materials etc.)
-  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
-  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
 experience_note:
   class: |
     answer_below_label
