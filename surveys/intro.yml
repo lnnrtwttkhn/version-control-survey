@@ -385,6 +385,18 @@ perspective_note:
   name: perspective_note
   label: |
     ### Your Perspective
+motivation_mc:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: motivation_mc
+  label: |
+    What describes your **main motivation** for taking this course the best?
+  choice1: Intrinsic Interest
+  choice2: Professional Advancement
+  choice3: Lack of alternatives
+  choice4: Skill Enhancement
 expectations:
   type: textarea
   class: |
