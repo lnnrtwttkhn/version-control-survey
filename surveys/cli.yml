@@ -87,8 +87,8 @@ moving_around_1:
   label: |
     Identify a directory where you currently keep your university-related files. 
     If you don't have one, choose a suitable location in your file system.
-    Navigate into the location using `ls` and `cd`.
-    Use the `pwd` command to display the path of your chosen directory. 
+    **Navigate into the location** using `ls` and `cd`.
+    Use the `pwd` command to **display the path** of your chosen directory. 
     What is the output?
 note_hiddenfiles:
   class: label_align_left
@@ -104,8 +104,8 @@ creating_files_1:
   label: |
     Within your chosen directory, use the `mkdir` command to create a folder named "recipes".
     Navigate into the "recipes" folder. 
-    Use the `touch` command to create a file named `recipes.txt`.
-    Confirm the creation by listing the contents of the "recipes" folder.
+    Use the `touch` command to **create a file** named `recipes.txt`.
+    **Confirm the creation by listing the contents** of the "recipes" folder.
     What command did you use?
 note_3:
   class: label_align_left
@@ -119,7 +119,7 @@ writing_1:
     answer_below_label
   name: writing_1
   label: |
-    Add the title "My Favorite Recipes" to recipes.txt.
+    **Add the title** "My Favorite Recipes" to recipes.txt.
     What command or method did you use?
 note_1:
   class: label_align_left
@@ -134,7 +134,7 @@ combining_1:
   name: combining_1 
   label: |
     Go back to your main university-related directory. 
-    Create three new files: `notes.txt`, `assignments.txt`, and `schedule.txt`.
+    **Create three new files:** `notes.txt`, `assignments.txt`, and `schedule.txt`.
     Provide the command you used.
 combining_2:
   type: text
@@ -142,7 +142,7 @@ combining_2:
     answer_below_label
   name: combining_2 
   label: |
-    Use a wildcard pattern to list all `.txt` files in your directory.
+    Use a wildcard pattern to **list all `.txt` files** in your directory.
     What command did you use?.
 combining_3:
   type: text
@@ -150,7 +150,7 @@ combining_3:
     answer_below_label
   name: combining_3
   label: |
-    After confirming the creation and listing of the `.txt´ files, delete all three files using a single command.
+    After confirming the creation and listing of the `.txt´ files, **delete all three files** using a single command.
     What command did you use?.
 bonus:
   type: textarea
