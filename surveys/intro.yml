@@ -183,12 +183,12 @@ os_other:
   label: |
     Please specify your choice:
   showif: os == 4
-experience_note:
+experience_note_1:
   class: |
     answer_below_label
     label_align_left
   type: note
-  name: experience_note
+  name: experience_note_1
   label: |
     ### Your experience
 experience_1:
