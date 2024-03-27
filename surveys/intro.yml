@@ -191,28 +191,6 @@ experience_note_1:
   name: experience_note_1
   label: |
     ### Your experience
-experience_1:
-  type: mc
-  class: |
-    mc_width100
-  name: experience_1
-  label: "In General: How would you rate your **coding/programming** skills?"
-  choice1: "No Knowledge"
-  choice2: "Newbie"
-  choice3: "Intermediate"
-  choice4: "Advance"
-  choice5: "Expert"
-experience_2:
-  type: mc
-  class: |
-    mc_width100
-  name: experience_2
-  label: "How much experience do you have working with (psychological) **research data**? (e.g. MRI data, questionnaire data)"
-  choice1: "No Experience"
-  choice2: "Limited Experience"
-  choice3: "Moderate Experience"
-  choice4: "Extensive Experience"
-  choice5: "Expert-Level Experience"
 experience_note_2:
   class: |
     answer_below_label
@@ -377,6 +355,30 @@ git_specific:
   label: |
     Is there something specific you would like to learn about Git?
   showif: experience_git >= 3
+experience_1:
+  type: mc
+  class: |
+    mc_width100
+    answer_below_label
+  name: experience_1
+  label: "In General: How would you rate your **coding/programming** skills?"
+  choice1: "No Knowledge"
+  choice2: "Newbie"
+  choice3: "Intermediate"
+  choice4: "Advance"
+  choice5: "Expert"
+experience_2:
+  type: mc
+  class: |
+    mc_width100
+    answer_below_label
+  name: experience_2
+  label: "How much experience do you have working with (psychological) **research data**? (e.g. MRI data, questionnaire data)"
+  choice1: "No Experience"
+  choice2: "Limited Experience"
+  choice3: "Moderate Experience"
+  choice4: "Extensive Experience"
+  choice5: "Expert-Level Experience"
 perspective_note:
   class: |
     answer_below_label
