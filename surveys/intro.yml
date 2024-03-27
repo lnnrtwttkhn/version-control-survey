@@ -191,6 +191,35 @@ experience_note:
   name: experience_note
   label: |
     ### Your experience
+experience_1:
+  type: mc
+  class: |
+    mc_width100
+  name: experience_1
+  label: "In General: How would you rate your **coding/programming** skills?"
+  choice1: "No Knowledge"
+  choice2: "Newbie"
+  choice3: "Intermediate"
+  choice4: "Advance"
+  choice5: "Expert"
+experience_2:
+  type: mc
+  class: |
+    mc_width100
+  name: experience_2
+  label: "How much experience do you have working with (psychological) **research data**? (e.g. MRI data, questionnaire data)"
+  choice1: "No Experience"
+  choice2: "Limited Experience"
+  choice3: "Moderate Experience"
+  choice4: "Extensive Experience"
+  choice5: "Expert-Level Experience"
+experience_note_2:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: experience_note_2
+  label: |
     Consider the following software tools or services and indicate **your familiarity** with them.
     Don't worry if you haven't heard about about some (or any!) of them.
     You don't need any previous experience with any of these tools to participate in the course.
