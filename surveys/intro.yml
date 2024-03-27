@@ -25,7 +25,7 @@ anonymity_note:
     All answers are kept anonymous.
     The recording and evaluation of your responses are conducted anonymously in the research group "Mechanisms of Learning & Change" at the University of Hamburg.
     A personal codeword is used (see below) which you create following a specific rule. No one else will have access to it except you.
-    The data will be used exclusively for educational purposes as part of the course  ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at the University of Hamburg.
+    The data will be used exclusively for research and educational purposes as part of the course  ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at the University of Hamburg.
     If responses are shared as part of the course, they will be aggregated to ensure anonymity is maintained.
     If you want your data to be deleted, send an email with your codeword to [sekretariat-luv.psych@uni-hamburg.de](mailto:sekretariat-luv.psych@uni-hamburg.de).
   showif: intro_note == 1
@@ -183,25 +183,21 @@ os_other:
   label: |
     Please specify your choice:
   showif: os == 4
-preferred_language:
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_horizontal
-  name: preferred_language
-  label: |
-    What would be your **preferred course language** (spoken language during the course)?
-    Note, that all course materials are in English (for example, presentations, reading materials etc.)
-  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
-  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
-experience_note:
+experience_note_1:
   class: |
     answer_below_label
     label_align_left
   type: note
-  name: experience_note
+  name: experience_note_1
   label: |
     ### Your experience
+experience_note_2:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: experience_note_2
+  label: |
     Consider the following software tools or services and indicate **your familiarity** with them.
     Don't worry if you haven't heard about about some (or any!) of them.
     You don't need any previous experience with any of these tools to participate in the course.
@@ -359,6 +355,30 @@ git_specific:
   label: |
     Is there something specific you would like to learn about Git?
   showif: experience_git >= 3
+experience_1:
+  type: mc
+  class: |
+    mc_width100
+    answer_below_label
+  name: experience_1
+  label: "In General: How would you rate your **coding/programming** skills?"
+  choice1: "No Knowledge"
+  choice2: "Newbie"
+  choice3: "Intermediate"
+  choice4: "Advance"
+  choice5: "Expert"
+experience_2:
+  type: mc
+  class: |
+    mc_width100
+    answer_below_label
+  name: experience_2
+  label: "How much experience do you have working with (psychological) **research data**? (e.g. MRI data, questionnaire data)"
+  choice1: "No Experience"
+  choice2: "Limited Experience"
+  choice3: "Moderate Experience"
+  choice4: "Extensive Experience"
+  choice5: "Expert-Level Experience"
 perspective_note:
   class: |
     answer_below_label
@@ -367,6 +387,18 @@ perspective_note:
   name: perspective_note
   label: |
     ### Your Perspective
+motivation_mc:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: motivation_mc
+  label: |
+    What describes your **main motivation** for taking this course the best?
+  choice1: Intrinsic Interest
+  choice2: Professional Advancement
+  choice3: Lack of alternatives
+  choice4: Skill Enhancement
 expectations:
   type: textarea
   class: |
