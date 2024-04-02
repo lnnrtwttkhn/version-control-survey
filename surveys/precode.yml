@@ -1,0 +1,48 @@
+referrer:
+  type: referrer
+  name: last_outside_referrer
+browser:
+  type: browser
+  name: browser
+welcome_note:
+  class: label_align_left
+  type: note
+  name: welcome_note
+  label: "Welcome text is missing!"
+codeword_note:
+  class: |
+    label_align_left
+  type: note
+  name: codeword_note
+  label: |
+    ### Codeword
+codeword_course:
+  type: text 8
+  class: label_align_left
+  name: codeword_course
+  label: |
+    **Please enter the course codeword:** 
+    (If you participate in the course "Version Control of Code and Data" at the University of Hamburg. If not, leave blank.)
+  optional: "*"
+codeword:
+  type: text 8
+  class: label_align_left
+  name: codeword
+  label: |
+    **Please enter your personal codeword:**
+  optional: "*"
+codeword_check:
+  class: |
+    label_align_left
+  type: mc_multiple
+  name: codeword_check
+  choice1: "Show codeword instructions"
+codeword_instructions:
+  type: note
+  name: codeword_instructions
+  label: "Instructions text is missing!"
+  showif: codeword_check == 1
+next_page_1:
+  type: submit
+  name: next_page_1
+  label: "Continue"
