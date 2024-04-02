@@ -12,9 +12,9 @@ welcome_note:
   name: welcome_note
   label: |
     ## Welcome!
-    This survey is part of the course ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at the University of Hamburg.
-    Please spend a few minutes answering the following questions about the course and course contents.
-    Your answers will help us to make this course better for you and the other participants.
+    This survey is part of the course ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ss24/) at the University of Hamburg and a supplementary to the online guide ["Version Control Book"](https://lennartwittkuhn.com/version-control-book/).
+    Please take a few minutes to answer the following questions regarding the course and its contents.
+    Your answers will help us in making this course better for you and the other participants.
     If you have any questions about the survey or if there is a problem, please contact [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de).
   choice1: "Show information on anonymity and data usage"
 anonymity_note:
@@ -22,10 +22,11 @@ anonymity_note:
   name: anonymity_note
   label: |
     #### Anonymity and data usage
-    All answers are kept anonymous.
-    The recording and evaluation of your responses are conducted anonymously in the research group "Mechanisms of Learning & Change" at the University of Hamburg.
-    A personal codeword is used (see below) which you create following a specific rule. No one else will have access to it except you.
-    The data will be used exclusively for educational purposes as part of the course  ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at the University of Hamburg.
+    All answers are recorded and kept anonymous.
+    The recording and evaluation of your responses are conducted anonymously in the research group "Cognitive Neuroscience: Mechanisms of Learning & Change" at the University of Hamburg.
+    A personal codeword is used (see below) which you create following a specific rule.
+    No one else will have access to it except you.
+    The data will be used exclusively for research and educational purposes as part of the course  ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ws23/) at the University of Hamburg.
     If responses are shared as part of the course, they will be aggregated to ensure anonymity is maintained.
     If you want your data to be deleted, send an email with your codeword to [sekretariat-luv.psych@uni-hamburg.de](mailto:sekretariat-luv.psych@uni-hamburg.de).
   showif: welcome_note == 1
