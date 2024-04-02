@@ -49,7 +49,7 @@ add_intro_note <- function() {
   path_intro_note_yml <- here::here("surveys", "intro_note.yml")
   intro_note_df <- yml2df(yml_file = path_intro_note_yml)
   intro_note_content <- intro_note_df %>%
-    filter(name == "intro") %>% 
+    .[name == "intro", ] %>% 
     .$label
 }
 
