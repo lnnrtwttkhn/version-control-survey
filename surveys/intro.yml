@@ -86,7 +86,7 @@ laptop:
     mc_vertical
   name: laptop
   label: |
-    Do you have a **personal laptop** that you can bring to each class?
+    Do you have a **personal laptop** that you can bring to each course session?
     Please note that tablets are not suitable.
   choice1: "Yes"
   choice2: "No"
@@ -97,7 +97,7 @@ laptop_feedback:
   type: note
   name: laptop_feedback
   label: |
-    If you don't have a personal laptop that you can bring to each class, that's no problem.
+    If you don't have a personal laptop that you can bring to each course session, that's no problem.
     It's possible to borrow a laptop from the university, e.g., from the institute's [notebook center](https://www.psy.uni-hamburg.de/en/service/notebookcenter.html).
     Please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de).
   showif: laptop == 2
@@ -108,7 +108,7 @@ os:
     mc_vertical
   name: os
   label: |
-    Which **operating system** do you use on the computer that you will bring to class?
+    Which **operating system** do you use on the computer that you will bring to the course?
   choice1: macOS <i class="fa fa-apple"></i>
   choice2: Windows <i class="fa fa-windows"></i>
   choice3: Linux <i class="fa fa-linux"></i>
@@ -360,7 +360,7 @@ worries:
     big-textarea
   name: worries
   label: |
-    Do you have any **worries or fears** regarding this course, that you want to express?
+    Do you have any **worries or fears** regarding this course that you want to express?
   optional: "*"
 motivation:
   type: textarea
