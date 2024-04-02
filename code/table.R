@@ -35,6 +35,7 @@ df2google <- function(survey_df, sheet_link) {
   write_sheet(survey_df, ss = gs4_get(sheet_link), sheet = "Sheet1")
 }
 
+
 add_codeword_instructions <- function() {
   path_codeword_yml <- here::here("surveys", "codeword.yml")
   codeword_df <- yml2df(yml_file = path_codeword_yml)
@@ -43,14 +44,31 @@ add_codeword_instructions <- function() {
     .$label
 }
 
+# Intro note function
+add_intro_note <- function() {
+  path_intro_note_yml <- here::here("surveys", "intro_note.yml")
+  intro_note_df <- yml2df(yml_file = path_intro_note_yml)
+  intro_note_content <- intro_note_df %>%
+    filter(name == "intro") %>% 
+    .$label
+}
+
 opt <- get_input()
 survey <- surveys[grepl(x = surveys, pattern = opt$survey)]
 sheet_link <- sheets[[opt$survey]]
 survey_df <- yml2df(yml_file = survey)
+
+# Check and add codeword instructions if required:
 if (any(survey_df$name %in% "codeword_instructions")) {
-  # add codeword instructions if required:
   codeword_instructions <- add_codeword_instructions()
   survey_df$label[survey_df$name == "codeword_instructions"] <- codeword_instructions
 }
+
+# Check and add intro note if required:
+if (any(survey_df$name %in% "intro_note")) {  # Assuming 'note' is the identifier for intro notes
+  intro_note_content <- add_intro_note()
+  survey_df$label[survey_df$name == "intro_note"] <- intro_note_content
+}
+
 df2google(survey_df, sheet_link = sheet_link)
 survey <- surveys[grepl(x = surveys, pattern = opt$survey)]
