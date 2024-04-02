@@ -47,10 +47,16 @@ opt <- get_input()
 survey <- surveys[grepl(x = surveys, pattern = opt$survey)]
 sheet_link <- sheets[[opt$survey]]
 survey_df <- yml2df(yml_file = survey)
+
+# add precode
+df_precode <- yml2df(yml_file = here::here("surveys", "precode.yml"))
+survey_df <- rbind(df_precode, survey_df, fill = TRUE)
+
+# Check and add codeword instructions if required:
 if (any(survey_df$name %in% "codeword_instructions")) {
-  # add codeword instructions if required:
   codeword_instructions <- add_codeword_instructions()
   survey_df$label[survey_df$name == "codeword_instructions"] <- codeword_instructions
 }
+
 df2google(survey_df, sheet_link = sheet_link)
 survey <- surveys[grepl(x = surveys, pattern = opt$survey)]
