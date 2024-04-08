@@ -43,7 +43,7 @@ codeword_course:
   name: codeword_course
   label: |
     **Please enter the course codeword:** 
-    (If you participate in the course about Git at the University of Hamburg. If not, leave blank.)
+    (If you participate in a course at the University of Hamburg. If not, leave blank.)
   optional: "*"
 codeword:
   type: text 8
