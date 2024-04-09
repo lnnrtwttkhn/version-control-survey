@@ -20,8 +20,9 @@ moving_around_1:
     Identify a directory where you currently keep your university-related files. 
     If you don't have one, choose a suitable location in your file system.
     **Navigate into the location** using `ls` and `cd`.
-    Use the `pwd` command to **display the path** of your chosen directory. 
+    Use the `pwd` command to **display the path** of your chosen directory.
     What is the output?
+    *Please delete your personal infos from the output.*
 note_hiddenfiles:
   class: label_align_left
   type: note
