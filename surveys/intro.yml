@@ -1,67 +1,3 @@
-referrer:
-  type: referrer
-  name: last_outside_referrer
-browser:
-  type: browser
-  name: browser
-intro_note:
-  class: |
-    label_align_left
-    answer_below_label
-  type: mc_multiple
-  name: intro_note
-  label: |
-    ## Welcome!
-    This survey is part of the course ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ss24/) at the University of Hamburg.
-    Please spend a few minutes answering the following questions about the course and course contents.
-    Your answers will help us to make this course better for you and the other participants.
-    If you have any questions about the survey or if there is a problem, please contact [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de).
-  choice1: "Show information on anonymity and data usage"
-anonymity_note:
-  type: note
-  name: anonymity_note
-  label: |
-    #### Anonymity and data usage
-    All answers are kept anonymous.
-    The recording and evaluation of your responses are conducted anonymously in the research group "Mechanisms of Learning & Change" at the University of Hamburg.
-    A personal codeword is used (see below) which you create following a specific rule. No one else will have access to it except you.
-    The data will be used exclusively for educational purposes as part of the course  ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-course-uhh-ss24/) at the University of Hamburg.
-    If responses are shared as part of the course, they will be aggregated to ensure anonymity is maintained.
-    If you want your data to be deleted, send an email with your codeword to [sekretariat-luv.psych@uni-hamburg.de](mailto:sekretariat-luv.psych@uni-hamburg.de).
-  showif: intro_note == 1
-codeword_note:
-  class: |
-    label_align_left
-  type: note
-  name: codeword_note
-  label: |
-    ### Codeword
-codeword_course:
-  type: text 8
-  class: label_align_left
-  name: codeword_course
-  label: |
-    **Please enter the course codeword:** 
-    (If you participate in the course "Version Control of Code and Data" at the University of Hamburg. If not, leave blank.)
-  optional: "*"
-codeword:
-  type: text 8
-  class: label_align_left
-  name: codeword
-  label: |
-    **Please enter your personal codeword:**
-  optional: "*"
-codeword_check:
-  class: |
-    label_align_left
-  type: mc_multiple
-  name: codeword_check
-  choice1: "Show codeword instructions"
-codeword_instructions:
-  type: note
-  name: codeword_instructions
-  label: "Instructions missing!"
-  showif: codeword_check == 1
 about_note:
   class: |
     answer_below_label
@@ -150,7 +86,7 @@ laptop:
     mc_vertical
   name: laptop
   label: |
-    Do you have a **personal laptop** that you can bring to each class?
+    Do you have a **personal laptop** that you can bring to each course session?
     Please note that tablets are not suitable.
   choice1: "Yes"
   choice2: "No"
@@ -161,7 +97,7 @@ laptop_feedback:
   type: note
   name: laptop_feedback
   label: |
-    If you don't have a personal laptop that you can bring to each class, that's no problem.
+    If you don't have a personal laptop that you can bring to each course session, that's no problem.
     It's possible to borrow a laptop from the university, e.g., from the institute's [notebook center](https://www.psy.uni-hamburg.de/en/service/notebookcenter.html).
     Please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de).
   showif: laptop == 2
@@ -172,7 +108,7 @@ os:
     mc_vertical
   name: os
   label: |
-    Which **operating system** do you use on the computer that you will bring to class?
+    Which **operating system** do you use on the computer that you will bring to the course?
   choice1: macOS <i class="fa fa-apple"></i>
   choice2: Windows <i class="fa fa-windows"></i>
   choice3: Linux <i class="fa fa-linux"></i>
@@ -183,17 +119,6 @@ os_other:
   label: |
     Please specify your choice:
   showif: os == 4
-preferred_language:
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_horizontal
-  name: preferred_language
-  label: |
-    What would be your **preferred course language** (spoken language during the course)?
-    Note, that all course materials are in English (for example, presentations, reading materials etc.)
-  choice1: "German &#x1F1E9;&#x1F1EA;" # includes HTML code for the German flag
-  choice2: "English &#x1F1FA;&#x1F1F8;" # includes HTML code for the US flag
 experience_note:
   class: |
     answer_below_label
@@ -202,6 +127,13 @@ experience_note:
   name: experience_note
   label: |
     ### Your experience
+experience_tools:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: experience_tools
+  label: |
     Consider the following software tools or services and indicate **your familiarity** with them.
     Don't worry if you haven't heard about about some (or any!) of them.
     You don't need any previous experience with any of these tools to participate in the course.
@@ -359,6 +291,80 @@ git_specific:
   label: |
     Is there something specific you would like to learn about Git?
   showif: experience_git >= 3
+experience_programming:
+  type: mc
+  class: |
+    mc_width150
+    answer_below_label
+  name: experience_programming
+  label: "How would you rate your overall **coding / programming** skills?"
+  choice1: "Novice"
+  choice2: "Beginner"
+  choice3: "Intermediate"
+  choice4: "Advanced"
+  choice5: "Expert"
+experience_programming_check:
+  class: label_align_left
+  type: mc_multiple
+  name: experience_programming_check
+  choice1: "Show explanation for each level"
+experience_programming_instructions:
+  type: note
+  name: experience_programming_instructions
+  label: |
+    1. **Novice (1/5):**
+    A novice programmer may have basic understanding of programming concepts but lacks practical experience.
+    They may struggle with fundamental concepts and require significant guidance and supervision.
+    1. **Beginner (2/5):**
+    A beginner programmer has a basic understanding of programming concepts and may have some experience with coding.
+    They can write simple programs with guidance but may struggle with more complex tasks and problem-solving.
+    1. **Intermediate (3/5):**
+    An intermediate programmer has a good grasp of programming fundamentals and can write code independently.
+    They can tackle moderately complex problems, debug code effectively, and understand more advanced topics.
+    1. **Advanced (4/5):**
+    An advanced programmer demonstrates a deep understanding of programming concepts and practices.
+    They can design and implement complex solutions, optimize code for performance and scalability, and mentor others effectively.
+    1. **Expert (5/5):**
+    An expert programmer is highly proficient in programming and possesses a comprehensive understanding of various programming languages, paradigms, and tools.
+    They can solve extremely challenging problems, architect large-scale systems, and contribute significantly to innovation in their field.
+  showif: experience_programming_check == 1
+experience_data:
+  type: mc
+  class: |
+    mc_width150
+    answer_below_label
+  name: experience_data
+  label: "How would you rate your overall experience working with (psychological) **research data** (for example, data from surveys, behavioral experiments or neuroimaging studies)?"
+  choice1: "Novice"
+  choice2: "Beginner"
+  choice3: "Intermediate"
+  choice4: "Advanced"
+  choice5: "Expert"
+experience_data_check:
+  class: label_align_left
+  type: mc_multiple
+  name: experience_data_check
+  choice1: "Show explanation for each level"
+experience_data_instructions:
+  type: note
+  name: experience_data_instructions
+  label: |
+    1. **Novice (1/5):**
+    A novice in working with research data has little to no experience with data collection, cleaning, analysis, or interpretation.
+    They may be unfamiliar with common data formats and tools used in research.
+    1. **Beginner (2/5):**
+    A beginner in working with research data has basic knowledge and some experience in handling data.
+    They can perform simple data manipulation tasks and basic statistical analyses under supervision.
+    1. **Intermediate (3/5):**
+    An intermediate researcher has solid experience in handling research data.
+    They can collect, clean, and analyze data independently, apply statistical methods appropriately, and interpret results effectively for basic research tasks.
+    1. **Advanced (4/5):**
+    An advanced researcher demonstrates extensive experience and proficiency in working with research data.
+    They can handle complex datasets, design and execute sophisticated data analysis workflows, apply advanced statistical methods, and critically evaluate research findings.
+    1. **Expert (5/5):**
+    An expert in working with research data is highly proficient and experienced in all aspects of data handling and analysis.
+    They possess deep domain knowledge, can tackle highly complex research questions, develop novel methodologies, and publish impactful research findings.
+  showif: experience_data_check == 1
 perspective_note:
   class: |
     answer_below_label
@@ -392,7 +398,7 @@ worries:
     big-textarea
   name: worries
   label: |
-    Do you have any **worries or fears** regarding this course, that you want to express?
+    Do you have any **worries or fears** regarding this course that you want to express?
   optional: "*"
 motivation:
   type: textarea
