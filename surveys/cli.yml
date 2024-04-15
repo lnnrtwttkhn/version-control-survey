@@ -4,150 +4,79 @@ note_start:
   name: Note_start
   label: |
    ## Command line exercises
-   This survey will be about the [Command Line chapter](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   This survey is about the contents of the [chapter "Command Line"](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) of the online book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
 note_4:
   class: label_align_left
   type: note
   name: note_4
   label: |
-    ### Moving around
+    ### Navigation and setup
 moving_around_1:
   type: text
   class: |
     answer_below_label
   name: moving_around_1 
   label: |
-    If you are not already in the Downloads folder, navigate to it first.
-    Next, switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.
-    Which command did you use?
-moving_around_2:
-  type: text
-  class: |
-    answer_below_label
-  name: moving_around_2 
-  label: |
-    Where does the following command place you on your system? 
-    ```{bash}
-    cd ~/../../..
-    ```
+    Identify a directory where you currently keep your university- or course-related files. 
+    If you don't have one, choose a suitable location in your file system.
+    **Navigate into the chosen location** using `ls` and `cd`.
+    Use the `pwd` command to **display the path** of your chosen directory.
+    What is the output?
+    *Please delete any personal information (e.g., your name) from the output.*
 note_hiddenfiles:
   class: label_align_left
   type: note
   name: note_hiddenfiles
   label: |
-    ### Hidden files
-    **Please navigate to your document folder and list all files, including the hidden ones**
-hidden_files_5:
+    ### Creating a folder and file
+creating_files_1:
   type: text
   class: |
     answer_below_label
-  name: hidden_files_5
+  name: creating_files_1
   label: |
-    What command do you use to list hidden files in a folder?
-hidden_files_1:
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_vertical
-  name: hidden_files_1
-  optional: "*"
-  label: |
-    Are there more hidden files and folders than you expected?
-  choice1: "Yes"
-  choice2: "No"
-hidden_files_2:
-  optional: "*"
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_vertical
-  name: hidden_files_2
-  label: |
-    Did you notice something about the names of the hidden files?
-  choice1: "Yes"
-  choice2: "No"
-hidden_files_3:
-  optional: "*"
-  type: text
-  class: |
-    answer_below_label
-  name: hidden_files_3
-  label: |
-    What did you notice about the names of the hidden files?
-  showif: hidden_files_2 == 1
-hidden_files_4:
-  optional: "*"
-  type: mc_button
-  class: |
-    answer_below_label
-    mc_vertical
-  name: hidden_files_4
-  label: |
-    Are there directories with more hidden folders than others?
-  choice1: "Yes"
-  choice2: "No"
+    Within your chosen directory, use the `mkdir` command to create a folder named `recipes`.
+    Navigate into the `recipes` folder. 
+    Use the `touch` command to **create a file** named `recipes.txt`.
+    **Confirm the creation by listing the contents** of the `recipes` folder.
+    Which command did you use?
 note_3:
   class: label_align_left
   type: note
   name: note_3
   label: |
-    ### Using flags
-using_flags_1:
+    ### Writing and opening files
+writing_1:
   type: text
   class: |
     answer_below_label
-  name: using_flags_1 
+  name: writing_1
   label: |
-    Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?
-using_flags_2:
-  optional: "*"
-  type: text
-  class: |
-    answer_below_label
-  name: using_flags_2
-  label: |
-    By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?
+    **Add the title** "My Favorite Recipes" to `recipes.txt`.
+    Which command or method did you use?
 note_1:
   class: label_align_left
   type: note
   name: note_1
   label: |
-    ### Combining arguments and flags
-combining_flags:
+    ### Wildcards and combining commands
+combining_1:
   type: text
   class: |
     answer_below_label
-  name: combining_flags 
+  name: combining_1 
   label: |
-    Create a command that lists all the contents of your Documents folder in long format.
-note_manipulating:
-  class: label_align_left
-  type: note
-  name: note_manipulating
-  label: |
-    ### Manipulating the file system
-creating_file:
+    Go back to your main university or course-related directory. 
+    **Create three new files:** `notes.txt`, `assignments.txt`, and `schedule.txt`.
+    Provide the command you used.
+combining_2:
   type: text
   class: |
     answer_below_label
-  name: creating_file 
+  name: combining_2 
   label: |
-   How can you create a new empty file using the command line? Provide an example.
-creating_folder:
-  type: text
-  class: |
-    answer_below_label
-  name: creating_folder 
-  label: |
-   What command is used to create a new folder called "newproject" in the command line?
-wildcards:
-  type: textarea
-  class: |
-    answer_below_label
-    big-textarea
-  name: wildcards
-  label: |
-    What is the purpose of using wildcards, such as *, in the command line? Give an example of how wildcards can be used..
+    Use a wildcard pattern to **list all `.txt` files** in your directory.
+    Which command did you use?
 bonus:
   type: textarea
   class: |
@@ -156,10 +85,10 @@ bonus:
   name: bonus
   label: |
     **Bonus question**
-    *You are in a directory containing multiple text files with various extensions, including .txt, .md, and .docx.*
-    *You want to move all the .txt files to a subdirectory named "text_files" while keeping the other file types in the current directory.*
-    *Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.*
-    *Explain each step in your solution.*
+    You are in a directory containing multiple text files with various extensions, including `.txt`, `.md`, and `.docx`.
+    You want to move all the `.txt`files to a subdirectory named "text_files" while keeping the other file types in the current directory.
+    Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.
+    Explain each step in your solution.
 next_page_2:
   type: submit
   name: next_page_2
@@ -170,99 +99,90 @@ feedback:
   type: note
   name: feedback
   label: |
-    ## Command line exercises
-    #### Moving around
+    ## Solutions and feedback
+    ### Navigation and setup
+    Identify a directory where you currently keep your university- or course-related files. 
+    If you don't have one, choose a suitable location in your file system.
+    **Navigate into the chosen location** using `ls` and `cd`.
+    Use the `pwd` command to **display the path** of your chosen directory.
+    What is the output?
+    *Please delete any personal information (e.g., your name) from the output.*
     
-    *Switch from your current location, the Downloads folder, to the Documents folder in one command, using the `~` symbol in the path.*
-    *Which command did you use?*
     **Your answer:**
-    `r moving_around_1 ` 
-    **Sample answer:**
-    ```bash cd ~/Documents```
+    `r moving_around_1`
     
-    *Where does the following command place you on your system?* 
-    ```bash
-    cd ~/../../..
-    ```
+    **Sample answer:**
+    `/Users/myusername/Documents`
+    
+    ### Creating a folder and file
+    
+    Within your chosen directory, use the `mkdir` command to create a folder named `recipes`.
+    Navigate into the `recipes` folder. 
+    Use the `touch` command to **create a file** named `recipes.txt`.
+    **Confirm the creation by listing the contents** of the `recipes` folder.
+    Which command did you use?
+    
     **Your answer:** 
-    `r moving_around_2` 
+    `r creating_files_1`
+    
     **Sample answer:**  
-    Root directory of your system, which is typically represented as /.
+     `ls`
     
-    #### Hidden files
-    *What did you notice about the names of the hidden files?*
+    ### Writing and opening files
+    
+    **Add the title** "My Favorite Recipes" to `recipes.txt`.
+    Which command or method did you use?
+    
     **Your answer:**
-    `r hidden_files_3` 
+    `r writing_1`
+    
     **Sample answer:**
-     Hidden files and directories will have names that start with a dot (.).
+    Sample answer: "I added the title to `recipes.txt` by using the command `echo 'My Favorite Recipes' > recipes.txt`. 
+    This command writes 'My Favorite Recipes' to the file, overwriting any existing content."
     
-    *What command do you use to list hidden files in a folder?*
-    **Your answer:** 
-    `r hidden_files_5` 
-    **Sample answer:**
-    ```bash ls -a ```
+    ### Wildcards and combining commands
     
-    #### Using flags
+    Go back to your main university or course-related directory. 
+    **Create three new files:** `notes.txt`, `assignments.txt`, and `schedule.txt`.
+    Provide the command you used.
     
-    *Obtain the usage information for `ls`. What is a flag that you can use to arrange the output according to date modified?*
-    Your answer: 
-    `r using_flags_1 ` 
-    **Sample answer:**  
-    1. Usage Information:
-    ```bash ls --help```
-    2. Arranging output according to date modified:
-    ```bash ls -lt ```
-    
-    *By convention flags that are full words use a double dash `--` and flags are a single letter have a singe dash `-`. Why must this be the case?*
-    **Your answer:** 
-    `r using_flags_2` 
-    **Sample answer:**
-    Readibility, avoiding ambiguity, consistency
-    
-    #### Combining arguments and flags
-    
-    *Create a command that lists all the contents of your Documents folder in long format*
     **Your answer:**
-    `r combining_flags ` 
+    `r combining_1`
+    
     **Sample answer:**
-    ```bash ls -a -l ``` or ```bash ls -al ```
+    `touch notes.txt assignments.txt schedule.txt`
     
-    #### Manipulating the file system
+    Use a wildcard pattern to **list all `.txt` files** in your directory.
+    Which command did you use?
     
-    *How can you create a new empty file using the command line? Provide an example.*
     **Your answer:**
-    `r creating_file` 
+    `r combining_2`
+    
     **Sample answer:**
-    ```bash touch example.txt```
+     `ls *.txt`
     
-    *What command is used to create a new folder called "newproject" in the command line?*
-    **Your answer:**
-    `r creating_folder` 
-    **Sample answer:** 
-    ```bash mkdir newproject```
+    **Bonus question**
+    You are in a directory containing multiple text files with various extensions, including `.txt`, `.md`, and `.docx`.
+    You want to move all the `.txt`files to a subdirectory named "text_files" while keeping the other file types in the current directory.
+    Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.
+    Explain each step in your solution.
     
-    *What is the purpose of using wildcards, such as `*`, in the command line?*
-    *Give an example of how wildcards can be used..*
-    **Your answer:**
-    `r wildcards` 
-    **Sample answer:** 
-    Wildcards, such as "*", in the command line are used to represent one or more characters, allowing you to match multiple files or directories based on a pattern. 
-    They are useful for performing operations on multiple files or directories simultaneously.
-    E.g. to list all files in your current directory that have a ".txt" extension.
-    ```bash ls *.txt```
-    
-    **Bonus question:**
-    *You are in a directory containing multiple text files with various extensions, including .txt, .md, and .docx.*
-    *You want to move all the .txt files to a subdirectory named "text_files" while keeping the other file types in the current directory.*
-    *Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.*
-    *Explain each step in your solution.*
     **Your answer:**
     `r bonus`
+    
     **Sample answer:**
+    
     1. Creating "text_files" subdirectory.
-     ```bash mkdir text_files```
-    2. Moving all the .txt files to the "text_files" subdirectory.
-    ```bash mv *.txt text_files```
+    
+    ```bash
+    mkdir text_files
+    ```
+     
+    2. Moving all the `.txt` files to the "text_files" subdirectory.
+    
+    ```bash
+    mv *.txt text_files
+    ```
 next_page_5:
   type: submit
   name: next_page_5
