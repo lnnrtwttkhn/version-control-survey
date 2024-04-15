@@ -4,7 +4,7 @@ note_start:
   name: Note_start
   label: |
    ## Command line exercises
-   This survey will be about the [Command Line chapter](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   This survey is about the contents of the [chapter "Command Line"](https://lennartwittkuhn.com/version-control-book/chapters/command-line.html) of the online book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
 note_4:
   class: label_align_left
   type: note
@@ -17,43 +17,43 @@ moving_around_1:
     answer_below_label
   name: moving_around_1 
   label: |
-    Identify a directory where you currently keep your university-related files. 
+    Identify a directory where you currently keep your university- or course-related files. 
     If you don't have one, choose a suitable location in your file system.
-    **Navigate into the location** using `ls` and `cd`.
+    **Navigate into the chosen location** using `ls` and `cd`.
     Use the `pwd` command to **display the path** of your chosen directory.
     What is the output?
-    *Please delete your personal infos from the output.*
+    *Please delete any personal information (e.g., your name) from the output.*
 note_hiddenfiles:
   class: label_align_left
   type: note
   name: note_hiddenfiles
   label: |
-    ### Creating a Folder and File
+    ### Creating a folder and file
 creating_files_1:
   type: text
   class: |
     answer_below_label
   name: creating_files_1
   label: |
-    Within your chosen directory, use the `mkdir` command to create a folder named "recipes".
-    Navigate into the "recipes" folder. 
+    Within your chosen directory, use the `mkdir` command to create a folder named `recipes`.
+    Navigate into the `recipes` folder. 
     Use the `touch` command to **create a file** named `recipes.txt`.
-    **Confirm the creation by listing the contents** of the "recipes" folder.
-    What command did you use?
+    **Confirm the creation by listing the contents** of the `recipes` folder.
+    Which command did you use?
 note_3:
   class: label_align_left
   type: note
   name: note_3
   label: |
-    ### Writing and Opening Files
+    ### Writing and opening files
 writing_1:
   type: text
   class: |
     answer_below_label
   name: writing_1
   label: |
-    **Add the title** "My Favorite Recipes" to recipes.txt.
-    What command or method did you use?
+    **Add the title** "My Favorite Recipes" to `recipes.txt`.
+    Which command or method did you use?
 note_1:
   class: label_align_left
   type: note
@@ -66,7 +66,7 @@ combining_1:
     answer_below_label
   name: combining_1 
   label: |
-    Go back to your main university-related directory. 
+    Go back to your main university or course-related directory. 
     **Create three new files:** `notes.txt`, `assignments.txt`, and `schedule.txt`.
     Provide the command you used.
 combining_2:
@@ -76,15 +76,7 @@ combining_2:
   name: combining_2 
   label: |
     Use a wildcard pattern to **list all `.txt` files** in your directory.
-    What command did you use?.
-combining_3:
-  type: text
-  class: |
-    answer_below_label
-  name: combining_3
-  label: |
-    After confirming the creation and listing of the `.txt´ files, **delete all three files** using a single command.
-    What command did you use?.
+    Which command did you use?
 bonus:
   type: textarea
   class: |
@@ -93,10 +85,10 @@ bonus:
   name: bonus
   label: |
     **Bonus question**
-    *You are in a directory containing multiple text files with various extensions, including .txt, .md, and .docx.*
-    *You want to move all the .txt files to a subdirectory named "text_files" while keeping the other file types in the current directory.*
-    *Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.*
-    *Explain each step in your solution.*
+    You are in a directory containing multiple text files with various extensions, including `.txt`, `.md`, and `.docx`.
+    You want to move all the `.txt`files to a subdirectory named "text_files" while keeping the other file types in the current directory.
+    Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.
+    Explain each step in your solution.
 next_page_2:
   type: submit
   name: next_page_2
@@ -107,77 +99,90 @@ feedback:
   type: note
   name: feedback
   label: |
-    ## Command line exercises
-    #### Navigation and setup
-    
-    *Identify a directory where you currently keep your university-related files.* 
-    *If you don't have one, choose a suitable location in your file system.*
-    *Navigate into the location using `ls` and `cd`.*
-    *Use the `pwd` command to display the path of your chosen directory.*
+    ## Solutions and feedback
+    ### Navigation and setup
+    Identify a directory where you currently keep your university- or course-related files. 
+    If you don't have one, choose a suitable location in your file system.
+    **Navigate into the chosen location** using `ls` and `cd`.
+    Use the `pwd` command to **display the path** of your chosen directory.
     What is the output?
+    *Please delete any personal information (e.g., your name) from the output.*
+    
     **Your answer:**
-    `r moving_around_1 ` 
+    `r moving_around_1`
+    
     **Sample answer:**
-    ```/Users/myusername/Documents```
+    `/Users/myusername/Documents`
     
-    ### Creating a Folder and File
+    ### Creating a folder and file
     
-    *Within your chosen directory, use the `mkdir` command to create a folder named "recipes".*
-    *Navigate into the "recipes" folder.*
-    *Use the `touch` command to create a file named `recipes.txt`.*
-    *Confirm the creation by listing the contents of the "recipes" folder.*
-    *What command did you use?*
+    Within your chosen directory, use the `mkdir` command to create a folder named `recipes`.
+    Navigate into the `recipes` folder. 
+    Use the `touch` command to **create a file** named `recipes.txt`.
+    **Confirm the creation by listing the contents** of the `recipes` folder.
+    Which command did you use?
+    
     **Your answer:** 
-    `r creating_files_1` 
+    `r creating_files_1`
+    
     **Sample answer:**  
      `ls`
     
-    #### Writing and Opening Files
+    ### Writing and opening files
     
-    *Add the title "My Favorite Recipes" to recipes.txt.*
-    *What command or method did you use?*
+    **Add the title** "My Favorite Recipes" to `recipes.txt`.
+    Which command or method did you use?
+    
     **Your answer:**
-    `r writing_1` 
+    `r writing_1`
+    
     **Sample answer:**
-     Sample answer: "I added the title to recipes.txt by using the command echo 'My Favorite Recipes' > recipes.txt. 
-     This command writes 'My Favorite Recipes' to the file, overwriting any existing content."
+    Sample answer: "I added the title to `recipes.txt` by using the command `echo 'My Favorite Recipes' > recipes.txt`. 
+    This command writes 'My Favorite Recipes' to the file, overwriting any existing content."
     
-    #### Wildcards and combining commands
+    ### Wildcards and combining commands
     
-    *Go back to your main university-related directory.*
-    *Create three new files: `notes.txt`, `assignments.txt`, and `schedule.txt`.*
-    *Provide the command you used.*
+    Go back to your main university or course-related directory. 
+    **Create three new files:** `notes.txt`, `assignments.txt`, and `schedule.txt`.
+    Provide the command you used.
+    
     **Your answer:**
-    `r  combining_1 ` 
-    **Sample answer:**  
+    `r combining_1`
+    
+    **Sample answer:**
     `touch notes.txt assignments.txt schedule.txt`
     
-    *Use a wildcard pattern to list all `.txt` files in your directory.*
-    *What command did you use?.*
+    Use a wildcard pattern to **list all `.txt` files** in your directory.
+    Which command did you use?
+    
     **Your answer:**
-    `r combining_2` 
+    `r combining_2`
+    
     **Sample answer:**
      `ls *.txt`
     
-    *After confirming the creation and listing of the .txt files, delete all three files using a single command.*
-    *What command did you use?*
-    **Your answer:**
-    `r combining_3` 
-    **Sample answer:**
-     `rm notes.txt assignments.txt schedule.txt`
+    **Bonus question**
+    You are in a directory containing multiple text files with various extensions, including `.txt`, `.md`, and `.docx`.
+    You want to move all the `.txt`files to a subdirectory named "text_files" while keeping the other file types in the current directory.
+    Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.
+    Explain each step in your solution.
     
-    **Bonus question:**
-    *You are in a directory containing multiple text files with various extensions, including .txt, .md, and .docx.*
-    *You want to move all the .txt files to a subdirectory named "text_files" while keeping the other file types in the current directory.*
-    *Write a series of command-line commands to accomplish this task, including creating the "text_files" subdirectory.*
-    *Explain each step in your solution.*
     **Your answer:**
     `r bonus`
+    
     **Sample answer:**
+    
     1. Creating "text_files" subdirectory.
-     ```bash mkdir text_files```
-    2. Moving all the .txt files to the "text_files" subdirectory.
-    ```bash mv *.txt text_files```
+    
+    ```bash
+    mkdir text_files
+    ```
+     
+    2. Moving all the `.txt` files to the "text_files" subdirectory.
+    
+    ```bash
+    mv *.txt text_files
+    ```
 next_page_5:
   type: submit
   name: next_page_5
