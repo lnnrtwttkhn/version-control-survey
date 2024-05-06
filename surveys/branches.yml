@@ -147,7 +147,7 @@ feedback:
   
     *What is the command to create a new branch in Git*
     **Your answer:** 
-    `r if(sc_1 == 1) "Local copies of your project" else if(sc_1 == 2) "Versions of your project hosted on the internet or a network" else if(sc_1 == 3) "Backups stored on a local machine" else "Snapshots of your project"` 
+    `r if(sc_1 == 1) "git new" else if(sc_1 == 2) "git create" else if(sc_1 == 3) "git start" else "git branch"` 
     **Right answer:** 
     git branch    
     
