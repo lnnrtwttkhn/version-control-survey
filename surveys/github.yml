@@ -125,8 +125,7 @@ text_1:
     big-textarea
   name: text_1
   label: |
-    Explain the concept of a remote repository in Git. 
-    Provide an example of a scenario where a remote repository is beneficial.
+    Shortly explain **the concept** of a **remote repository** in Git and provide an **example** of a scenario where a remote repository is **beneficial**.
   optional: "*"
 text_2:
   type: textarea
@@ -135,8 +134,7 @@ text_2:
     big-textarea
   name: text_2
   label: |
-    Describe the steps involved in cloning a repository from GitHub to your local machine. 
-    Why is cloning necessary?
+    Describe **the steps** to **clone** a **GitHub repository** to your local machine and explain why **cloning** is **important**.
   optional: "*"
 text_3:
   type: textarea
@@ -145,7 +143,7 @@ text_3:
     big-textarea
   name: text_3
   label: |
-    Explain the purpose of a README file in a GitHub repository and its significance in a project
+    Explain **the purpose** of a **README file** in a **GitHub repository**.
   optional: "*"
 next_page_3:
   type: submit
