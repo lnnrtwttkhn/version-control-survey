@@ -69,11 +69,11 @@ next_page_1:
 note_start:
   class: label_align_left
   type: note
-  name: Note_start
+  name: note_start
   label: |
     ## Feedback
-    Thank you for participating in the course "Version Control of Code and Data."
-    We hope you have enjoyed it!
+    Thank you for participating in the course "Version Control with Git"!
+    We hope that you have enjoyed it!
 
     We are always aiming to improve the course to meet the needs and interests of the participants.
     Therefore, we would be very interested in your feedback on the course, as well as any suggestions you might have for possible future courses.
