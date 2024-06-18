@@ -1,9 +1,3 @@
-referrer:
-  type: referrer
-  name: last_outside_referrer
-browser:
-  type: browser
-  name: browser
 intro_note:
   class: |
     answer_below_label
