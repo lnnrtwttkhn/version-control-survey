@@ -97,9 +97,7 @@ laptop_feedback:
   type: note
   name: laptop_feedback
   label: |
-    If you don't have a personal laptop that you can bring to each course session, that's no problem.
-    It's possible to borrow a laptop from the university, e.g., from the institute's [notebook center](https://www.psy.uni-hamburg.de/en/service/notebookcenter.html).
-    Please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@uni-hamburg.de).
+    If you don't have a personal laptop that you can bring to each course session, please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@tutanota.com).
   showif: laptop == 2
 os:
   type: mc_button
