@@ -172,6 +172,18 @@ experience_github:
   choice3: "Used it occassionally"
   choice4: "Frequent user"
   choice5: "Integral part of my work"
+experience_gitlab:
+  type: mc
+  class: |
+    hide_label 
+    mc_width100
+  name: experience_gitlab
+  label: "**[GitLab](https://about.gitlab.com/)**"
+  choice1: "Never heard of it"
+  choice2: "Heard of it, but never used it"
+  choice3: "Used it occassionally"
+  choice4: "Frequent user"
+  choice5: "Integral part of my work"
 experience_cli:
   type: mc
   class: |
