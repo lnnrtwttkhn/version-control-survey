@@ -162,12 +162,12 @@ experience_git:
   choice3: "Used it occassionally"
   choice4: "Frequent user"
   choice5: "Integral part of my work"
-experience_gitub:
+experience_github:
   type: mc
   class: |
     hide_label 
     mc_width100
-  name: experience_gitub
+  name: experience_github
   label: "**[GitHub](http://github.com)**"
   choice1: "Never heard of it"
   choice2: "Heard of it, but never used it"
