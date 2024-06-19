@@ -99,6 +99,27 @@ laptop_feedback:
   label: |
     If you don't have a personal laptop that you can bring to each course session, please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@tutanota.com).
   showif: laptop == 2
+gitlab:
+  type: mc_button
+  class: |
+    answer_below_label
+    mc_vertical
+  name: gitlab
+  label: |
+    Do you have access to the **MPIB GitLab** instance at [https://git.mpib-berlin.mpg.de/](https://git.mpib-berlin.mpg.de/)?
+    If you are a member of the Max Planck Institute for Human Development, you should be able to login with your MPIB credentials.
+  choice1: "Yes"
+  choice2: "No"
+gitlab_feedback:
+  class: |
+    answer_below_label
+    label_align_left
+  type: note
+  name: gitlab_feedback
+  label: |
+    If you don't have access to [https://git.mpib-berlin.mpg.de/](https://git.mpib-berlin.mpg.de/), please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@tutanota.com).
+    As an alternative, please create an account on GitHub at [https://github.com/](https://github.com/).
+  showif: gitlab == 2
 os:
   type: mc_button
   class: |
