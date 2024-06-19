@@ -5,7 +5,7 @@ intro_note:
   type: note
   name: intro_note
   label: |
-    ### Understanding version control
+    ###  Version Control
 version_control:
   type: textarea
   class: |
