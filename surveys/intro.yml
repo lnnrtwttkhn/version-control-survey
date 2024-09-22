@@ -14,7 +14,7 @@ academic:
   name: academic
   label: |
     Which **academic career level** do you identify with? &#127891;
-    If you choose `Other` please specify your choice in the accompanying text field.
+    If you choose `Other`, please specify your choice in the accompanying text field.
   choice1: Bachelor Student
   choice2: Master Student
   choice3: PhD Student
@@ -37,7 +37,7 @@ interest:
   name: interest
   label: |
     Which **field of research** are you most interested in? &#128270;
-    If you choose `Other` please specify your choice in the accompanying text field.
+    Is there something specific you would like to learn about Git?
   choice1: Clinical Psychology
   choice2: Developmental Psychology
   choice3: Educational Psychology
@@ -58,8 +58,8 @@ career:
   type: mc_button
   name: career
   label: |
-   Where do you see yourself **professionally** once you've finished your current program of study or job? &#x1F4BC;
-   If you choose `Other` please specify your choice in the accompanying text field.
+    Where do you see yourself **professionally** once you've finished your current program of study or job? &#x1F4BC;
+    If you choose `Other`, please specify your choice in the accompanying text field.
   choice1: Clinical Psychology
   choice2: Educational Psychology
   choice3: Industrial-Organizational Psychology
@@ -106,8 +106,8 @@ gitlab:
     mc_vertical
   name: gitlab
   label: |
-    Do you have access to the **MPIB GitLab** instance at [https://git.mpib-berlin.mpg.de/](https://git.mpib-berlin.mpg.de/)?
-    If you are a member of the Max Planck Institute for Human Development, you should be able to login with your MPIB credentials.
+    Do you have access to the **UHH GitLab** instance at [https://gitlab.rrz.uni-hamburg.de/users/sign_in](https://gitlab.rrz.uni-hamburg.de/users/sign_in)?
+    If you are a member of the University of Hamburg, you should be able to log in with your regular UHH credentials.
   choice1: "Yes"
   choice2: "No"
 gitlab_feedback:
@@ -117,7 +117,7 @@ gitlab_feedback:
   type: note
   name: gitlab_feedback
   label: |
-    If you don't have access to [https://git.mpib-berlin.mpg.de/](https://git.mpib-berlin.mpg.de/), please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@tutanota.com).
+    If you don't have access to UHH GitLab at [https://gitlab.rrz.uni-hamburg.de/users/sign_in](https://gitlab.rrz.uni-hamburg.de/users/sign_in), please get in contact with the course instructor [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@tutanota.com).
     As an alternative, please create an account on GitHub at [https://github.com/](https://github.com/).
   showif: gitlab == 2
 os:
@@ -154,9 +154,9 @@ experience_tools:
   name: experience_tools
   label: |
     Consider the following software tools or services and indicate **your familiarity** with them.
-    Don't worry if you haven't heard about about some (or any!) of them.
+    Don't worry if you haven't heard about some (or any!) of them.
     You don't need any previous experience with any of these tools to participate in the course.
-    Your answers help us to get a better understanding of your previous experience.
+    Your answers help us get a better understanding of your previous experience.
 tools_heading:
   type: mc_heading
   class: |
