@@ -12,9 +12,9 @@ welcome_note:
   name: welcome_note
   label: |
     ## Welcome!
-    This survey is part of the course "Version Control with Git" and a supplementary to the online guide ["Version Control Book"](https://lennartwittkuhn.com/version-control-book/).
+    This survey is part of the course "Version Control with Git" and is supplementary to the online guide ["Version Control Book"](https://lennartwittkuhn.com/version-control-book/).
     Please take a few minutes to answer the following questions regarding the course and its contents.
-    Your answers will help us in making this course better for you and the other participants.
+    Your answers will help us make this course better for you and the other participants.
     If you have any questions about the survey or if there is a problem, please contact [Dr. Lennart Wittkuhn](mailto:lennart.wittkuhn@tutanota.com).
   choice1: "Show information on anonymity and data usage"
 anonymity_note:
@@ -24,11 +24,11 @@ anonymity_note:
     #### Anonymity and data usage
     All answers are recorded and kept anonymous.
     The recording and evaluation of your responses are conducted anonymously by Dr. Lennart Wittkuhn.
-    A personal codeword is used (see below) which you create following a specific rule.
+    A personal codeword is used (see below), which you create following a specific rule.
     No one else will have access to it except you.
     The data will be used exclusively for research and educational purposes as part of the course "Version Control with Git".
     If responses are shared as part of the course, they will be aggregated to ensure anonymity is maintained.
-    If you want your data to be deleted, send an email to [lennart.wittkuhn@tutanota.com](lennart.wittkuhn@tutanota.com).
+    If you want your data to be deleted, send an email to [lennart.wittkuhn@tutanota.com](mailto:lennart.wittkuhn@tutanota.com).
   showif: welcome_note == 1
 codeword_note:
   class: |
