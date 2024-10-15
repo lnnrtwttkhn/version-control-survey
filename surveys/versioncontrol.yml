@@ -23,9 +23,10 @@ collaboration:
     big-textarea
   name: collaboration
   label: |
-    Please briefly describe your **typical workflow for collaboration**, i.e., when you work together with others on research projects.
+    Please briefly describe your **typical workflow for collaboration**, i.e., when you work together with others on the same project.
     How do you work collaboratively on manuscripts, programming code, or research data?
     Which tools are involved, and how would you evaluate the effectiveness of the collaborative workflow?
+    If you haven't worked much with others yet, you can skip this question.
   optional: "*"
 scenario_1:
   type: textarea
