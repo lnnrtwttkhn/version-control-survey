@@ -4,7 +4,7 @@ note_start:
   name: Note_start
   label: |
    ## Git basics exercises
-   This survey will be about the [First steps with Git chapter](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
+   This survey will be about the ["First steps with Git"](https://lennartwittkuhn.com/version-control-book/chapters/first-steps-git.html) and ["Git Essentials"](https://lennartwittkuhn.com/version-control-book/chapters/git-essentials.html) chapters from the book ["Version Control of Code and Data"](https://lennartwittkuhn.com/version-control-book/).
    ### Single choice questions:
 mc_1:
   type: mc_button
@@ -25,7 +25,7 @@ mc_2:
     mc_vertical
   name: mc_2
   label: |
-    After creating the "recipes" folder, what is the next step to initialize it as a Git repository?
+    After creating the `city-guide` folder, what is the next step to initialize it as a Git repository?
   choice1: "git start"
   choice2: "git create"
   choice3: "git init"
@@ -51,7 +51,7 @@ mc_4:
   label: |
    When committing changes in Git, what should you include along with your changes?
   choice1: "A commit message describing the changes"
-  choice2: "A recipe for your favorite dish"
+  choice2: "A recommendation for your favorite café"
   choice3: "A list of Git contributors"
   choice4: "Your personal contact information"
 mc_5:
@@ -61,7 +61,7 @@ mc_5:
     mc_vertical
   name: mc_5
   label: |
-   What is the purpose of a .gitignore file?
+   What is the purpose of a `.gitignore` file?
   choice1: "To store your Git commit messages"
   choice2: "To specify which files or patterns should be excluded from version control"
   choice3: "To track changes in your project"
@@ -73,7 +73,7 @@ mc_6:
     mc_vertical
   name: mc_6
   label: |
-    Which command is used to create a .gitignore file?
+    Which command is used to create a `.gitignore` file?
   choice1: "git exclude"
   choice2: "git ignore"
   choice3: "touch .gitignore"
@@ -85,7 +85,7 @@ mc_7:
     mc_vertical
   name: mc_7
   label: |
-    What should you include in a .gitignore file if you want to exclude all files with the ".log" extension from being tracked by Git?
+    What should you include in a `.gitignore` file if you want to exclude all files with the `.log` extension from being tracked by Git?
   choice1: ".log"
   choice2: "*.log"
   choice3: "exclude .log"
@@ -107,7 +107,7 @@ text_1:
     answer_below_label
   name: text_1
   label: |
-    Write a good commit message for adding a new receipe into a file.
+    Write a good commit message for adding a new city guide tip into a file.
   optional: "*"
 text_2:
   type: text
@@ -115,7 +115,7 @@ text_2:
     answer_below_label
   name: text_2
   label: |
-    Write a good commit message for fixing an error in your recipe.
+    Write a good commit message for fixing an error in your city guide.
   optional: "*"
 next_page_3:
   type: submit
@@ -137,7 +137,7 @@ feedback:
     **Right answer:** 
     mkdir
     
-    *After creating the "recipes" folder, what is the next step to initialize it as a Git repository?*
+    *After creating the `city-guide` folder, what is the next step to initialize it as a Git repository?*
     **Your answer:**
     `r if(mc_2 == 1) "git start" else if(mc_2 == 2) "git create" else if(mc_2 == 3) "git init" else if(mc_2 == 4) "git new" else "Your answer here"` 
     **Right answer:**
@@ -151,7 +151,7 @@ feedback:
     
     *When committing changes in Git, what should you include along with your changes?*
     **Your answer:**
-    `r if(mc_4 == 1) "A commit message describing the changes" else if(mc_4 == 2) "A recipe for your favorite dish" else if(mc_4 == 3) "A list of Git contributors" else if(mc_4 == 4) "Your personal contact information" else "Your answer here"` 
+    `r if(mc_4 == 1) "A commit message describing the changes" else if(mc_4 == 2) "A recommendation for your favorite café" else if(mc_4 == 3) "A list of Git contributors" else if(mc_4 == 4) "Your personal contact information" else "Your answer here"` 
     **Right answer:**
     A commit message describing the changes
     
@@ -174,17 +174,17 @@ feedback:
     *.log
     
     #### Open questions
-    *Write a good commit message for adding a new recipe into a file.*
+    *Write a good commit message for adding a new city guide tip into a file.*
     **Your answer:**
     `r text_1`  
     **Sample answer:**  
-    e.g.: "Add new recipe: [Recipe Name]"
+    e.g.: "Add new tip: [Tip Name]"
     
-    *Write a good commit message for fixing an error in your recipe.*
+    *Write a good commit message for fixing an error in your city guide.*
     **Your answer:**
     `r text_2`  
     **Sample answer:** 
-    e.g.: "Fix error in [Recipe Name]: [Brief Description]"
+    e.g.: "Fix error in city guide: [Brief Description]"
 next_page_4:
   type: submit
   name: next_page_4
